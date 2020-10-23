@@ -1,0 +1,2964 @@
+/*===========================================
+Author Name : Md Mahmudul Hasan (Miron)
+Template Type : Personal Portfolio
+Email : mironbonny1994@gmail.com
+Phone : +8801838288389
+Brand Color : #48455a, #347db6
+Text font : Poppins & Open Sans
+Icon : Flat Icon
+Version : 1.0.04
+----------------------------------
+
+
+Table of content responsive.css
+---------------------------------
+01. INDEX PAGE
+02. PORTFOLIO PAGE
+============================================*/
+
+
+
+/*==============================================
+          INDEX PAGE RESPONSIVE START
+===============================================*/
+
+@media (max-width: 575px) {
+
+    /*-----------------------------
+      BACK TO TOP BUTTON PART STAR 
+    -------------------------------*/
+    .top-btn {
+        visibility: hidden;
+    }
+
+    .top-btn a i {
+        font-size: 14px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    /*-----------------------------
+       BACK TO TOP BUTTON PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          PRELOADER PART START
+    -------------------------------*/
+    .preloader h1 {
+        font-size: 40px;
+        letter-spacing: -3px;
+    }
+
+    /*-----------------------------
+           PRELOADER PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           HIDDENBAR PART START
+    -------------------------------*/
+    .gear-btn {
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+        left: -40px;
+    }
+    /*-----------------------------
+           HIDDENBAR PART END
+    -------------------------------*/
+
+    /*---------------------------
+           MENU PART START
+    ---------------------------*/
+    .menu-head {
+        padding: 5px 15px !important;
+    }
+
+    .navbar a h1 {
+        font-size: 40px;
+        letter-spacing: -4px;
+    }
+
+    .navbar-toggler:focus {
+        outline: none !important;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    .nav-item {
+        margin: 6px 0px !important;
+    }
+
+    .nav-link {
+        padding: 5px 30px !important;
+        display: inline-block !important;
+    }
+
+    .dropdown-item {
+        font-size: 13px !important;
+    }
+
+    .menu-src {
+        display: inline-block;
+        margin-left: 0px;
+    }
+
+    .hire-btn a {
+        margin-left: 0px;
+        margin-top: 20px;
+        padding: 12px 35px;
+    }
+
+    /*---------------------------
+            MENU PART END
+    ---------------------------*/
+
+    /*-----------------------------
+           BANNER PART START
+    -------------------------------*/
+    .banner-shape-1 {
+        display: none;
+    }
+    
+    .banner-oly {
+        padding: 40px 0px 50px;
+        background-position: right;
+    }
+
+    .anim-round {
+        display: none;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-text {
+        text-align: center;
+    }
+
+    .banner-text ul {
+        margin-top: 45px;
+    }
+
+    .banner-text ul li {
+        margin-right: 0px;
+        margin: 0px 5px;
+    }
+
+    .banner-text ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .banner-btn a {
+        font-size: 14px;
+        padding: 14px 26px;
+        margin: 45px 5px 0px;
+    }
+
+    .banner-btn a:nth-child(1) {
+        margin-right: 0px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    /*-----------------------------
+            BANNER PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           CODING PART START
+    -------------------------------*/
+    #code-part {
+        padding: 60px 0px 0px;
+    }
+
+    .code-heading {
+        margin-bottom: 30px;
+    }
+
+    .code-heading p {
+        font-size: 16px;
+    }
+
+    .code-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .code-cnt {
+        text-align: center;
+    }
+
+    .code-cnt-heading {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .code-cnt-text {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .code-item-text {
+        width: 200px;
+        font-size: 16px;
+    }
+    /*-----------------------------
+           CODING PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           SERVICE PART START
+    -------------------------------*/
+    #service-part {
+        padding: 60px 0px 0px;
+    }
+
+    .service-heading {
+        margin-bottom: 30px;
+    }
+
+    .service-heading p {
+        font-size: 16px;
+    }
+
+    .service-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .service-parent {
+        margin-top: 0px;
+    }
+
+    .service-child {
+        width: 100%;
+        padding: 35px 15px 40px;
+    }
+
+    .service-number {
+        width: 0px;
+        height: 0px;
+        line-height: 0px;
+        text-align: inherit;
+        font-size: 18px;
+        top: 25px;
+        right: 35px;
+    }
+
+    .service-child span {
+        font-size: 45px;
+    }
+
+    .service-child i {
+        font-size: 35px;
+    }
+
+    .service-child h4 {
+        font-size: 20px;
+    }
+
+    .service-child p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .service-child:nth-child(2),
+    .service-child:nth-child(5) {
+        margin-top: 15px;
+    }
+
+    .service-btn a {
+        padding: 14px 35px;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+    /*-----------------------------
+            SERVICE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            RESUME PART START
+    -------------------------------*/
+    #resume-part {
+        padding: 70px 0px 0px;
+    }
+
+    .resume-heading {
+        margin-bottom: 15px;
+    }
+
+    .resume-heading p {
+        font-size: 16px;
+    }
+
+    .resume-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .resume-category {
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    .category-btn {
+        margin: 12px;
+        padding: 15px 15px 20px;
+    }
+
+    .category-btn .cate-icon {
+        font-size: 16px;
+    }
+
+    .category-btn h3 {
+        font-size: 12px;
+    }
+    /*-----------------------------
+            RESUME PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            ABOUT PART START
+    -------------------------------*/
+    #about-part {
+        padding: 30px 0px 0px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content h3 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 15px;
+    }
+
+    .about-list {
+        width: 270px;
+        margin: 30px auto 0px;
+    }
+
+    .about-list ul:nth-child(1) {
+        margin-bottom: 18px !important;
+    }
+
+    .about-list ul:first-child {
+        margin-right: 0px;
+    }
+
+    .about-list ul li h4 {
+        font-size: 14px;
+        width: 85px;
+        margin-right: 0px;
+    }
+
+    .about-list ul li p {
+        font-size: 14px;
+    }
+
+    .about-btn {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .about-btn a:nth-child(1) {
+        margin-right: 0px;
+    }
+
+    .about-btn a {
+        font-size: 14px;
+        padding: 14px 22px;
+        margin: 0px 5px;
+    }
+
+    .about-img img {
+        display: none;
+    }
+    /*-----------------------------
+            ABOUT PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          PORTFOLIO PART PART
+    -------------------------------*/
+    #port-part {
+        padding: 60px 0px 0px;
+    }
+
+    .port-heading {
+        margin-bottom: 15px;
+    }
+
+    .port-heading p {
+        font-size: 16px;
+    }
+
+    .port-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .port-parent .dandik,
+    .port-parent .bamdik {
+        font-size: 14px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .port-parent .dandik {
+        right: 0%;
+    }
+
+    .port-parent .bamdik {
+        left: 0%;
+    }
+
+    .port-child {
+        margin: 15px;
+    }
+
+    .port-end-btn {
+        margin-top: 20px;
+    }
+
+    .port-end-btn a {
+        font-size: 14px;
+    }
+    /*-----------------------------
+          PORTFOLIO PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            SKILL PART START
+    -------------------------------*/
+    #skill-part {
+        padding: 60px 0px 0px;
+    }
+
+    .skill-heading {
+        margin-bottom: 15px;
+    }
+
+    .skill-heading p {
+        font-size: 16px;
+    }
+
+    .skill-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .skill-child {
+        border-radius: 8px;
+    }
+
+    .skill-img {
+        width: 120px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .skill-img img {
+        height: 50px;
+    }
+
+    .skill-item p {
+        font-size: 12px;
+    }
+    /*-----------------------------
+            SKILL PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            GET PART START
+    -------------------------------*/
+    #get-part {
+        transform: translateY(15%);
+    }
+
+    .get-content {
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+
+    .get-text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .get-text h3 {
+        font-size: 32px;
+    }
+
+    .get-text p {
+        font-size: 16px;
+    }
+
+    .get-btn a {
+        font-size: 16px;
+    }
+    /*-----------------------------
+            GET PART END
+    -------------------------------*/
+
+    /*-----------------------------
+             COUNT PART START
+    -------------------------------*/
+    .count-bg {
+        padding: 100px 0px 60px;
+    }
+
+    .count-parent {
+        align-items: flex-start;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .count-child {
+        width: 235px;
+        margin: 0 auto 30px;
+    }
+
+    .count-child:last-child {
+        margin-bottom: 0px;
+    }
+
+    .count-child i {
+        font-size: 55px !important;
+    }
+
+    .count-text span {
+        font-size: 35px;
+    }
+
+    .count-text p {
+        font-size: 16px;
+    }
+    /*-----------------------------
+             COUNT PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            PRICE PART START
+    -------------------------------*/
+    #price-part {
+        padding: 60px 0px 0px;
+    }
+
+    .price-heading {
+        margin-bottom: 15px;
+    }
+
+    .price-heading p {
+        font-size: 16px;
+    }
+
+    .price-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .price-card:nth-child(2) {
+        transform: scale(1);
+    }
+
+    .price-money h3 {
+        font-size: 16px;
+    }
+
+    .price-money h3::after {
+        width: 100px;
+        height: 110px;
+    }
+
+    .price-card h4 {
+        margin-top: 60px;
+        font-size: 32px;
+    }
+
+    .price-card p {
+        font-size: 11px;
+    }
+
+    .price-list ul li {
+        font-size: 14px;
+    }
+
+    .price-btn a {
+        font-size: 14px;
+        padding: 14px 28px;
+    }
+    /*-----------------------------
+            PRICE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          TESTIMONIAL PART START
+    -------------------------------*/
+    #testi-part {
+        padding: 60px 0px 0px;
+    }
+
+    .testi-heading {
+        margin-bottom: 15px;
+    }
+
+    .testi-heading p {
+        font-size: 16px;
+    }
+
+    .testi-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .testi-parent .bamdik,
+    .testi-parent .dandik {
+        font-size: 14px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .testi-child {
+        padding: 30px 25px;
+    }
+
+    .testi-child i {
+        font-size: 120px;
+    }
+
+    .testi-child p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .testi-child ul li img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .testi-child ul li h3 {
+        font-size: 14px;
+    }
+
+    .testi-child ul li h4 {
+        font-size: 12px;
+    }
+    /*-----------------------------
+          TESTIMONIAL PART END
+    -------------------------------*/
+
+    /*-----------------------------
+             BLOG PART START
+    -------------------------------*/
+    #blog-part {
+        padding: 60px 0px 0px;
+    }
+
+    .blog-heading {
+        margin-bottom: 25px;
+    }
+
+    .blog-heading p {
+        font-size: 16px;
+    }
+
+    .blog-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .blog-card {
+        margin-bottom: 30px;
+    }
+
+    .blog-head li p {
+        font-size: 13px;
+    }
+
+    .blog-head li i {
+        font-size: 14px;
+    }
+
+    .blog-text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .blog-text p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .blog-social li a {
+        font-size: 12px;
+        padding: 8px 22px;
+    }
+
+    .blog-social li i {
+        font-size: 16px;
+    }
+
+    .blog-social li p {
+        font-size: 14px;
+    }
+
+    .blog-suggest {
+        width: 290px;
+        margin: 0 auto 30px;
+    }
+    /*-----------------------------
+             BLOG PART END
+    -------------------------------*/
+
+    /*-----------------------------
+              FAQ PART START
+    -------------------------------*/
+    #faq-part {
+        padding: 60px 0px 0px;
+    }
+
+    .faq-heading {
+        margin-bottom: 25px;
+    }
+
+    .faq-heading p {
+        font-size: 16px;
+    }
+
+    .faq-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .faq-child:last-child {
+        margin-bottom: 30px;
+    }
+    /*-----------------------------
+              FAQ PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           CONTACT PART START
+    -------------------------------*/
+    #contact-part {
+        padding: 40px 0px 0px;
+    }
+
+    .contact-heading {
+        margin-bottom: 25px;
+    }
+
+    .contact-heading p {
+        font-size: 16px;
+    }
+
+    .contact-heading h2 {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .contact-box {
+        display: inherit;
+        margin-bottom: 0px;
+    }
+
+    .contact-address {
+        display: inherit;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .address-text {
+        margin-left: 0px;
+    }
+
+    .address-icon i {
+        width: 45px;
+        height: 45px;
+        line-height: 44px;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .input-div {
+        display: inherit;
+    }
+
+    .input-div input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contact-form button {
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .contact-img {
+        text-align: center;
+    }
+
+    .contact-img img {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    /*-----------------------------
+            CONTACT PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           FOOTER PART START
+    -------------------------------*/
+    #footer-part {
+        padding: 50px 0px;
+    }
+
+    .footer-logo a {
+        font-size: 45px;
+    }
+
+    .footer-menu ul li {
+        margin: 0px 6px 35px !important;
+    }
+
+    .footer-menu ul li a {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+    }
+
+    .copy-text p {
+        font-size: 14px;
+    }
+    /*-----------------------------
+            FOOTER PART END
+    -------------------------------*/
+
+    
+}
+
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    /*-----------------------------
+      BACK TO TOP BUTTON PART STAR 
+    -------------------------------*/
+    .top-btn a i {
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /*-----------------------------
+       BACK TO TOP BUTTON PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          PRELOADER PART START
+    -------------------------------*/
+    .preloader h1 {
+        font-size: 50px;
+        letter-spacing: -3px;
+    }
+
+    /*-----------------------------
+           PRELOADER PART END
+    -------------------------------*/
+
+    /*---------------------------
+           MENU PART START
+    ---------------------------*/
+    .menu-head {
+        padding: 5px 15px !important;
+    }
+
+    .navbar a h1 {
+        font-size: 40px;
+        letter-spacing: -4px;
+    }
+
+    .navbar-toggler:focus {
+        outline: none !important;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    .nav-item {
+        margin: 6px 0px !important;
+    }
+
+    .nav-link {
+        padding: 5px 30px !important;
+        display: inline-block !important;
+    }
+
+    .dropdown-item {
+        font-size: 13px !important;
+    }
+
+    .menu-src {
+        display: inline-block;
+        margin-left: 0px;
+    }
+
+    .hire-btn a {
+        margin-left: 0px;
+        margin-top: 20px;
+        padding: 12px 35px;
+    }
+
+    /*---------------------------
+            MENU PART END
+    ---------------------------*/
+
+    /*-----------------------------
+           BANNER PART START
+    -------------------------------*/
+    #banner-part {
+        padding: 60px 0px 0px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-shape img {
+        bottom: 0px;
+        top: 200px;
+    }
+
+    .logo-shape {
+        display: none;
+    }
+
+    .banner-text {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .banner-text h1 {
+        font-size: 24px;
+    }
+
+    .banner-text h2 {
+        font-size: 30px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    .banner-text a {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    /*-----------------------------
+            BANNER PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           SERVICE PART START
+    -------------------------------*/
+    #service-part {
+        padding: 60px 0px 0px;
+    }
+
+    .service-heading {
+        margin-bottom: 30px;
+    }
+
+    .service-heading h2 {
+        font-size: 28px;
+    }
+
+    .service-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .service-heading p {
+        font-size: 14px;
+    }
+
+    .service-box {
+        padding: 30px 15px 25px;
+    }
+
+    .service-box h4 {
+        font-size: 20px;
+    }
+
+    .service-box p {
+        font-size: 14px;
+    }
+
+    .service-box i {
+        font-size: 35px;
+        margin-top: 15px;
+    }
+
+    .ser-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    /*-----------------------------
+            SERVICE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            SKILL PART START
+    -------------------------------*/
+    #skill-part {
+        padding: 60px 0px 0px;
+    }
+
+    .skill-heading {
+        margin-bottom: 35px;
+    }
+
+    .skill-heading h2 {
+        font-size: 28px;
+    }
+
+    .skill-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .skill-heading p {
+        font-size: 14px;
+    }
+
+    .skill-img img {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .skill-type-2,
+    .skill-type-3,
+    .skill-type-4 {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .skill-type-1,
+    .skill-type-2,
+    .skill-type-3,
+    .skill-type-4 {
+        text-align: center;
+    }
+
+    .skill-type-1 h3,
+    .skill-type-2 h3,
+    .skill-type-3 h3,
+    .skill-type-4 h3 {
+        top: 42%;
+        left: -50px;
+        font-size: 145px;
+    }
+
+    .skill-type-1 h4,
+    .skill-type-2 h4,
+    .skill-type-3 h4,
+    .skill-type-4 h4 {
+        font-size: 20px;
+    }
+
+    /*-----------------------------
+            SKILL PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            RESUME PART START
+    -------------------------------*/
+    #resume-part {
+        padding: 40px 0px 0px;
+    }
+
+    .resume-heading {
+        margin-bottom: 20px;
+    }
+
+    .resume-heading h2 {
+        font-size: 28px;
+    }
+
+    .resume-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .resume-content i {
+        font-size: 30px;
+    }
+
+    .resume-content h3 {
+        font-size: 16px;
+    }
+
+    .resume-slide ul {
+        top: -45px;
+    }
+
+    .resume-category {
+        margin-bottom: 70px;
+    }
+
+    .resume-slide ul li {
+        margin: 0px 44px;
+    }
+
+    .resume-slide ul li button {
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+    }
+
+    /*-----------------------------
+            RESUME PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            ABOUT PART START
+    -------------------------------*/
+    .about-img img {
+        width: auto;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .about-heading {
+        text-align: center;
+    }
+
+    .about-heading h4 {
+        font-size: 16px;
+        display: none;
+    }
+
+    .about-heading h5 {
+        font-size: 20px;
+    }
+
+    .about-para {
+        width: 100%;
+    }
+
+    .about-link-parent {
+        margin-top: 25px;
+        display: inherit;
+    }
+
+    .about-icon-text {
+        text-align: left;
+    }
+
+    .res-ab-ghape {
+        margin-bottom: 30px;
+    }
+
+    .about-btn {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .download-btn {
+        padding: 12px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 0px;
+    }
+
+    .download-btn p {
+        font-size: 16px;
+    }
+
+    .about-btn .download-btn:last-child {
+        display: none;
+    }
+
+    /*-----------------------------
+             ABOUT PART END
+    -------------------------------*/
+
+    /*-----------------------------
+         EXPERIENCE PART START
+    -------------------------------*/
+    .ex-img img {
+        margin: 0px auto 30px;
+        width: auto;
+        height: 400px;
+    }
+
+    .ex-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    .ex-ghape {
+        margin-top: 0px;
+    }
+
+    .ex-card {
+        padding: 35px 20px 45px;
+        text-align: center;
+    }
+
+    .ex-card i {
+        font-size: 35px;
+        position: inherit;
+        top: 0px;
+        left: 0px;
+    }
+
+    /*-----------------------------
+          EXPERIENCE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          EDUCATION PART START
+    -------------------------------*/
+    .edu-img img {
+        width: auto;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .edu-ghape {
+        margin-top: 0px;
+    }
+
+    .edu-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    .edu-card {
+        padding: 35px 5px 45px;
+        text-align: center;
+    }
+
+    .edu-card i {
+        font-size: 35px;
+        position: inherit;
+        top: 0px;
+        left: 0px;
+    }
+
+    /*-----------------------------
+          EDUCATION PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          REFERENCE PART START
+    -------------------------------*/
+    .refer {
+        margin-top: 30px;
+    }
+
+    .refer h3 {
+        font-size: 18px;
+    }
+
+    .refer h4,
+    .refer h5,
+    .refer h6 {
+        font-size: 16px;
+    }
+
+    .refer-img img {
+        width: auto;
+        height: 400px;
+        margin: 30px auto;
+    }
+
+    /*-----------------------------
+          REFERENCE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          PORTFOLIO PART START
+    -------------------------------*/
+    #port-part {
+        padding: 50px 0px 0px;
+    }
+
+    .port-heading {
+        margin-bottom: 15px;
+    }
+
+    .port-heading h2 {
+        font-size: 28px;
+    }
+
+    .port-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .port-menu {
+        margin-bottom: 5px;
+    }
+
+    .port-menu .menu {
+        margin-bottom: 10px;
+    }
+
+    .prot-main {
+        margin: 0px 5px;
+    }
+
+    .port-btn a {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .port-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    /*-----------------------------
+          PORTFOLIO PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            PRICE PART START
+    -------------------------------*/
+    #price-part {
+        padding: 60px 0px 0px;
+    }
+
+    .price-heading {
+        margin-bottom: 30px;
+    }
+
+    .price-heading h2 {
+        font-size: 28px;
+    }
+
+    .price-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .price-card {
+        margin: 0px 70px;
+    }
+
+    .price-btn a {
+        font-size: 16px;
+    }
+
+    .price-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    /*-----------------------------
+            PRICE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+         TESTIMONIAL PART START
+    -------------------------------*/
+    #testi-part {
+        padding: 70px 0px 0px;
+    }
+
+    .testi-heading {
+        margin-bottom: 25px;
+    }
+
+    .testi-heading h2 {
+        font-size: 28px;
+    }
+
+    .testi-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .testi-card {
+        margin: 0px 5px;
+    }
+
+    .testi-img img {
+        height: 130px;
+        width: auto;
+        top: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .testi-text::after {
+        display: none;
+    }
+
+    .testi-text {
+        width: 100%;
+        margin-top: 50px;
+        padding: 30px 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .testi-text p {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .testi-text i {
+        top: 0px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .rating-img img {
+        display: none;
+    }
+
+    .testi-slider .dandik,
+    .testi-slider .bamdik {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    /*-----------------------------
+        TESTIMONIAL PART END
+    -------------------------------*/
+
+    /*-----------------------------
+             BLOG PART START
+    -------------------------------*/
+    #blog-part {
+        padding: 40px 0px 0px;
+    }
+
+    .blog-heading {
+        margin-bottom: 60px;
+    }
+
+    .blog-heading h2 {
+        font-size: 28px;
+    }
+
+    .blog-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .blog-slider .dandik,
+    .blog-slider .bamdik {
+        top: -50px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    .blog-card {
+        margin: 0px 70px;
+    }
+
+    .blog-admin img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .blog-date i {
+        font-size: 25px;
+    }
+
+    .blog-text h3 {
+        font-size: 18px;
+    }
+
+    .blog-react i {
+        font-size: 12px;
+    }
+
+    .blog-react p {
+        font-size: 12px;
+    }
+
+    .blog-react:after {
+        display: none;
+    }
+
+    .blog-btn a {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    /*-----------------------------
+             BLOG PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           CONTACT PART START
+    -------------------------------*/
+    #contact-part {
+        padding: 80px 0px 0px;
+    }
+
+    .contact-heading {
+        margin-bottom: 15px;
+    }
+
+    .contact-heading h2 {
+        font-size: 28px;
+    }
+
+    .contact-heading img {
+        height: 35px;
+        left: 46%;
+    }
+
+    .contact-box {
+        display: inherit;
+        margin-bottom: 0px;
+    }
+
+    .contact-address {
+        display: inherit;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .address-text {
+        margin-left: 0px;
+    }
+
+    .address-icon i {
+        width: 45px;
+        height: 45px;
+        line-height: 44px;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .input-div {
+        display: inherit;
+    }
+
+    .input-div input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contact-form button {
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .contact-img {
+        text-align: center;
+    }
+
+    .contact-img img {
+        margin-top: 30px;
+        width: 400px;
+    }
+
+    /*-----------------------------
+            CONTACT PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           FOOTER PART START
+    -------------------------------*/
+    #footer-part {
+        padding: 50px 0px;
+    }
+
+    .footer-logo a {
+        font-size: 45px;
+    }
+
+    .footer-menu ul li {
+        margin: 0px 6px 35px !important;
+    }
+
+    .footer-menu ul li a i {
+        font-size: 16px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    /*-----------------------------
+            FOOTER PART END
+    -------------------------------*/
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*-----------------------------
+      BACK TO TOP BUTTON PART STAR 
+    -------------------------------*/
+    .top-btn a i {
+        font-size: 18px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    /*-----------------------------
+       BACK TO TOP BUTTON PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          PRELOADER PART START
+    -------------------------------*/
+    .preloader h1 {
+        font-size: 50px;
+        letter-spacing: -3px;
+    }
+
+    /*-----------------------------
+           PRELOADER PART END
+    -------------------------------*/
+
+    /*---------------------------
+           MENU PART START
+    ---------------------------*/
+    .menu-head {
+        padding: 5px 15px !important;
+    }
+
+    .navbar a h1 {
+        font-size: 40px;
+        letter-spacing: -4px;
+    }
+
+    .navbar-toggler:focus {
+        outline: none !important;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    .nav-item {
+        margin: 6px 0px !important;
+    }
+
+    .nav-link {
+        padding: 5px 30px !important;
+        display: inline-block !important;
+    }
+
+    .dropdown-item {
+        font-size: 13px !important;
+    }
+
+    .menu-src {
+        display: inline-block;
+        margin-left: 0px;
+    }
+
+    .hire-btn a {
+        margin-left: 0px;
+        margin-top: 20px;
+        padding: 12px 35px;
+    }
+
+    /*---------------------------
+            MENU PART END
+    ---------------------------*/
+
+    /*-----------------------------
+           BANNER PART START
+    -------------------------------*/
+    #banner-part {
+        padding: 60px 0px 0px;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-shape img {
+        bottom: 0px;
+        top: 200px;
+    }
+
+    .logo-shape {
+        display: none;
+    }
+
+    .banner-text {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .banner-text h1 {
+        font-size: 30px;
+    }
+
+    .banner-text h2 {
+        font-size: 40px;
+    }
+
+    .banner-text a {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    /*-----------------------------
+            BANNER PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           SERVICE PART START
+    -------------------------------*/
+    #service-part {
+        padding: 60px 0px 0px;
+    }
+
+    .service-heading {
+        margin-bottom: 30px;
+    }
+
+    .service-heading h2 {
+        font-size: 28px;
+    }
+
+    .service-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .service-box h4 {
+        font-size: 20px;
+    }
+
+    .ser-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    /*-----------------------------
+            SERVICE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            SKILL PART START
+    -------------------------------*/
+    #skill-part {
+        padding: 60px 0px 0px;
+    }
+
+    .skill-heading {
+        margin-bottom: 35px;
+    }
+
+    .skill-heading h2 {
+        font-size: 28px;
+    }
+
+    .skill-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .skill-img img {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .skill-type-2,
+    .skill-type-3,
+    .skill-type-4 {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .skill-type-1 h3,
+    .skill-type-2 h3,
+    .skill-type-3 h3,
+    .skill-type-4 h3 {
+        top: 42%;
+        left: -50px;
+        font-size: 145px;
+    }
+
+    .skill-type-1 h4,
+    .skill-type-2 h4,
+    .skill-type-3 h4,
+    .skill-type-4 h4 {
+        font-size: 20px;
+    }
+
+    /*-----------------------------
+            SKILL PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            RESUME PART START
+    -------------------------------*/
+    #resume-part {
+        padding: 40px 0px 0px;
+    }
+
+    .resume-heading {
+        margin-bottom: 20px;
+    }
+
+    .resume-heading h2 {
+        font-size: 28px;
+    }
+
+    .resume-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .resume-content i {
+        font-size: 30px;
+    }
+
+    .resume-content h3 {
+        font-size: 16px;
+    }
+
+    .resume-slide ul {
+        top: -45px;
+    }
+
+    .resume-category {
+        margin-bottom: 70px;
+    }
+
+    .resume-slide ul li {
+        margin: 0px 67px;
+    }
+
+    .resume-slide ul li button {
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+    }
+
+    /*-----------------------------
+            RESUME PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            ABOUT PART START
+    -------------------------------*/
+    .about-img img {
+        width: auto;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .about-heading {
+        text-align: center;
+    }
+
+    .about-heading h5 {
+        font-size: 24px;
+    }
+
+    .about-para {
+        width: 100%;
+    }
+
+    .about-link-parent {
+        margin-top: 25px;
+        display: inherit;
+    }
+
+    .about-icon-text {
+        text-align: left;
+    }
+
+    .res-ab-ghape {
+        margin-bottom: 30px;
+    }
+
+    .about-btn {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .download-btn {
+        padding: 12px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 0px;
+    }
+
+    .download-btn p {
+        font-size: 16px;
+    }
+
+    .about-btn .download-btn:last-child {
+        display: none;
+    }
+
+    /*-----------------------------
+             ABOUT PART END
+    -------------------------------*/
+
+    /*-----------------------------
+         EXPERIENCE PART START
+    -------------------------------*/
+    .ex-img img {
+        margin: 0px auto 30px;
+        width: auto;
+        height: 400px;
+    }
+
+    .ex-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    .ex-ghape {
+        margin-top: 0px;
+    }
+
+    .ex-card {
+        padding: 35px 20px 45px;
+        text-align: center;
+    }
+
+    .ex-card i {
+        font-size: 35px;
+        position: inherit;
+        top: 0px;
+        left: 0px;
+    }
+
+    /*-----------------------------
+          EXPERIENCE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          EDUCATION PART START
+    -------------------------------*/
+    .edu-img img {
+        width: auto;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .edu-ghape {
+        margin-top: 0px;
+    }
+
+    .edu-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    .edu-card {
+        padding: 35px 5px 45px;
+        text-align: center;
+    }
+
+    .edu-card i {
+        font-size: 35px;
+        position: inherit;
+        top: 0px;
+        left: 0px;
+    }
+
+    /*-----------------------------
+          EDUCATION PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          REFERENCE PART START
+    -------------------------------*/
+    .refer {
+        margin-top: 30px;
+    }
+
+    .refer h3 {
+        font-size: 18px;
+    }
+
+    .refer h4,
+    .refer h5,
+    .refer h6 {
+        font-size: 16px;
+    }
+
+    .refer-img img {
+        width: 100%;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    /*-----------------------------
+          REFERENCE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          PORTFOLIO PART START
+    -------------------------------*/
+    #port-part {
+        padding: 50px 0px 0px;
+    }
+
+    .port-heading {
+        margin-bottom: 15px;
+    }
+
+    .port-heading h2 {
+        font-size: 28px;
+    }
+
+    .port-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .port-menu {
+        margin-bottom: 5px;
+    }
+
+    .port-menu .menu {
+        margin: 0px 0px 10px;
+    }
+
+    .prot-main {
+        margin: 0px 5px;
+    }
+
+    .port-btn a {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .port-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    /*-----------------------------
+          PORTFOLIO PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            PRICE PART START
+    -------------------------------*/
+    #price-part {
+        padding: 60px 0px 0px;
+    }
+
+    .price-heading {
+        margin-bottom: 30px;
+    }
+
+    .price-heading h2 {
+        font-size: 28px;
+    }
+
+    .price-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .price-btn a {
+        font-size: 16px;
+    }
+
+    .price-res-ghape {
+        margin-bottom: 30px;
+    }
+
+    /*-----------------------------
+            PRICE PART END
+    -------------------------------*/
+
+    /*-----------------------------
+         TESTIMONIAL PART START
+    -------------------------------*/
+    #testi-part {
+        padding: 70px 0px 0px;
+    }
+
+    .testi-heading {
+        margin-bottom: 25px;
+    }
+
+    .testi-heading h2 {
+        font-size: 28px;
+    }
+
+    .testi-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .testi-card {
+        margin: 0px 5px;
+    }
+
+    .testi-img img {
+        height: 130px;
+        width: auto;
+        top: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .testi-text::after {
+        display: none;
+    }
+
+    .testi-text {
+        width: 100%;
+        margin-top: 50px;
+        padding: 30px 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 80px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .testi-text p {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .testi-text i {
+        top: 0px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .rating-img img {
+        display: none;
+    }
+
+    .testi-slider .dandik,
+    .testi-slider .bamdik {
+        top: 0px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    /*-----------------------------
+        TESTIMONIAL PART END
+    -------------------------------*/
+
+    /*-----------------------------
+             BLOG PART START
+    -------------------------------*/
+    #blog-part {
+        padding: 0px 0px 0px;
+    }
+
+    .blog-heading {
+        margin-bottom: 60px;
+    }
+
+    .blog-heading h2 {
+        font-size: 28px;
+    }
+
+    .blog-heading img {
+        height: 35px;
+        left: 43%;
+    }
+
+    .blog-slider .dandik,
+    .blog-slider .bamdik {
+        top: -50px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    .blog-card {
+        margin: 0px 15px;
+    }
+
+    .blog-admin img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .blog-date i {
+        font-size: 25px;
+    }
+
+    .blog-text h3 {
+        font-size: 18px;
+    }
+
+    .blog-react i {
+        font-size: 12px;
+    }
+
+    .blog-react p {
+        font-size: 12px;
+    }
+
+    .blog-react:after {
+        display: none;
+    }
+
+    .blog-btn a {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    /*-----------------------------
+             BLOG PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           CONTACT PART START
+    -------------------------------*/
+    #contact-part {
+        padding: 80px 0px 0px;
+    }
+
+    .contact-heading {
+        margin-bottom: 15px;
+    }
+
+    .contact-heading h2 {
+        font-size: 28px;
+    }
+
+    .contact-heading img {
+        height: 35px;
+        left: 47%;
+    }
+
+    .contact-box {
+        margin-bottom: 40px;
+    }
+
+    .contact-address {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .address-text {
+        margin-left: 0px;
+    }
+
+    .address-icon i {
+        width: 45px;
+        height: 45px;
+        line-height: 44px;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .input-div {
+        display: inherit;
+    }
+
+    .input-div input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contact-form button {
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .contact-img {
+        text-align: center;
+    }
+
+    .contact-img img {
+        margin-top: 30px;
+    }
+
+    /*-----------------------------
+            CONTACT PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           FOOTER PART START
+    -------------------------------*/
+    #footer-part {
+        padding: 50px 0px;
+    }
+
+    .footer-logo a {
+        font-size: 45px;
+    }
+
+    .footer-menu ul li {
+        margin: 0px 6px 35px !important;
+    }
+
+    .footer-menu ul li a i {
+        font-size: 16px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    /*-----------------------------
+            FOOTER PART END
+    -------------------------------*/
+}
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*-----------------------------
+           MENU PART START
+    -------------------------------*/
+    .navbar a h1 {
+        font-size: 40px;
+        letter-spacing: -4px;
+    }
+
+    .menu-src {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    /*-----------------------------
+           MENU PART START
+    -------------------------------*/
+
+    /*-----------------------------
+           BANNER PART START
+    -------------------------------*/
+    .logo-shape {
+        display: none;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-text h1 {
+        font-size: 45px;
+    }
+
+    /*-----------------------------
+           BANNER PART END
+    -------------------------------*/
+
+    /*-----------------------------
+           RESUME PART START
+    -------------------------------*/
+    .resume-slide ul li {
+        margin: 0px 95px;
+    }
+
+    /*-----------------------------
+           RESUME PART END
+    -------------------------------*/
+
+    /*-----------------------------
+            ABOUT PART START
+    -------------------------------*/
+    .about-para {
+        width: 100%;
+    }
+
+    .about-link-parent {
+        margin-top: 25px;
+    }
+
+    .about-link-child {
+        padding: 30px 5px;
+    }
+
+    /*-----------------------------
+            ABOUT PART END
+    -------------------------------*/
+
+    /*-----------------------------
+          EXPERIENCE PART START
+    -------------------------------*/
+    .ex-card h4 {
+        font-size: 14px;
+    }
+
+    /*-----------------------------
+           EXPERIENCE PART END
+    -------------------------------*/
+}
+
+/*==============================================
+          INDEX PAGE RESPONSIVE END
+===============================================*/
+
+
+
+
+/*=============================================
+        PORTFOLIO PAGE RESPONSIVE START
+==============================================*/
+
+@media (max-width: 575px) {
+
+    /*------------------------------------
+       INNER PORTFOLIO BANNER PART START
+    -------------------------------------*/
+    .port-banner-oly {
+        padding: 60px 0px 110px;
+    }
+
+    .port-banner-content h1 {
+        font-size: 45px;
+    }
+    /*-----------------------------------
+       INNER PORTFOLIO BANNER PART END
+    ------------------------------------*/
+
+
+    /*------------------------------------
+       INNER PORTFOLIO DETAIL PART START
+    -------------------------------------*/
+    #port-detail-part {
+        transform: translateY(-30%);
+    }
+
+    .port-detail-parent {
+        display: none;
+    }
+
+    .port-detail-slider {
+        display: block;
+    }
+
+    .port-detail-slider {
+        display: inherit;
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    .port-detail-slider ul li button {
+        display: none !important;
+    }
+
+    .port-detail-child {
+        width: 125px !important;
+        margin: 0px 10px;
+        padding: 20px 5px 25px;
+        margin-bottom: 15px;
+    }
+
+    .port-detail-child i {
+        font-size: 22px;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .port-detail-child h3 {
+        font-size: 13px;
+    }
+    /*----------------------------------
+       INNER PORTFOLIO DETAIL PART END
+    -----------------------------------*/
+
+
+    /*------------------------------
+        INNER PORTFOLIO PART START
+    -------------------------------*/
+    #inner-port-part {
+        padding: 0px 0px 0px;
+    }
+
+    .inner-port-heading h2 {
+        font-size: 28px;
+    }
+
+    .inner-port-heading p {
+        margin-bottom: 25px !important;
+    }
+
+    .inner-port-sub form {
+        display: block;
+    }
+
+    .inner-port-src {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 25px 15px;
+        border-radius: 15px;
+    }
+
+    .inner-port-src input {
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.3);
+        margin-bottom: 25px;
+    }
+
+    .custom-select {
+        width: 100% !important;
+        height: 50px !important;
+        border-radius: 30px !important;
+        box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.3);
+        margin-bottom: 25px;
+    }
+
+    .inner-port-menu {
+        display: none;
+    }
+
+    .inner-port-text {
+        width: 100%;
+        bottom: 20px;
+    }
+
+    .inner-port-text h3 {
+        font-size: 14px;
+        width: 170px;
+    }
+
+    .lovw-input {
+        margin-right: 15px;
+    }
+
+    .love-input i {
+        width: 34px;
+    }
+
+    /*----------------------------
+        INNER PORTFOLIO PART END
+    -----------------------------*/
+}
+
+
+/*
+@media (max-width: 450px) {
+    .container {
+        width: 320px !important;
+        margin: 0 auto;
+    }
+}
+*/
+
+
+@media (min-width: 451px) and (max-width: 575px) {
+
+    /*
+    .container {
+        width: 451px !important;
+        margin: 0 auto;
+    }
+*/
+
+    .port-detail-slider {
+        width: 420px;
+    }
+
+    .inner-port-menu .menu {
+        font-size: 14px;
+    }
+
+    .port-detail-child {
+        margin: 0px 7.5px 15px;
+    }
+
+    .inner-port-child {
+        width: 190px;
+        padding: 18px;
+        margin: 10px;
+    }
+
+    .inner-port-img {
+        height: 190px;
+    }
+
+    .inner-port-btn {
+        top: 50%;
+    }
+
+    .inner-port-text {
+        display: none;
+    }
+
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+
+    /*-------------------------------------
+       INNER PORTFOLIO BANNER PART START
+    --------------------------------------*/
+    .port-banner-oly {
+        padding: 60px 0px 110px;
+    }
+
+    .port-banner-content h1 {
+        font-size: 45px;
+    }
+
+    /*-------------------------------------
+       INNER PORTFOLIO BANNER PART END
+    --------------------------------------*/
+
+
+    /*---------------------------------------
+          INNER PORTFOLIO DETAIL PART START
+    ----------------------------------------*/
+    #port-detail-part {
+        transform: translateY(-30%);
+    }
+
+    .port-detail-parent {
+        display: none;
+    }
+
+    .port-detail-slider {
+        display: inherit;
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .port-detail-slider ul li button {
+        display: none !important;
+    }
+
+    .port-detail-child {
+        width: 125px !important;
+        margin: 0px 5px;
+        padding: 20px 5px 25px;
+        margin-bottom: 15px;
+    }
+
+    .port-detail-child i {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .port-detail-child h3 {
+        font-size: 13px;
+    }
+
+    /*-----------------------------------
+        INNER PORTFOLIO DETAIL PART END
+    ------------------------------------*/
+
+
+    /*------------------------------
+        INNER PORTFOLIO PART START
+    -------------------------------*/
+    #inner-port-part {
+        padding: 0px 0px 0px;
+    }
+
+    .inner-port-heading h2 {
+        font-size: 28px;
+    }
+
+    .inner-port-heading p {
+        margin-bottom: 25px !important;
+    }
+
+    .inner-port-sub {
+        margin-bottom: 15px;
+    }
+
+    .inner-port-src {
+        display: flex;
+        align-items: center;
+    }
+
+    .inner-port-src a i {
+        font-size: 14px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .inner-port-src input {
+        width: 175px;
+    }
+
+    .inner-port-menu {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .inner-port-menu .menu {
+        margin-left: 13px;
+        font-size: 13px;
+    }
+
+    .inner-port-menu .menu:first-child {
+        margin-left: 0px;
+    }
+
+    .inner-port-child {
+        width: 243px;
+        padding: 22px;
+    }
+
+    .inner-port-img {
+        height: 243px;
+    }
+
+    .port-pagi li {
+        margin: 0px 6px;
+    }
+
+    /*---------------------------------------
+        INNER PORTFOLIO PORTFOLIO PART END
+    ----------------------------------------*/
+}
+
+
+@media (min-width: 650px) and (max-width: 767px) {
+
+    .inner-port-menu .menu {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .inner-port-src input {
+        width: 200px;
+    }
+
+    .inner-port-child {
+        width: 280px;
+        padding: 25px;
+    }
+
+    .inner-port-img {
+        height: 280px;
+    }
+
+}
+
+
+@media (min-width: 700px) and (max-width: 767px) {
+
+    .port-detail-slider {
+        width: 640px;
+    }
+
+    .port-detail-child {
+        width: 150px !important;
+    }
+
+    .port-detail-child h3 {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /*--------------------------------------
+         INNER PORTFOLIO BANNER PART START
+    ----------------------------------------*/
+    .port-banner-oly {
+        padding: 60px 0px 110px;
+    }
+
+    .port-banner-content h1 {
+        font-size: 45px;
+    }
+
+    /*--------------------------------------
+         INNER PORTFOLIO BANNER PART END
+    ----------------------------------------*/
+
+
+    /*-------------------------------------
+        INNER PORTFOLIO DETAIL PART START
+    --------------------------------------*/
+    #port-detail-part {
+        transform: translateY(-30%);
+    }
+
+    .port-detail-parent {
+        display: none;
+    }
+
+    .port-detail-slider {
+        display: inherit;
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .port-detail-slider ul li button {
+        display: none !important;
+    }
+
+    .port-detail-child {
+        width: 150px !important;
+        margin: 0px 15px;
+        padding: 20px 5px 25px;
+        margin-bottom: 15px;
+    }
+
+    .port-detail-child i {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .port-detail-child h3 {
+        font-size: 14px;
+    }
+
+    /*-------------------------------------
+         INNER PORTFOLIO DETAIL PART END
+    --------------------------------------*/
+
+
+    /*-----------------------------
+        INNER PORTFOLIO PART START
+    ------------------------------*/
+    #inner-port-part {
+        padding: 0px 0px 0px;
+    }
+
+    .inner-port-heading h2 {
+        font-size: 32px;
+    }
+
+    .inner-port-heading p {
+        margin-bottom: 25px !important;
+    }
+
+    .inner-port-sub {
+        margin-bottom: 15px;
+    }
+
+    .inner-port-src {
+        display: flex;
+        align-items: center;
+    }
+
+    .inner-port-src a i {
+        font-size: 14px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .inner-port-menu {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .inner-port-menu .menu {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .inner-port-menu .menu:first-child {
+        margin-left: 0px;
+    }
+
+    /*---------------------------
+       INNER PORTFOLIO PART END
+    ---------------------------*/
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .detail-child h3 {
+        font-size: 16px;
+    }
+}
+
+/*=============================================
+        PORTFOLIO PAGE RESPONSIVE END
+==============================================*/
