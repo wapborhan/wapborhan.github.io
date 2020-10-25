@@ -3836,8 +3836,8 @@ h2 {
 }
 
 .port-banner-oly {
-    background-image: linear-gradient(rgba(254, 99, 71, 0.9), rgba(240, 90, 62, 0.9));
-    padding: 110px 0px 200px;
+    background-image: linear-gradient(#347db68c, #00e2ffbf);
+  
 }
 
 .port-banner-content {
@@ -4082,7 +4082,7 @@ h2 {
 
 .inner-port-menu .active {
     color: #fff;
-    background-image: linear-gradient(#347db6, #f05a3e);
+    background-image: linear-gradient(#347db6, #00e2ff);
 }
 
 .inner-port-slider .active {
