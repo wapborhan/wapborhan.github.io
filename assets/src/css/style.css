@@ -8356,9 +8356,9 @@ body {
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     display: inline-block;
-    padding: 35px 15px !important;
+    padding: 25px 15px !important;
     border-radius: 5px;
-    transform: skewX(7deg);
+    transform: skewX(15deg);
     position: relative;
     z-index: 1;
     transition: all linear .3s;
@@ -8572,22 +8572,43 @@ body {
 /*=========================================
               BANNER PART START
 ==========================================*/
-.clip-home {
-    clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
-    position: relative;
-}
 
-.clip-home {
-    clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
-    position: relative;
-    background: red;
-}
 
 #banner-part {
     background: #fcfcfd;
     overflow: hidden;
     position: relative;
 }
+
+
+#banner-part::before {
+    content: "";
+    background: #ffffff;
+    height: 200px;
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(7deg);
+    transform: skewY(7deg);
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    right: 0;
+    z-index: 1;
+}
+
+#banner-part::after {
+    content: "";
+    background: #ffffff;
+    height: 200px;
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-7deg);
+    transform: skewY(-7deg);
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    right: 0;
+    z-index: 1;
+}
+
 
 .banner-oly {
     background: url(../../images/banner-bg.png);
@@ -8620,8 +8641,6 @@ body {
 }
 
 .banner-sl {
-    /*            padding: 120px 0px;*/
-    background: url(assets/images/banner-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -8826,7 +8845,7 @@ body {
 
 .scroll_down {
     position: absolute;
-    bottom: 5vh;
+    bottom: 1vh;
     width: 100%;
     text-align: center;
     color: #fff;
@@ -9139,6 +9158,86 @@ p {
 }
 
 /* 2ND Services Part End*/
+
+
+/*Services Discription part Start*/
+#services-dis {
+    padding-top: 50px;
+}
+
+.services-dis-head {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.services-dis-head p {
+    color: #48455a;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.services-dis-head p span {
+    color: #347db6;
+}
+
+.services-dis-head h5 {
+
+    width: 430px;
+    color: #48455a;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 18px auto 0px;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+
+.services-dis-img img {
+    width: 100%;
+}
+
+.services-dis-body {
+    padding-bottom: 70px;
+}
+
+.card-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999999;
+    font-weight: 400;
+    overflow-y: scroll;
+    height: 170px;
+    line-height: 30px;
+}
+
+.card-texts h5 {
+    padding-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-texts i {
+    font-size: 30px;
+}
+
+.card {
+    margin-bottom: 15px;
+}
+
+.card-header {
+    padding: 1rem 1.25rem;
+}
+
+/*Services Discription part End*/
+
+
 
 /*=========================================
              SERVICE PART START
@@ -9544,7 +9643,7 @@ ul li:before {
 }
 
 .c-services__item:hover {
-    background-color: var(--color-brand-accent);
+    background: linear-gradient(#347db6, #00e2ff)
 }
 
 @media (min-width: 40.625em) {
@@ -9581,10 +9680,7 @@ ul li:before {
 
 
 
-#service-part {
-    background: #fff;
-    padding: 144px 0px 60px;
-}
+#service-part {}
 
 .service-heading {
     margin-bottom: 40px;
@@ -10752,7 +10848,7 @@ a.admin-head span {
 
 .skill-heading h2 {
     width: 430px;
-    color: #ffffff;
+    color: #48455a;
     font-size: 35px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
@@ -10835,7 +10931,7 @@ h2 {
 .skills-bar-container li {
     position: relative;
     width: 100%;
-    padding: 17px 2px;
+    padding: 22px 2px;
 }
 
 .progressbar-title {
@@ -10852,7 +10948,7 @@ h2 {
 .progressbar-title .percent {
     position: absolute;
     right: 2px;
-    top: 30px;
+    top: 20px;
 }
 
 .bar-container {
@@ -12533,6 +12629,7 @@ h2 {
     background-size: cover;
 }
 
+
 #port-banner-part .container {
     max-width: 1250px !important;
 }
@@ -13098,6 +13195,37 @@ h2 {
     overflow: hidden;
 }
 
+
+.team-heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team-heading p {
+    color: #48455a;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.team-heading p span {
+    color: #347db6;
+}
+
+.team-heading h2 {
+    width: 430px;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 18px auto 0px;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+
+
 .team-section .team-item {
     position: relative;
     padding-left: 45px;
@@ -13181,6 +13309,24 @@ ul {
 #hobby {
     padding: 60px 0px;
 
+}
+
+.interest-heading {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.interest-heading p {
+    color: #48455a;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.interest-heading p span {
+    color: #347db6;
 }
 
 .card-content {

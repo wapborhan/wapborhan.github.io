@@ -9,13 +9,14 @@
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Protfolio Type Website" />
     <meta property="og:description" content="This is Borhan Portfolio, He Designed This." />
-    <meta property="og:image" content="assets/images/icon-logo.png" />
+    <!--    <meta property="og:image" content="assets/images/icon-logo.png" />-->
     <meta property="og:url" content="https://borhan4238.github.io/portfolio/" />
     <meta property="og:site_name" content="https://borhan4238.github.io/portfolio/" />
     <!--=============================================
                     CSS LINK PART START
     ===============================================-->
-    <link rel="icon" href="assets/images/icon-logo.png">
+
+    <!--    <link rel="icon" href="assets/images/icon-logo.png">-->
     <link rel="stylesheet" href="assets/icon/font-awesome/all.min.css">
     <link rel="stylesheet" href="assets/icon/flaticonindex/flaticon.css">
     <link rel="stylesheet" href="assets/src/css/slick.css">
@@ -67,7 +68,7 @@
     <!--=============================================
                     BANNER PART START
     ===============================================-->
-    <section id="banner-part" class="demo clip-home">
+    <section id="banner-part" class="demo">
 
         <div class="banner-sl content">
 
@@ -85,29 +86,22 @@
                             <i class="fas fa-bars"></i>
                         </button>
 
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse menu-center" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="#banner-part">Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#resume-part">resume</a>
+                                    <a class="nav-link" data-scroll-nav="2" href="#resume-part">resume</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#service-part">services</a>
+                                    <a class="nav-link" data-scroll-nav="3" href="#service-part">services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#port-part">portfolio</a>
+                                    <a class="nav-link" data-scroll-nav="4" href="#port-part">portfolio</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        explore
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#code-part">CODING STRUCTURE</a>
-                                        <a class="dropdown-item" href="#">source code</a>
-                                        <a class="dropdown-item" href="#">payment</a>
-                                    </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll-nav="5" href="#skill-part">skils</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -120,7 +114,10 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact-part">contact</a>
+                                    <a class="nav-link" data-scroll-nav="6" href="#team-part">team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-scroll-nav="7" href="#contact-part">contact</a>
                                 </li>
                             </ul>
                             <form action="" method="" class="menu-src">
@@ -501,7 +498,7 @@
     <!------------------------------
                 ABOUT PART START
         ------------------------------->
-    <section id="resume-part">
+    <section data-scroll-index="2" id="resume-part">
         <div class="container">
             <div class="resume-heading">
                 <p>my <span>resume</span></p>
@@ -545,8 +542,9 @@
     ===============================================-->
 
 
-    <section class="c-section">
-        <h2 class="c-section__title"><span>Our Services</span></h2>
+    <section data-scroll-index="3" id="service-part" class="c-section">
+        <h2 class="c-section__title"><span>MY Services</span></h2>
+        <!--        <p>my <span>services</span></p>-->
         <ul class="c-services">
             <li class="c-services__item">
                 <h3>Responsive Web Design</h3>
@@ -575,95 +573,76 @@
         </ul>
     </section>
 
-
-
-    <!--  Services main  -->
-    <section id="service-part">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="service-heading">
-                        <p>my <span>services</span></p>
-                        <h2>I'm very passionate under about this services</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="service-parent">
-
-
-                <div class="service-child">
-                    <h3 class="service-number">01</h3>
-                    <span class="flaticon-computer"></span>
-                    <div class="wpo-service-icon1">
-                        <i class="fi flaticon-computer"></i>
-                    </div>
-                    <div class="services-content">
-                        <h4>website design</h4>
-                    </div>
-                    <p>I have got much experience working with front-end coding HTML, CSS, JAVASCRIPT, BOOTSTRAP, JQUERY.</p>
-                </div>
-
-                <div class="service-child">
-                    <h3 class="service-number">02</h3>
-                    <span class="flaticon-wordpress"></span>
-                    <div class="wpo-service-icon2">
-                        <i class="flaticon-wordpress"></i>
-                    </div>
-                    <div class="services-content">
-                        <h4>wordpress customize</h4>
-                    </div>
-                    <p>Also have dynamic website development experience with wordpress based solutions, wordpress plugins.</p>
-                </div>
-                <!--
-                <div class="service-child">
-                    <h3 class="service-number">03</h3>
-                    <span class="flaticon-online-ads"></span>
-                    <i class="flaticon-online-ads"></i>
-                    <h4>web banner</h4>
-                    <p>I have helped a lot of companies and startups designing their advertising campaigns and modern websites.</p>
-                </div>
--->
-                <div class="service-child">
-                    <h3 class="service-number">03</h3>
-                    <span class="flaticon-mail"></span>
-                    <div class="wpo-service-icon3">
-                        <i class="flaticon-mail"></i>
-                    </div>
-                    <div class="services-content">
-                        <h4>email signature</h4>
-                    </div>
-                    <p>I am expert to code HTML email signature for you that can be used in Gmail, Yahoo, Outlook, Mac Mail, Hotmail etc.</p>
-                </div>
-                <div class="service-child">
-                    <h3 class="service-number">04</h3>
-                    <span class="flaticon-responsive-design"></span>
-                    <div class="wpo-service-icon4">
-                        <i class="flaticon-responsive-design"></i>
-                    </div>
-                    <div class="services-content">
-                        <h4>responsive design</h4>
-                    </div>
-                    <p>I will do responsive website design and build complete website by CSS FLEXBOX, GRID, BOOTSTRAP etc.</p>
-                </div>
-                <!--
-                <div class="service-child">
-                    <h3 class="service-number">06</h3>
-                    <span class="flaticon-tools-and-utensils"></span>
-                    <i class="flaticon-tools-and-utensils"></i>
-                    <h4>sass coding</h4>
-                    <p>SASS is a CSS pre-processor that lets use variables, mixins, loops, functions, imports, and other interesting functionalities .</p>
-                </div>
--->
-                <div class="service-btn">
-                    <a target="_blank" href="https://www.freelancer.in/hireme/mironcoder">learn more</a>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--=============================================
                     SERVICE PART END
     ===============================================-->
 
+
+
+    <!-- Services Discription Part Start -->
+    <section id="services-dis">
+        <div class="container">
+            <div class="row services-dis-head text-center">
+                <div class="col-lg-12">
+                    <p>Services <span>Details</span></p>
+                    <h5>In details of our services</h5>
+
+                </div>
+            </div>
+            <div class="row services-dis-body">
+                <div class="col-lg-6 services-dis-img">
+                    <img src="https://borhan4238.github.io/mogo/images/services-dis-img.jpg" alt="">
+                </div>
+                <div class="col-lg-6 services-dis-text">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="card-texts d-flex">
+                                    <i class="fa fa-clock" aria-hidden="true"></i>
+                                    <h5 class="mb-0">photography</h5>
+                                </div>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                <div class="card-texts d-flex">
+                                    <i class="fa fa-clock" aria-hidden="true"></i>
+                                    <h5 class="mb-0">creativity</h5>
+                                </div>
+
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="card-texts d-flex">
+                                    <i class="fa fa-clock" aria-hidden="true"></i>
+                                    <h5 class="mb-0">web design</h5>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Discription Part End -->
 
 
 
@@ -970,9 +949,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="skill-heading">
+                    <div class="team-heading">
                         <p>my <span>team</span></p>
-                        <h2>Expert in this technical web software</h2>
+                        <h2>Experiance People On Our Team</h2>
                     </div>
                 </div>
             </div>
@@ -1325,7 +1304,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="testi-heading">
+                    <div class="interest-heading">
                         <p><i class="lnr lnr-heart"></i> My <span>Interest</span></p>
 
                     </div>
