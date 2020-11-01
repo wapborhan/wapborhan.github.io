@@ -8572,6 +8572,17 @@ body {
 /*=========================================
               BANNER PART START
 ==========================================*/
+.clip-home {
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+    position: relative;
+}
+
+.clip-home {
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+    position: relative;
+    background: red;
+}
+
 #banner-part {
     background: #fcfcfd;
     overflow: hidden;
@@ -8617,7 +8628,7 @@ body {
 }
 
 .pad-tp {
-    padding: 120px 0px;
+    padding: 95px 0px;
 }
 
 .pad-stp {
@@ -8812,6 +8823,73 @@ body {
     transform: translateY(-3px);
     box-shadow: 0px 25px 60px 0px rgba(0, 0, 0, 0.2);
 }
+
+.scroll_down {
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    z-index: 8;
+}
+
+.scroll_down i {
+    border: 2px solid #e33324;
+}
+
+.scroll_down i {
+    position: relative;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+    height: 50px;
+    width: 30px;
+    line-height: 50px;
+    border-radius: 50px;
+    border: 2px solid #e33324;
+    display: inline-block;
+    color: #fff;
+    font-size: 10px;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+
+.scroll_down i:after {
+    background: #e33324;
+}
+
+.scroll_down i:after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 11px;
+    border-radius: 20px 20px 0 0;
+    z-index: -1;
+    bottom: 0px;
+    transition: all .2s;
+    height: 15px;
+    width: 4px;
+    background: #e33324;
+}
+
 
 /*=========================================
               BANNER PART END
