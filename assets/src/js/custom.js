@@ -71,7 +71,3 @@ $.each(lang, function (language, pourcent) {
     multiply++;
 
 });
-
-
-
-//TestMonials 2nd version
