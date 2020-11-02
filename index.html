@@ -10,8 +10,8 @@
     <meta property="og:title" content="Protfolio Type Website" />
     <meta property="og:description" content="This is Borhan Portfolio, He Designed This." />
     <!--    <meta property="og:image" content="assets/images/icon-logo.png" />-->
-    <meta property="og:url" content="https://borhan4238.github.io/portfolio/" />
-    <meta property="og:site_name" content="https://borhan4238.github.io/portfolio/" />
+    <meta property="og:url" content="https://borhan4238.github.io" />
+    <meta property="og:site_name" content="https://borhan4238.github.io" />
     <!--=============================================
                     CSS LINK PART START
     ===============================================-->
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/icon/font-awesome/all.min.css">
     <link rel="stylesheet" href="assets/icon/flaticonindex/flaticon.css">
     <link rel="stylesheet" href="assets/src/css/slick.css">
+    <link rel="stylesheet" href="assets/src/css/animate.css">
     <link rel="stylesheet" href="assets/src/css/responsive.css">
     <link rel="stylesheet" href="assets/src/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/src/css/style.css">
@@ -179,7 +180,6 @@
                     </div>
                 </div>
                 <div class="scroll_down"> <a href="#resume-part" class="scroll"> <i class="text-white"></i> </a> </div>
-
                 <div class="containersl">
                     <div class="circle-container">
                         <div class="circle"></div>
@@ -509,7 +509,7 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="about-content">
-                        <div class="sora-author-box-text-head">
+                        <div class="sora-author-box-text-head wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.1">
                             <span class="hello-txt">
                                 Hello
                             </span>
@@ -517,7 +517,7 @@
                                 <a class="admin-head"><span>B</span>ORHAN <span>U</span>DDIN</a>
                             </h2>
                         </div>
-                        <p>I’m with broad technical skill-set, very strong attention to detail, and 3 years of experience in front-end web development. Able to multitask and juggle multiple pressing projects simultaneously. On top of the latest trends and technologies. Ability to improvise, troubleshoot, take ownership, and most importantly learn new skills on the job.</p>
+                        <p class="wow lightSpeedInLeft" data-wow-duration="2s" data-wow-delay="0.4">I’m with broad technical skill-set, very strong attention to detail, and 3 years of experience in front-end web development. Able to multitask and juggle multiple pressing projects simultaneously. On top of the latest trends and technologies. Ability to improvise, troubleshoot, take ownership, and most importantly learn new skills on the job.</p>
                     </div>
                     <div class="about-btn">
                         <a href="assets/images/miron-cv.pdf" download>Download CV</a>
@@ -576,6 +576,44 @@
     <!--=============================================
                     SERVICE PART END
     ===============================================-->
+
+
+
+    <section id="video">
+        <div class="container ">
+            <div class="row services-dis-head text-center">
+                <div class="col-lg-12">
+                    <p>Services <span>Details</span></p>
+                    <h5>In details of our services</h5>
+
+                </div>
+            </div>
+            <div class="row video-main">
+                <div class="col-lg-6 video-image">
+                    <div class="image-side">
+                        <img src="https://jk-studio-dev.com/templates/andale-template/assets/img/content-sections/content-image-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 video-content text-center">
+                    <h3 class="title">Pixel perfect design and clear code delivered to you</h3>
+                    <p class="content">Ut ullum explicari nec, his ne commodo nostrud. Assum tantas splendide ei
+                        qui,
+                        quot mundi meliore ex mea. Eu per ubique option conclusi onemque, ridens volumus expetendis</p>
+                    <div class="button-wrapper button-wrapper-start">
+                        <a href="#" class="button button-animation-type-3 button-large button-circle">Explore
+                            Features</a>
+                        <a href="#" class="button button-animation-type-4 button-large button-circle">Learn More</a>
+                    </div>
+                </div>
+                <div class="vid-button">
+                    <a class="play-btn js-modal-btn video-toggle-button  video-toggle-button-type-4 video-toggle-centered " data-video-id="OZCiUkYDWK8">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
 
@@ -1781,7 +1819,11 @@
     <script src="assets/src/js/waypoints.min.js"></script>
     <script src="assets/src/js/counterup.min.js"></script>
     <script src="assets/src/js/counterup.js"></script>
-
+    <!--Animation Plugin-->
+    <script src="assets/src/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <!-- CUSTOMIZABLE JS -->
     <script src="assets/src/js/script.js"></script>
     <script src="assets/src/js/custom.js"></script>
@@ -1790,6 +1832,4 @@
     <!--=============================================
                 JAVA SCRIPT LINK PART END
     ===============================================-->
-</body>
-
-</html>
+</body></html>
