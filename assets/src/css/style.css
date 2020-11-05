@@ -9517,8 +9517,8 @@ p {
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0px;
+    right: 0px;
 }
 
 .services-content {
@@ -9561,7 +9561,7 @@ p {
 .service-child span {
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 22%;
     color: #FFFFFF;
     font-size: 45px;
 }
@@ -11950,7 +11950,7 @@ h2 {
 #faq-part {
     background: #fff;
     padding: 145px 0px 20px;
-    z-index: 19;
+    z-index: 2;
     position: relative;
 }
 
@@ -12267,13 +12267,13 @@ h2 {
 .shape-foot::after {
     content: "";
     background: #ffffff;
-    height: 134px;
+    height: 180px;
     -webkit-transform: skewY(-7deg);
     -ms-transform: skewY(-7deg);
     transform: skewY(-10deg);
     position: absolute;
     left: 0;
-    top: -135px;
+    top: -180px;
     right: 0;
     z-index: 1;
 }
@@ -12281,13 +12281,13 @@ h2 {
 .shape-foot::before {
     content: "";
     background: #ffffff;
-    height: 134px;
+    height: 180px;
     -webkit-transform: skewY(7deg);
     -ms-transform: skewY(7deg);
     transform: skewY(10deg);
     position: absolute;
     left: 0;
-    top: -135px;
+    top: -180px;
     right: 0;
     z-index: 1;
 }
