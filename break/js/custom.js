@@ -1,1 +1,288 @@
-var _0x39f5=['NumberHolder\x20H2\x20show','getElementById','click','rotate','.Type\x20span','NumberHolder\x20H1\x20show','NumberHolder\x20S2\x20show','.S1','getMinutes','TimeHolder\x20StopWatch','NumberHolder\x20S2\x20show0','NumberHolder\x20S1\x20show','.H1','getSeconds','NumberHolder\x20M1\x20show','TimeHolder\x20Alarm','.Stop','.Pause','.Formats\x20span','.Start','NumberHolder\x20M2\x20show','countdown','lineCap','val','.H2','addClass','removeClass','active','floor','getHours','fadeIn','en-US','html','hasClass','কত\x20মিনিটের\x20বিরতি,\x20তা\x20লিখুন\x20:\x20','.M2','.Formats\x20span:nth-child(1)','.TimeHolder','.M1','moveTo','lineWidth','.AlarmInput','BgAnimation','toLocaleString','NumberHolder\x20S1\x20show0','fadeOut','12hr','.WeekDays\x20span:nth-child(','.fas.fa-clock','.AlarmInput\x20input','body','Alarm','NumberHolder\x20H1\x20show0','DisNone','.fa-stopwatch','.Numbers','.S2','.Formats\x20span:nth-child(2)'];(function(_0x49303d,_0x3c2e83){var _0x39f5b1=function(_0x5b3e3e){while(--_0x5b3e3e){_0x49303d['push'](_0x49303d['shift']());}};_0x39f5b1(++_0x3c2e83);}(_0x39f5,0x6e));var _0x5b3e=function(_0x49303d,_0x3c2e83){_0x49303d=_0x49303d-0xd8;var _0x39f5b1=_0x39f5[_0x49303d];return _0x39f5b1;};var _0xc8d491=_0x5b3e,Format=0x1,TimeHolder=0x0,StopChecker=0x0;function resetTimer(){var _0x472559=_0x5b3e;$(_0x472559(0xe5))['removeClass']()['addClass'](_0x472559(0x10a)),$(_0x472559(0xdc))[_0x472559(0xf8)]()[_0x472559(0xf7)](_0x472559(0xe8)),$('.M1')['removeClass']()[_0x472559(0xf7)]('NumberHolder\x20M1\x20show0'),$('.M2')[_0x472559(0xf8)]()[_0x472559(0xf7)]('NumberHolder\x20M2\x20show0'),$(_0x472559(0xea))[_0x472559(0xf8)]()['addClass'](_0x472559(0xd8)),$(_0x472559(0xf6))[_0x472559(0xf8)]()['addClass']('NumberHolder\x20H2\x20show0');}function SetDay(_0x839d14){var _0x305a36=_0x5b3e;$(_0x305a36(0x10d)+(_0x839d14+0x2)%0x7+')')[_0x305a36(0xf7)](_0x305a36(0xf9));};function Run24hr(_0x214ad2,_0x1175da,_0x41862b,_0x13f570,_0x34852a,_0x3f4736){var _0x82a9bc=_0x5b3e;$(_0x82a9bc(0xe5))[_0x82a9bc(0xf8)]()[_0x82a9bc(0xf7)](_0x82a9bc(0xe9)+_0x214ad2),$('.S2')[_0x82a9bc(0xf8)]()[_0x82a9bc(0xf7)](_0x82a9bc(0xe4)+_0x1175da),$('.M1')[_0x82a9bc(0xf8)]()[_0x82a9bc(0xf7)](_0x82a9bc(0xec)+_0x41862b),$('.M2')['removeClass']()[_0x82a9bc(0xf7)]('NumberHolder\x20M2\x20show'+_0x13f570),$(_0x82a9bc(0xea))[_0x82a9bc(0xf8)]()['addClass'](_0x82a9bc(0xe3)+_0x34852a),$(_0x82a9bc(0xf6))['removeClass']()[_0x82a9bc(0xf7)](_0x82a9bc(0xde)+_0x3f4736);};function Run12hr(_0x408f14,_0x2c5091,_0x35a566,_0x269153,_0x1c8f2a){var _0x2640ae=_0x5b3e;_0x1c8f2a>0xc?(_0x1c8f2a=_0x1c8f2a-0xc,$(_0x2640ae(0xdd))[_0x2640ae(0xf7)](_0x2640ae(0xf9))):$(_0x2640ae(0x102))['addClass']('active');;var _0x5d507f=Math['floor'](_0x1c8f2a/0xa),_0x16297c=_0x1c8f2a%0xa;$(_0x2640ae(0xe5))['removeClass']()[_0x2640ae(0xf7)](_0x2640ae(0xe9)+_0x408f14),$(_0x2640ae(0xdc))[_0x2640ae(0xf8)]()[_0x2640ae(0xf7)]('NumberHolder\x20S2\x20show'+_0x2c5091),$(_0x2640ae(0x104))[_0x2640ae(0xf8)]()[_0x2640ae(0xf7)](_0x2640ae(0xec)+_0x35a566),$(_0x2640ae(0x101))[_0x2640ae(0xf8)]()[_0x2640ae(0xf7)](_0x2640ae(0xf2)+_0x269153),_0x5d507f===0x0?$(_0x2640ae(0xea))[_0x2640ae(0x10b)](0x0):$(_0x2640ae(0xea))[_0x2640ae(0xfc)]()[_0x2640ae(0xf8)]()[_0x2640ae(0xf7)](_0x2640ae(0xe3)+_0x5d507f),$('.H2')['removeClass']()[_0x2640ae(0xf7)]('NumberHolder\x20H2\x20show'+_0x16297c);};function Stopwatch(_0x26de1f){var _0x35ffcf=_0x5b3e,_0x4f3a43=Math[_0x35ffcf(0xfa)](_0x26de1f/0xe10),_0x1c15b6=Math[_0x35ffcf(0xfa)]((_0x26de1f-_0x4f3a43*0xe10)/0x3c),_0x4ed843=Math[_0x35ffcf(0xfa)](_0x26de1f-_0x4f3a43*0xe10-_0x1c15b6*0x3c),_0x26f96a=Math['floor'](_0x4ed843/0xa),_0x19f3ec=_0x4ed843%0xa,_0x4b6a5f=Math[_0x35ffcf(0xfa)](_0x1c15b6/0xa),_0x3bf54a=_0x1c15b6%0xa,_0x3e5666=Math['floor'](_0x4f3a43/0xa),_0x884cd7=_0x4f3a43%0xa;Run24hr(_0x26f96a,_0x19f3ec,_0x4b6a5f,_0x3bf54a,_0x3e5666,_0x884cd7);};function update_time(){var _0x797a8=_0x5b3e,_0x5e229b=new Date(),_0x1b455e=_0x5e229b[_0x797a8(0xfb)](),_0x14e99a=_0x5e229b['getMinutes'](),_0xed6283=_0x5e229b[_0x797a8(0xeb)](),_0x21ab68=_0x5e229b['getDay']();SetDay(_0x21ab68);var _0x5a0285=Math[_0x797a8(0xfa)](_0xed6283/0xa),_0x4628f6=_0xed6283%0xa,_0x357577=Math[_0x797a8(0xfa)](_0x14e99a/0xa),_0x37ad71=_0x14e99a%0xa,_0xb82796=Math[_0x797a8(0xfa)](_0x1b455e/0xa),_0x5073a5=_0x1b455e%0xa;if(Format===0x1)Run24hr(_0x5a0285,_0x4628f6,_0x357577,_0x37ad71,_0xb82796,_0x5073a5);else{if(Format===0x2)Run12hr(_0x5a0285,_0x4628f6,_0x357577,_0x37ad71,_0x1b455e);else{if(Format===0x3&&StopChecker===0x0)TimeHolder++,Stopwatch(TimeHolder);else Format===0x4&&StopChecker===0x0&&(TimeHolder--,TimeHolder===0x0?AlarmOut():Stopwatch(TimeHolder));}};setTimeout(update_time,0x3e8);};$(_0xc8d491(0xe2))['on'](_0xc8d491(0xe0),function(){var _0x562257=_0xc8d491;$('.Type\x20.active')[_0x562257(0xf8)]('active'),$(this)['addClass'](_0x562257(0xf9));var _0x4663e6=$(this)['html']();_0x4663e6==='24hr'?(Format=0x1,$('.H1')[_0x562257(0xfc)](),$(_0x562257(0xf0))[_0x562257(0xf8)]('active')):Format=0x2;}),$(_0xc8d491(0xda))['on'](_0xc8d491(0xe0),function(){var _0x21f576=_0xc8d491;$('body')[_0x21f576(0xf8)]('BgAnimation'),$(_0x21f576(0xea))[_0x21f576(0xfc)](),!$(_0x21f576(0x103))[_0x21f576(0xff)]('StopWatch')&&(Format=0x3,resetTimer(),StopChecker=0x1,$(_0x21f576(0x103))['removeClass']()[_0x21f576(0xf7)](_0x21f576(0xe7)),$(_0x21f576(0xdb))['fadeIn'](0x0),$(_0x21f576(0xef))[_0x21f576(0xf8)](_0x21f576(0xf9)),$(_0x21f576(0xf1))[_0x21f576(0xf7)]('active'),TimeHolder=0x0);}),$(_0xc8d491(0xf1))['on'](_0xc8d491(0xe0),function(){var _0xd5b5eb=_0xc8d491;$(_0xd5b5eb(0x110))[_0xd5b5eb(0xf8)]('BgAnimation');if(Format===0x3)StopChecker=0x0,$(this)[_0xd5b5eb(0xf8)](_0xd5b5eb(0xf9)),$(_0xd5b5eb(0xef))['addClass']('active');else Format===0x4&&(TimeHolder=$(_0xd5b5eb(0x10f))[_0xd5b5eb(0xf5)](),TimeHolder>0x0&&(StopChecker=0x0,resetTimer(),$(this)[_0xd5b5eb(0xf8)](_0xd5b5eb(0xf9)),$(_0xd5b5eb(0xef))['addClass'](_0xd5b5eb(0xf9)),$(_0xd5b5eb(0x107))[_0xd5b5eb(0xf7)](_0xd5b5eb(0xd9)),$(_0xd5b5eb(0xdb))['fadeIn'](0x0)));}),$('.Pause')['on'](_0xc8d491(0xe0),function(){var _0x579887=_0xc8d491;StopChecker=0x1,$(this)[_0x579887(0xf8)](_0x579887(0xf9)),$(_0x579887(0xf1))['addClass']('active');}),$(_0xc8d491(0xee))['on'](_0xc8d491(0xe0),function(){var _0x12caea=_0xc8d491;$(_0x12caea(0x110))[_0x12caea(0xf8)]('BgAnimation');if(Format===0x3)StopChecker=0x1,TimeHolder=0x0,resetTimer(),$(_0x12caea(0xef))[_0x12caea(0xf8)](_0x12caea(0xf9)),$('.Start')[_0x12caea(0xf7)](_0x12caea(0xf9));else Format===0x4&&(resetTimer(),StopChecker=0x1,$(_0x12caea(0x107))['removeClass']('DisNone'),$('.Numbers')[_0x12caea(0x10b)](0x0),$('.AlarmInput\x20input')[_0x12caea(0xf5)](''),$('.Pause')['removeClass']('active'),$(_0x12caea(0xf1))[_0x12caea(0xf7)](_0x12caea(0xf9)));}),$(_0xc8d491(0x10e))['on'](_0xc8d491(0xe0),function(){var _0x308b6d=_0xc8d491;$(_0x308b6d(0x110))[_0x308b6d(0xf8)](_0x308b6d(0x108)),$('.Type\x20.active')[_0x308b6d(0xfe)]()===_0x308b6d(0x10c)?Format=0x2:Format=0x1,StopChecker=0x0,$('.TimeHolder')['removeClass']()['addClass']('TimeHolder'),$(_0x308b6d(0xdb))[_0x308b6d(0xfc)](0x0);}),$('.far.fa-clock')['on']('click',function(){var _0x118a33=_0xc8d491;$(_0x118a33(0x110))[_0x118a33(0xf8)](_0x118a33(0x108)),$('.H1')[_0x118a33(0xfc)](),!$(_0x118a33(0x103))[_0x118a33(0xff)](_0x118a33(0x111))&&($('.TimeHolder')[_0x118a33(0xf8)]()[_0x118a33(0xf7)](_0x118a33(0xed)),Format=0x4,resetTimer(),StopChecker=0x1,$(_0x118a33(0x107))[_0x118a33(0xf8)](_0x118a33(0xd9)),$(_0x118a33(0x103))[_0x118a33(0xf7)](_0x118a33(0x111)),$(_0x118a33(0xdb))[_0x118a33(0x10b)](0x0),$(_0x118a33(0xef))[_0x118a33(0xf8)](_0x118a33(0xf9)),$(_0x118a33(0xf1))['addClass'](_0x118a33(0xf9)));});function AlarmOut(){var _0x305995=_0xc8d491;$(_0x305995(0x110))['addClass'](_0x305995(0x108)),resetTimer(),StopChecker=0x1;}update_time();function drawTime(_0x31c675,_0xc81f63){var _0x187827=_0xc8d491,_0x87aa15=new Date(),_0x3fd288=_0x87aa15[_0x187827(0xfb)](),_0x369eb1=_0x87aa15[_0x187827(0xe6)](),_0x2686fa=_0x87aa15[_0x187827(0xeb)]();_0x3fd288=_0x3fd288%0xc,_0x3fd288=_0x3fd288*Math['PI']/0x6+_0x369eb1*Math['PI']/(0x6*0x3c)+_0x2686fa*Math['PI']/(0x168*0x3c),drawHand(_0x31c675,_0x3fd288,_0xc81f63*0.5,_0xc81f63*0.07),_0x369eb1=_0x369eb1*Math['PI']/0x1e+_0x2686fa*Math['PI']/(0x1e*0x3c),drawHand(_0x31c675,_0x369eb1,_0xc81f63*0.8,_0xc81f63*0.07),_0x2686fa=_0x2686fa*Math['PI']/0x1e,drawHand(_0x31c675,_0x2686fa,_0xc81f63*0.9,_0xc81f63*0.02);}function drawHand(_0x3d1a84,_0x3934ab,_0x355e1f,_0x2a0cb6){var _0x5a34d2=_0xc8d491;_0x3d1a84['beginPath'](),_0x3d1a84[_0x5a34d2(0x106)]=_0x2a0cb6,_0x3d1a84[_0x5a34d2(0xf4)]='round',_0x3d1a84[_0x5a34d2(0x105)](0x0,0x0),_0x3d1a84[_0x5a34d2(0xe1)](_0x3934ab),_0x3d1a84['lineTo'](0x0,-_0x355e1f),_0x3d1a84['stroke'](),_0x3d1a84[_0x5a34d2(0xe1)](-_0x3934ab);}function sleep(_0x3270fd){return new Promise(_0x536b46=>setTimeout(_0x536b46,_0x3270fd));}async function timerFun(_0x34ac5a){var _0x505541=_0xc8d491;for(_0x34ac5a=_0x34ac5a-0x1;_0x34ac5a>=0x0;_0x34ac5a--){for(let _0xc0a647=0x3b;_0xc0a647>=0x0;_0xc0a647--){m=_0x34ac5a[_0x505541(0x109)]('en-US',{'minimumIntegerDigits':0x2,'useGrouping':![]}),s=_0xc0a647[_0x505541(0x109)](_0x505541(0xfd),{'minimumIntegerDigits':0x2,'useGrouping':![]}),document[_0x505541(0xdf)](_0x505541(0xf3))['innerHTML']=m+':'+s,await sleep(0x3e8);}}}timerFun(parseInt(prompt(_0xc8d491(0x100))));
+// Digital Watch Time
+
+var Format = 1,
+    TimeHolder = 0,
+    StopChecker = 0;
+
+function resetTimer() {
+    $('.S1').removeClass().addClass('NumberHolder S1 show0');
+    $('.S2').removeClass().addClass('NumberHolder S2 show0');
+
+    $('.M1').removeClass().addClass('NumberHolder M1 show0');
+    $('.M2').removeClass().addClass('NumberHolder M2 show0');
+
+    $('.H1').removeClass().addClass('NumberHolder H1 show0');
+    $('.H2').removeClass().addClass('NumberHolder H2 show0');
+}
+
+function SetDay(DD) {
+    $(".WeekDays span:nth-child(" + ((DD + 2) % 7) + ")").addClass('active');
+};
+
+function Run24hr(S1, S2, M1, M2, H1, H2) {
+
+    $('.S1').removeClass().addClass('NumberHolder S1 show' + S1);
+    $('.S2').removeClass().addClass('NumberHolder S2 show' + S2);
+
+    $('.M1').removeClass().addClass('NumberHolder M1 show' + M1);
+    $('.M2').removeClass().addClass('NumberHolder M2 show' + M2);
+
+    $('.H1').removeClass().addClass('NumberHolder H1 show' + H1);
+    $('.H2').removeClass().addClass('NumberHolder H2 show' + H2);
+};
+
+function Run12hr(S1, S2, M1, M2, HH) {
+
+    if (HH > 12) {
+        HH = HH - 12;
+        $(".Formats span:nth-child(2)").addClass('active');
+    } else {
+        $(".Formats span:nth-child(1)").addClass('active');
+    };
+    var H1 = Math.floor(HH / 10),
+        H2 = HH % 10;
+
+    $('.S1').removeClass().addClass('NumberHolder S1 show' + S1);
+    $('.S2').removeClass().addClass('NumberHolder S2 show' + S2);
+
+    $('.M1').removeClass().addClass('NumberHolder M1 show' + M1);
+    $('.M2').removeClass().addClass('NumberHolder M2 show' + M2);
+
+    if (H1 === 0) {
+        $('.H1').fadeOut(0);
+    } else {
+        $('.H1').fadeIn().removeClass().addClass('NumberHolder H1 show' + H1);
+    }
+    $('.H2').removeClass().addClass('NumberHolder H2 show' + H2);
+};
+
+function Stopwatch(TimeHolder) {
+
+    var HH = Math.floor(TimeHolder / 3600),
+        MM = Math.floor((TimeHolder - (HH * 3600)) / 60),
+        SS = Math.floor(TimeHolder - HH * 3600 - MM * 60);
+
+    var S1 = Math.floor(SS / 10),
+        S2 = SS % 10,
+        M1 = Math.floor(MM / 10),
+        M2 = MM % 10,
+        H1 = Math.floor(HH / 10),
+        H2 = HH % 10;
+
+    Run24hr(S1, S2, M1, M2, H1, H2);
+};
+
+function update_time() {
+
+    var dt = new Date(),
+        HH = dt.getHours(),
+        MM = dt.getMinutes(),
+        SS = dt.getSeconds(),
+        DD = dt.getDay();
+    SetDay(DD);
+
+    var S1 = Math.floor(SS / 10),
+        S2 = SS % 10,
+        M1 = Math.floor(MM / 10),
+        M2 = MM % 10,
+        H1 = Math.floor(HH / 10),
+        H2 = HH % 10;
+
+    if (Format === 1) {
+        Run24hr(S1, S2, M1, M2, H1, H2);
+    } else if (Format === 2) {
+        Run12hr(S1, S2, M1, M2, HH);
+    } else if (Format === 3 && StopChecker === 0) {
+        TimeHolder++;
+        Stopwatch(TimeHolder);
+    } else if (Format === 4 && StopChecker === 0) {
+        TimeHolder--;
+        if (TimeHolder === 0) {
+            AlarmOut();
+        } else {
+            Stopwatch(TimeHolder);
+        }
+    };
+
+
+
+    setTimeout(update_time, 1000);
+
+};
+
+
+$('.Type span').on('click', function () {
+    $('.Type .active').removeClass('active');
+    $(this).addClass('active');
+    var T = $(this).html();
+    if (T === '24hr') {
+        Format = 1;
+        $('.H1').fadeIn();
+        $('.Formats span').removeClass('active');
+
+    } else {
+        Format = 2;
+    }
+});
+
+$('.fa-stopwatch').on('click', function () {
+    $('body').removeClass('BgAnimation');
+    $('.H1').fadeIn();
+    if (!($('.TimeHolder').hasClass('StopWatch'))) {
+        Format = 3;
+        resetTimer();
+        StopChecker = 1;
+        $('.TimeHolder').removeClass().addClass('TimeHolder StopWatch');
+        $('.Numbers').fadeIn(0);
+        $('.Pause').removeClass('active');
+        $('.Start').addClass('active');
+        TimeHolder = 0;
+    }
+});
+
+$('.Start').on('click', function () {
+    $('body').removeClass('BgAnimation');
+    if (Format === 3) {
+        StopChecker = 0;
+        $(this).removeClass('active');
+        $('.Pause').addClass('active');
+    } else if (Format === 4) {
+        TimeHolder = $('.AlarmInput input').val();
+        if (TimeHolder > 0) {
+            StopChecker = 0;
+            resetTimer();
+            $(this).removeClass('active');
+            $('.Pause').addClass('active');
+            $('.AlarmInput').addClass('DisNone');
+            $('.Numbers').fadeIn(0);
+        }
+    }
+});
+
+$('.Pause').on('click', function () {
+    StopChecker = 1;
+    $(this).removeClass('active');
+    $('.Start').addClass('active');
+});
+
+$('.Stop').on('click', function () {
+    $('body').removeClass('BgAnimation');
+    if (Format === 3) {
+        StopChecker = 1;
+        TimeHolder = 0;
+        resetTimer();
+        $('.Pause').removeClass('active');
+        $('.Start').addClass('active');
+    } else if (Format === 4) {
+        resetTimer();
+        StopChecker = 1;
+        $('.AlarmInput').removeClass('DisNone');
+        $('.Numbers').fadeOut(0);
+        $('.AlarmInput input').val("");
+        $('.Pause').removeClass('active');
+        $('.Start').addClass('active');
+    }
+});
+
+$('.fas.fa-clock').on('click', function () {
+    $('body').removeClass('BgAnimation');
+
+    if (($('.Type .active').html()) === '12hr') {
+        Format = 2;
+    } else {
+        Format = 1;
+    }
+
+    StopChecker = 0;
+    $('.TimeHolder').removeClass().addClass('TimeHolder');
+    $('.Numbers').fadeIn(0);
+});
+
+
+$('.far.fa-clock').on('click', function () {
+    $('body').removeClass('BgAnimation');
+    $('.H1').fadeIn();
+    if (!($('.TimeHolder').hasClass('Alarm'))) {
+        $('.TimeHolder').removeClass().addClass('TimeHolder Alarm');
+        Format = 4;
+        resetTimer();
+        StopChecker = 1;
+        $('.AlarmInput').removeClass('DisNone');
+        $('.TimeHolder').addClass('Alarm');
+        $('.Numbers').fadeOut(0);
+        $('.Pause').removeClass('active');
+        $('.Start').addClass('active');
+    }
+});
+
+// Alarm Out
+function AlarmOut() {
+    $('body').addClass('BgAnimation');
+    resetTimer();
+    StopChecker = 1;
+}
+
+
+update_time();
+
+//digital time end
+
+
+
+//Count Time STart
+function drawTime(ctx, radius) {
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour = hour % 12;
+    hour = (hour * Math.PI / 6) +
+        (minute * Math.PI / (6 * 60)) +
+        (second * Math.PI / (360 * 60));
+    drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+    //minute
+    minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+    drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+    // second
+    second = (second * Math.PI / 30);
+    drawHand(ctx, second, radius * 0.9, radius * 0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0, 0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function timerFun(minute) {
+    for (minute = minute - 1; minute >= 0; minute--) {
+        for (let second = 59; second >= 0; second--) {
+            m = (minute).toLocaleString('en-US', {
+                minimumIntegerDigits: 2,
+                useGrouping: false
+            })
+            s = (second).toLocaleString('en-US', {
+                minimumIntegerDigits: 2,
+                useGrouping: false
+            })
+            document.getElementById('countdown').innerHTML = m + ':' + s;
+            await sleep(1000);
+        }
+//        document.getElementsByTagName('body')[0].style.backgroundImage = "url('images/coffe" + ((minute % 4) + 1) + ".jpg')";
+    }
+}
+
+timerFun(parseInt(prompt('কত মিনিটের বিরতি, তা লিখুন : ')));
+//document.getElementById('countdown').innerHTML = minute+':'+second;
+
+//Count Time End
