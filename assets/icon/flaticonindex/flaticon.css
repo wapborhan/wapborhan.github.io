@@ -1,0 +1,64 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 11/05/2020 03:42
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-style: normal;
+}
+
+.flaticon-calendar:before { content: "\f100"; }
+.flaticon-graphic:before { content: "\f101"; }
+.flaticon-time:before { content: "\f102"; }
+.flaticon-plane:before { content: "\f103"; }
+.flaticon-search:before { content: "\f104"; }
+.flaticon-pin:before { content: "\f105"; }
+.flaticon-telephone:before { content: "\f106"; }
+.flaticon-mail:before { content: "\f107"; }
+.flaticon-tools-and-utensils:before { content: "\f108"; }
+.flaticon-responsive-design:before { content: "\f109"; }
+.flaticon-programmer:before { content: "\f10a"; }
+.flaticon-negotiation:before { content: "\f10b"; }
+.flaticon-handshake:before { content: "\f10c"; }
+.flaticon-download:before { content: "\f10d"; }
+.flaticon-favorites:before { content: "\f10e"; }
+.flaticon-share:before { content: "\f10f"; }
+.flaticon-left-arrow:before { content: "\f110"; }
+.flaticon-right-arrow:before { content: "\f111"; }
+.flaticon-play:before { content: "\f112"; }
+.flaticon-upload:before { content: "\f113"; }
+.flaticon-deadline:before { content: "\f114"; }
+.flaticon-project-management:before { content: "\f115"; }
+.flaticon-chat:before { content: "\f116"; }
+.flaticon-computer:before { content: "\f117"; }
+.flaticon-computer-1:before { content: "\f118"; }
+.flaticon-shopping-cart:before { content: "\f119"; }
+.flaticon-wordpress:before { content: "\f11a"; }
+.flaticon-online-ads:before { content: "\f11b"; }
+.flaticon-human-resources:before { content: "\f11c"; }
+.flaticon-testimonial:before { content: "\f11d"; }
+.flaticon-rating:before { content: "\f11e"; }
+.flaticon-award:before { content: "\f11f"; }
+.flaticon-graduation-cap:before { content: "\f120"; }
+.flaticon-medal:before { content: "\f121"; }
