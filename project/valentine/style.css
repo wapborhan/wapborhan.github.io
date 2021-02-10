@@ -30,11 +30,11 @@
 
 @font-face {
     font-family: 'Li Sirajee Sheikh Unicode';
-    src: url('src/fonts/LiSirajeeSheikhUnicode.eot');
-    src: url('src/fonts/LiSirajeeSheikhUnicode.eot?#iefix') format('embedded-opentype'),
-        url('src/fonts/LiSirajeeSheikhUnicode.woff2') format('woff2'),
-        url('src/fonts/LiSirajeeSheikhUnicode.woff') format('woff'),
-        url('src/fonts/LiSirajeeSheikhUnicode.svg#LiSirajeeSheikhUnicode') format('svg');
+    src: url('LiSirajeeSheikhUnicode.eot');
+    src: url('LiSirajeeSheikhUnicode.eot?#iefix') format('embedded-opentype'),
+        url('LiSirajeeSheikhUnicode.woff2') format('woff2'),
+        url('LiSirajeeSheikhUnicode.woff') format('woff'),
+        url('LiSirajeeSheikhUnicode.svg#LiSirajeeSheikhUnicode') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
