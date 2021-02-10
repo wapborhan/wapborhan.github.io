@@ -20,17 +20,17 @@ proposeBtn = document.querySelector('#propose-btn');
 if (link.indexOf('#') != -1 && link.indexOf('#') != (link.length - 1)) {
     // HIDING HADER AND SHOWING THE MAIN SECTION
     document.getElementById('header').classList.add('hide');
-    document.getElementById('footer').classList.add('hide');
+    // document.getElementById('footer').classList.add('hide');
     document.getElementById('main').classList.remove('hide');
     // GETTING THE TITLE FROM LINK
     link = link.slice(link.indexOf('#') + 1);
     if (link.includes("%20+%20")) {
         var res = link.replace("%20+%20", ' <i style="color:red;" class="fas fa-heart"></i> ');
-     }else if(link.includes("+")){
+    } else if (link.includes("+")) {
         var res = link.replace("+", ' <i style="color:red;" class="fas fa-heart"></i> ');
-     }else{
-         var res = link;
-     }
+    } else {
+        var res = link;
+    }
 
     title.innerHTML = res;
 }
@@ -48,19 +48,19 @@ var lines = [
 
 // MAKING FUNCTIONS
 
-function load(){
+function load() {
     //MAKING BASIC ANIMATION
     content.classList.add('content-anim');
     txt.innerHTML = lines[index];
-    setTimeout( () => {
+    setTimeout(() => {
         content.classList.remove('content-anim');
-    }, 500 )
+    }, 500)
 
     // WHILE INDEX REACH THE MAXIMUM NUMBER OF LINE
-    if(index == (lines.length - 1)){
+    if (index == (lines.length - 1)) {
         // STOP INCREASING INDEX
         index = (lines.length - 1);
-    }else{
+    } else {
         // OTHERWISE INCREASING IT
         index++;
     }
@@ -79,18 +79,18 @@ function generate() {
         popupBtn.innerHTML = "Submit";
         popupClose()
         // ALEART FOR COPYING
-        alert('Link Is Copied \n \nNow Send This To Your Valentine')
+        alert('\n \n \n \nলিঙ্ক সঠিক ভাবে কপি হয়েছে \n \n আপনার ভালোবাসার মানুষটিকে লিঙ্কটি দিন।')
     } else {
         // VALIDATING INPUT VALUE
-        if(popupInput.value.length != 0){
+        if (popupInput.value.length != 0) {
             // CONCATING THE LINK WITH NAME
             var pageLink = window.location.href + "#" + popupInput.value;
             popupInput.value = pageLink;
             // CHANGING BUTTON TEXT FOR COPY
             popupBtn.innerHTML = "Copy";
-        }else{
+        } else {
             // ALEART FOR INVALID INPUT
-            alert('Please Insert A Valid Name')
+            alert('সঠিক নাম দিন!')
         }
     }
 }
