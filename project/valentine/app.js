@@ -37,13 +37,12 @@ if (link.indexOf('#') != -1 && link.indexOf('#') != (link.length - 1)) {
 
 // LINES THAT ARE STORING IN A ARRAY
 var lines = [
-    "Are you Google search engine? Because you’ve got everything I’ve been searching for in life.",
-    "Found the reason for my smile, the day I found you. Will you let me be the reason for your smile?",
-    "In you, my life becomes whole, with you my days become bright. In your hands I would love to lay, this night and for the rest of my life!",
-    "You deserve the world and all the good things it has to offer. If I fail to find that world for you, I promise to give you mine!",
-    "When the rain is blowing in your face and the whole world is on your case, I could offer you a warm embrace to make you feel my love.",
-    "Hold my hand tight as I want to grow old with you from this day forth.",
-    "I Love You Very Much"
+    " কত যে সাগর নদী পেরিয়ে এলাম আমি, কত পথ হলাম যে পার, তোমারি মতন ওগো  অপরূপ সুন্দর কাউকে তো দেখিনি গো আর। ",
+    " ভালোবাসা মানে একটা রাত না হয় না ঘুমিয়েই কাটালাম তাতে কি ? প্রত্যেক প্রহরে আমি তোমার কথা ভেবেই জাগি । ",
+    " তোমাকে ভেবে পৃথিবী আমার অদেখা তবু এঁকে যাই, আমার ভেতর শুধু তুমি আর তো কিছু পায়নি ঠাই । ",
+    " তোমাকে অনুবাদ করেছি স্বপ্নে, তোমাকে অনুবাদ করেছি তৃষ্ণায়??, তোমাকে অনুবাদ করেছি উদাসিনতায়। ",
+    " যতনে রেখেছি তোমায় আমারি বুকে, পারবেনা কেড়ে নিতে কেউ তোমাকে, কোথায় যাবো আমি কে আছে আমার, তুমি ছাড়া পৃথিবীটা এতই আধাঁর, এক পৃথিবী প্রেম আমি তোমাকে দেবো, জনমে জনমে আমি তোমারি রবো। ",
+    "❤ ভালোবাসি তোমাকে, \n অনেক অনেক ভালোবাসি গো ❤"
 ]
 
 // MAKING FUNCTIONS
