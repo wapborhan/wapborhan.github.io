@@ -116,3 +116,6 @@ next.addEventListener('click', load);
 proposeBtn.addEventListener('click', popupOpen);
 popupCloseBtn.addEventListener('click', popupClose);
 popupBtn.addEventListener('click', generate);
+
+
+// Bangla Support
