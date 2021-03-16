@@ -39,11 +39,46 @@
     <!--=============================================
                     CSS LINK PART END
     ===============================================-->
+    <style>
+        label {
+            position: absolute;
+            width: 45px;
+            height: 22px;
+            right: 20px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+            z-index: 99;
+        }
 
+        label:before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            left: 1px;
+            top: 1px;
+            border-radius: 50%;
+            background: #000;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        label.active:before {
+            left: 24px;
+            background: #fff;
+        }
+
+        body.night {
+            background: #000;
+            color: #fff;
+        }
+
+    </style>
 </head>
 
 <body>
-
+    <label id="dark-change"></label>
     <!--=============================================
                   04 - BANNER PART START
     ===============================================-->
@@ -1181,6 +1216,89 @@
     <script src="assets/src/js/script.js"></script>
     <script src="assets/src/js/custom.js"></script>
     <!--    -->
+
+    <script>
+        var content = document.getElementsByTagName('body')[0];
+        var darkMode = document.getElementById('dark-change');
+        darkMode.addEventListener('click', function() {
+            darkMode.classList.toggle('active');
+            content.classList.toggle('night');
+        })
+
+    </script>
+
+
+    <script>
+        /* COPY PROTECTED */
+
+        function clickIE4() {
+
+            if (event.button == 2) {
+
+                return false;
+
+            }
+
+        }
+
+        function clickNS4(e) {
+
+            if (document.layers || document.getElementById && !document.all) {
+
+                if (e.which == 2 || e.which == 3) {
+
+                    return false;
+
+                }
+
+            }
+
+        }
+
+        if (document.layers) {
+
+            document.captureEvents(Event.MOUSEDOWN);
+
+            document.onmousedown = clickNS4;
+
+        } else if (document.all && !document.getElementById) {
+
+            document.onmousedown = clickIE4;
+
+        }
+
+        document.oncontextmenu = new Function("return false")
+
+        function disableSelection(target) {
+
+            if (typeoftarget.onselectstart != "undefined")
+
+                //For IE
+
+                target.onselectstart = function() {
+                    return
+
+                    false
+                }
+
+            else if (typeof target.style.MozUserSelect != "undefined") //For Firefox
+
+                target.style.MozUserSelect = "none"
+
+            else //All other route (For Opera)
+
+                target.onmousedown = function() {
+                    return
+
+                    false
+                }
+
+            target.style.cursor = "default"
+
+        }
+
+    </script>
+
 
     <!--=============================================
                 JAVA SCRIPT LINK PART END
