@@ -111,7 +111,7 @@ body.light {
 
 body.home.light .home-details h1 span,
 body.light .button .button-text {
-    color: #666;
+/*    color: #666;*/
 }
 
 body.light .button:hover .button-text {
