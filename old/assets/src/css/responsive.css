@@ -1,9 +1,8 @@
 /*===========================================
-Author Name : Md Mahmudul Hasan (Miron)
+Author Name : Md Borhan Uddin Rabby
 Template Type : Personal Portfolio
-Email : mironbonny1994@gmail.com
-Phone : +8801838288389
-Brand Color : #48455a, #347db6
+Email : borhanuddin621@gmail.com
+Phone : +8801620557840
 Text font : Poppins & Open Sans
 Icon : Flat Icon
 Version : 1.0.04
@@ -38,6 +37,8 @@ Table of content responsive.css
         line-height: 40px;
     }
 
+
+
     /*-----------------------------
        BACK TO TOP BUTTON PART END
     -------------------------------*/
@@ -57,12 +58,21 @@ Table of content responsive.css
     /*-----------------------------
            HIDDENBAR PART START
     -------------------------------*/
+    #hidden-part {
+        visibility: hidden !important;
+    }
+
+    .hidden-part {
+        visibility: hidden !important;
+    }
+
     .gear-btn {
         width: 40px;
         height: 40px;
         line-height: 35px;
         left: -40px;
     }
+
     /*-----------------------------
            HIDDENBAR PART END
     -------------------------------*/
@@ -122,14 +132,20 @@ Table of content responsive.css
     .banner-shape-1 {
         display: none;
     }
-    
+
     .banner-oly {
-        padding: 40px 0px 50px;
-        background-position: right;
+        padding: 0px 0px 50px;
+        background-position: center;
+        background: transparent linear-gradient(to right bottom, #3f51b5, #ff4081) !important;
+        background-image: none;
     }
 
     .anim-round {
         display: none;
+    }
+
+    .pad-tp {
+        padding: 0px 0px;
     }
 
     .banner-img img {
@@ -142,7 +158,8 @@ Table of content responsive.css
     }
 
     .banner-text ul {
-        margin-top: 45px;
+        margin-top: 10px;
+        margin-bottom: 20px !important;
     }
 
     .banner-text ul li {
@@ -158,14 +175,18 @@ Table of content responsive.css
     }
 
     .banner-text h1 {
-        font-size: 30px;
+        font-size: 23px;
         line-height: 40px;
+    }
+
+    .banner-btn {
+        padding: 0px 0px 50px 0px;
     }
 
     .banner-btn a {
         font-size: 14px;
-        padding: 14px 26px;
-        margin: 45px 5px 0px;
+        /*        padding: 14px 26px;*/
+        margin: 20px 5px 0px;
     }
 
     .banner-btn a:nth-child(1) {
@@ -176,6 +197,25 @@ Table of content responsive.css
         font-size: 14px;
         line-height: 24px;
     }
+
+    #banner-part::before {
+        -webkit-transform: skewY(-14deg);
+        -ms-transform: skewY(14deg);
+        transform: skewY(14deg);
+
+    }
+
+    #banner-part::after {
+        -webkit-transform: skewY(-14deg);
+        -ms-transform: skewY(-14deg);
+        transform: skewY(-14deg);
+
+    }
+
+    h2.typewriter {
+        text-align: center;
+    }
+
     /*-----------------------------
             BANNER PART END
     -------------------------------*/
@@ -196,7 +236,7 @@ Table of content responsive.css
     }
 
     .code-heading h2 {
-        width: 100%;
+        width: 300px;
         font-size: 22px;
         line-height: 30px;
     }
@@ -219,6 +259,7 @@ Table of content responsive.css
         width: 200px;
         font-size: 16px;
     }
+
     /*-----------------------------
            CODING PART END
     -------------------------------*/
@@ -226,8 +267,15 @@ Table of content responsive.css
     /*-----------------------------
            SERVICE PART START
     -------------------------------*/
+
+    .services-dis-head h2 {
+        width: 300px !important;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
     #service-part {
-        padding: 60px 0px 0px;
+        padding: 30px 0px 30px 0px;
     }
 
     .service-heading {
@@ -239,13 +287,13 @@ Table of content responsive.css
     }
 
     .service-heading h2 {
-        width: 100%;
+        width: 300px !important;
         font-size: 22px;
         line-height: 30px;
     }
 
     .service-parent {
-        margin-top: 0px;
+        margin-top: 30px;
     }
 
     .service-child {
@@ -290,6 +338,7 @@ Table of content responsive.css
         font-size: 16px;
         margin-top: 25px;
     }
+
     /*-----------------------------
             SERVICE PART END
     -------------------------------*/
@@ -298,7 +347,7 @@ Table of content responsive.css
             RESUME PART START
     -------------------------------*/
     #resume-part {
-        padding: 70px 0px 0px;
+        padding: 0px 0px 30px 0px;
     }
 
     .resume-heading {
@@ -310,8 +359,8 @@ Table of content responsive.css
     }
 
     .resume-heading h2 {
-        width: 100%;
-        font-size: 22px;
+        width: 300px !important;
+        font-size: 22px !important;
         line-height: 30px;
     }
 
@@ -332,6 +381,7 @@ Table of content responsive.css
     .category-btn h3 {
         font-size: 12px;
     }
+
     /*-----------------------------
             RESUME PART END
     -------------------------------*/
@@ -398,6 +448,7 @@ Table of content responsive.css
     .about-img img {
         display: none;
     }
+
     /*-----------------------------
             ABOUT PART END
     -------------------------------*/
@@ -406,7 +457,7 @@ Table of content responsive.css
           PORTFOLIO PART PART
     -------------------------------*/
     #port-part {
-        padding: 60px 0px 0px;
+        padding: 30px 0px 30px 0px;
     }
 
     .port-heading {
@@ -418,7 +469,7 @@ Table of content responsive.css
     }
 
     .port-heading h2 {
-        width: 100%;
+        width: 300px !important;
         font-size: 22px;
         line-height: 30px;
     }
@@ -450,6 +501,7 @@ Table of content responsive.css
     .port-end-btn a {
         font-size: 14px;
     }
+
     /*-----------------------------
           PORTFOLIO PART END
     -------------------------------*/
@@ -470,7 +522,7 @@ Table of content responsive.css
     }
 
     .skill-heading h2 {
-        width: 100%;
+        width: 300px !important;
         font-size: 22px;
         line-height: 30px;
     }
@@ -479,11 +531,18 @@ Table of content responsive.css
         border-radius: 8px;
     }
 
+    .skill-child {
+        margin: 10px;
+        width: 145px;
+    }
+
+    /*
     .skill-img {
         width: 120px;
         height: 100px;
         line-height: 100px;
     }
+*/
 
     .skill-img img {
         height: 50px;
@@ -492,6 +551,11 @@ Table of content responsive.css
     .skill-item p {
         font-size: 12px;
     }
+
+    .skill-iteaml {
+        padding: 20px 0px 40px;
+    }
+
     /*-----------------------------
             SKILL PART END
     -------------------------------*/
@@ -525,6 +589,7 @@ Table of content responsive.css
     .get-btn a {
         font-size: 16px;
     }
+
     /*-----------------------------
             GET PART END
     -------------------------------*/
@@ -562,6 +627,7 @@ Table of content responsive.css
     .count-text p {
         font-size: 16px;
     }
+
     /*-----------------------------
              COUNT PART END
     -------------------------------*/
@@ -582,7 +648,7 @@ Table of content responsive.css
     }
 
     .price-heading h2 {
-        width: 100%;
+        width: 300px !important;
         font-size: 22px;
         line-height: 30px;
     }
@@ -617,6 +683,7 @@ Table of content responsive.css
         font-size: 14px;
         padding: 14px 28px;
     }
+
     /*-----------------------------
             PRICE PART END
     -------------------------------*/
@@ -637,7 +704,7 @@ Table of content responsive.css
     }
 
     .testi-heading h2 {
-        width: 100%;
+        width: 300px !important;
         font-size: 22px;
         line-height: 30px;
     }
@@ -675,6 +742,7 @@ Table of content responsive.css
     .testi-child ul li h4 {
         font-size: 12px;
     }
+
     /*-----------------------------
           TESTIMONIAL PART END
     -------------------------------*/
@@ -695,7 +763,7 @@ Table of content responsive.css
     }
 
     .blog-heading h2 {
-        width: 100%;
+        width: 300px !important;
         font-size: 22px;
         line-height: 30px;
     }
@@ -740,6 +808,7 @@ Table of content responsive.css
         width: 290px;
         margin: 0 auto 30px;
     }
+
     /*-----------------------------
              BLOG PART END
     -------------------------------*/
@@ -748,7 +817,7 @@ Table of content responsive.css
               FAQ PART START
     -------------------------------*/
     #faq-part {
-        padding: 60px 0px 0px;
+        padding: 30px 0px 30px;
     }
 
     .faq-heading {
@@ -760,7 +829,7 @@ Table of content responsive.css
     }
 
     .faq-heading h2 {
-        width: 100%;
+        width: 300px !important;
         font-size: 22px;
         line-height: 30px;
     }
@@ -768,6 +837,7 @@ Table of content responsive.css
     .faq-child:last-child {
         margin-bottom: 30px;
     }
+
     /*-----------------------------
               FAQ PART END
     -------------------------------*/
@@ -788,19 +858,19 @@ Table of content responsive.css
     }
 
     .contact-heading h2 {
-        width: 100%;
+        width: 300px !important;
         font-size: 22px;
         line-height: 30px;
     }
 
     .contact-box {
-        display: inherit;
+        display: inline-block;
         margin-bottom: 0px;
+        text-align: center;
     }
 
     .contact-address {
         display: inherit;
-        text-align: center;
         margin-bottom: 30px;
         margin-top: 30px;
     }
@@ -822,7 +892,7 @@ Table of content responsive.css
     }
 
     .input-div input {
-        width: 100%;
+        width: 48% !important;
         margin-bottom: 15px;
     }
 
@@ -844,7 +914,17 @@ Table of content responsive.css
     /*-----------------------------
             CONTACT PART END
     -------------------------------*/
+    /*Team */
+    .team-heading h2 {
+        width: 300px !important;
+        font-size: 22px;
+    }
 
+    .team-image img {
+        width: 100% !important;
+    }
+
+    /*Team */
     /*-----------------------------
            FOOTER PART START
     -------------------------------*/
@@ -870,15 +950,13 @@ Table of content responsive.css
     .copy-text p {
         font-size: 14px;
     }
+
     /*-----------------------------
             FOOTER PART END
     -------------------------------*/
 
-    
+
 }
-
-
-
 
 
 
@@ -1113,6 +1191,8 @@ Table of content responsive.css
         font-size: 20px;
     }
 
+
+
     /*-----------------------------
             SKILL PART END
     -------------------------------*/
@@ -1130,6 +1210,7 @@ Table of content responsive.css
 
     .resume-heading h2 {
         font-size: 28px;
+        width: 300px;
     }
 
     .resume-heading img {
@@ -1338,6 +1419,7 @@ Table of content responsive.css
 
     .port-heading h2 {
         font-size: 28px;
+        width: 300px;
     }
 
     .port-heading img {
@@ -1383,6 +1465,7 @@ Table of content responsive.css
 
     .price-heading h2 {
         font-size: 28px;
+        width: 300px;
     }
 
     .price-heading img {
@@ -1419,6 +1502,7 @@ Table of content responsive.css
 
     .testi-heading h2 {
         font-size: 28px;
+        width: 300px;
     }
 
     .testi-heading img {
@@ -1495,6 +1579,7 @@ Table of content responsive.css
 
     .blog-heading h2 {
         font-size: 28px;
+        width: 300px;
     }
 
     .blog-heading img {
@@ -1598,7 +1683,6 @@ Table of content responsive.css
     }
 
     .input-div input {
-        width: 100%;
         margin-bottom: 15px;
     }
 
@@ -1646,10 +1730,6 @@ Table of content responsive.css
             FOOTER PART END
     -------------------------------*/
 }
-
-
-
-
 
 
 
@@ -1748,6 +1828,11 @@ Table of content responsive.css
         top: 200px;
     }
 
+    .banner-text ul li {
+        display: inline-block;
+        margin-right: 14px;
+    }
+
     .logo-shape {
         display: none;
     }
@@ -1780,6 +1865,11 @@ Table of content responsive.css
     #service-part {
         padding: 60px 0px 0px;
     }
+
+    .service-parent {
+        padding: 40px 0px 30px 0px;
+    }
+
 
     .service-heading {
         margin-bottom: 30px;
@@ -1828,7 +1918,7 @@ Table of content responsive.css
 
     .skill-img img {
         margin-top: 0px;
-        margin-bottom: 30px;
+        /*        margin-bottom: 30px;*/
     }
 
     .skill-type-2,
@@ -1851,6 +1941,14 @@ Table of content responsive.css
     .skill-type-3 h4,
     .skill-type-4 h4 {
         font-size: 20px;
+    }
+
+    .skill-iteaml {
+        padding: 20px 0px 40px;
+    }
+
+    .skills-bar-container li {
+        padding: 30px 2px;
     }
 
     /*-----------------------------
@@ -1911,6 +2009,10 @@ Table of content responsive.css
     /*-----------------------------
             ABOUT PART START
     -------------------------------*/
+    .about-img {
+        padding-top: 50px;
+    }
+
     .about-img img {
         width: auto;
         height: 400px;
@@ -2064,7 +2166,7 @@ Table of content responsive.css
           PORTFOLIO PART START
     -------------------------------*/
     #port-part {
-        padding: 50px 0px 0px;
+        padding: 30px 0px 30px 0px;
     }
 
     .port-heading {
@@ -2328,7 +2430,7 @@ Table of content responsive.css
     }
 
     .input-div input {
-        width: 100%;
+        width: 48%;
         margin-bottom: 15px;
     }
 
@@ -2377,9 +2479,6 @@ Table of content responsive.css
 }
 
 
-
-
-
 @media (min-width: 992px) and (max-width: 1199px) {
 
     /*-----------------------------
@@ -2418,6 +2517,14 @@ Table of content responsive.css
         font-size: 45px;
     }
 
+    #service-part {
+        padding: 50px 0px;
+    }
+
+    .service-child {
+        width: 44%;
+    }
+
     /*-----------------------------
            BANNER PART END
     -------------------------------*/
@@ -2448,15 +2555,28 @@ Table of content responsive.css
         padding: 30px 5px;
     }
 
+    .about-img {
+        padding-top: 90px;
+    }
+
+    .about-btn a {
+        padding: 16px 30px;
+    }
+
     /*-----------------------------
             ABOUT PART END
     -------------------------------*/
+
 
     /*-----------------------------
           EXPERIENCE PART START
     -------------------------------*/
     .ex-card h4 {
         font-size: 14px;
+    }
+
+    .contact-box {
+        padding-top: 8%;
     }
 
     /*-----------------------------
@@ -2487,6 +2607,7 @@ Table of content responsive.css
     .port-banner-content h1 {
         font-size: 45px;
     }
+
     /*-----------------------------------
        INNER PORTFOLIO BANNER PART END
     ------------------------------------*/
@@ -2535,6 +2656,7 @@ Table of content responsive.css
     .port-detail-child h3 {
         font-size: 13px;
     }
+
     /*----------------------------------
        INNER PORTFOLIO DETAIL PART END
     -----------------------------------*/
