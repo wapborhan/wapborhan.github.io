@@ -105,13 +105,13 @@ hr.separator {
 /*** Light Body ***/
 
 body.light {
-/*    color: #666;*/
+    /*    color: #666;*/
     background-color: #fff;
 }
 
 body.home.light .home-details h1 span,
 body.light .button .button-text {
-/*    color: #666;*/
+    /*    color: #666;*/
 }
 
 body.light .button:hover .button-text {
@@ -909,6 +909,7 @@ body.light hr.separator {
     left: 50%;
     margin: -280px 0 0 -330px;
     visibility: hidden;
+    height: 85%;
 }
 
 .portfolio .slideshow ul > li.show {
@@ -951,6 +952,7 @@ body.light hr.separator {
 
 .portfolio .slideshow figcaption {
     margin-bottom: 15px;
+    color: #000000;
 }
 
 .portfolio .slideshow figcaption h3 {
@@ -1532,6 +1534,7 @@ body.light hr.separator {
         border-radius: 0;
         max-width: 720px;
         margin: 0 auto;
+        height: 95%;
     }
 
     .portfolio .slideshow nav span.nav-prev,
