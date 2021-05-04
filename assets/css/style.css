@@ -453,7 +453,7 @@ body.light hr.separator {
 
     .header.hide-header {
         z-index: 0 !important;
-        opacity: 0;
+        opacity: 1;
     }
 
     .header ul.icon-menu {
@@ -1789,4 +1789,18 @@ body.light hr.separator {
     .separator.mt-1 {
         margin-top: 35px !important;
     }
+}
+
+
+
+li.hedsec img {
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+li.hedsec {
+    text-align: center;
+    padding: 0 !important;
+    border: none;
 }
