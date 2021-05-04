@@ -1791,10 +1791,14 @@ body.light hr.separator {
     }
 }
 
-
+li.hedsec h2 {
+    color: #72b626;
+    border-bottom: 1px solid #bebcbc;
+    padding: 20px 0px;
+}
 
 li.hedsec img {
-    height: 200px;
+    height: 180px;
     border-radius: 50%;
     border: 1px solid red;
 }
@@ -1803,4 +1807,15 @@ li.hedsec {
     text-align: center;
     padding: 0 !important;
     border: none;
+}
+
+
+li.hedsec:after {
+    position: absolute;
+    height: 0px !important;
+    position: absolute;
+    content: '';
+    background: #eee !important;
+    top: 0px;
+    left: 0;
 }
