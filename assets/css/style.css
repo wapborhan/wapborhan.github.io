@@ -428,6 +428,83 @@ body.light hr.separator {
     color: rgba(255, 255, 255, 0.07);
 }
 
+/*Extra Css ADD*/
+.havatar .image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: morph 8s ease-in-out infinite 1s;
+    background-blend-mode: multiply;
+    -webkit-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+    -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+    box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3)
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+    }
+}
+
+.boxstats:hover:after {
+    left: 16px;
+    right: 16px;
+    opacity: 1;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.boxstats:after {
+    left: 45%;
+    right: 45%;
+    bottom: 1px;
+    background-color: #ffffff;
+    height: 5px;
+    position: absolute;
+    content: '';
+    transition: all .5s ease;
+    opacity: 0;
+    /*    border-radius: 0px 0px 30px 30px;*/
+}
+
+.about .boxstats {
+    padding: 20px 30px 20px 30px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+.about .boxstats.with-margin {
+    margin-bottom: 30px;
+}
+
+.about .boxstats h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #72b626;
+}
+
+
+.about .boxstats h2 {
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+.about .boxstats p {
+    padding-left: 40px;
+}
+
+/*Extra Css ADD*/
+
+
+
 /* [ HEADER ] */
 /*================================================== */
 
@@ -1800,8 +1877,6 @@ li.hedsec h2 {
 
 li.hedsec img {
     height: 180px;
-    border-radius: 50%;
-    border: 1px solid red;
 }
 
 li.hedsec {
