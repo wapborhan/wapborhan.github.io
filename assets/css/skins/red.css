@@ -40,7 +40,7 @@ body.light .header ul.icon-menu li.icon-box:hover,
 .button:before,
 .button-icon,
 .boxstats:hover:after,
-.post-infoa.read-more {
+.post-info a.read-more {
     background-color: #f72b1c;
 }
 
