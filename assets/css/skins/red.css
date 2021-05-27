@@ -39,8 +39,7 @@ body.light .header ul.icon-menu li.icon-box:hover,
 .portfolio .slideshow .carousel-indicators li.active,
 .button:before,
 .button-icon,
-.boxstats:hover:after,
-.post-info a.read-more {
+.boxstats:hover:after {
     background-color: #f72b1c;
 }
 
