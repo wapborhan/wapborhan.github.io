@@ -126,10 +126,6 @@
 
 
 
-
-
-
-
 /* COPY PROTECTED */
 
 //function clickIE4() {

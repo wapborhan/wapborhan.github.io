@@ -18,6 +18,7 @@ if(isset($_POST['submit'])){
     }
 ?>
 
+
 <!DOCTYPE html>
 <html>
 
@@ -26,6 +27,7 @@ if(isset($_POST['submit'])){
 </head>
 
 <body>
+
 
     <form action="" method="post">
         First Name: <input type="text" name="first_name"><br>
