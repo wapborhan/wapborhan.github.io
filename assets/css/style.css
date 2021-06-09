@@ -646,6 +646,9 @@ body.light hr.separator {
     transition: all linear 0.3s;
 }
 
+.btn-why {
+    padding: 15px 30px;
+}
 
 /*Extra Css ADD*/
 
