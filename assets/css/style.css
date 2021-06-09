@@ -53,7 +53,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-    color: #fff;
+    color: #000;
     font-weight: 500;
     line-height: 1.6;
     position: relative;
@@ -61,7 +61,8 @@ body {
     background-position: center;
     height: 100%;
     width: 100%;
-    /*    background-color: #111;*/
+    background-color: #111;
+    /*
     background: #1BFFFF url() repeat fixed top left;
     background-color: #1BFFFF;
     -webkit-overflow-scrolling: touch;
@@ -69,9 +70,10 @@ body {
     background: fixed -webkit-linear-gradient(left top, #2E3192, #1BFFFF);
     background: fixed -o-linear-gradient(left top, #2E3192, #1BFFFF);
     background: fixed linear-gradient(to right bottom, #2E3192, #1BFFFF);
+*/
 }
 
-}
+
 
 .poppins-font {
     font-family: 'Poppins', sans-serif;
@@ -115,7 +117,7 @@ body.light {
 
 body.home.light .home-details h1 span,
 body.light .button .button-text {
-    /*    color: #666;*/
+    color: #666;
 }
 
 body.light .button:hover .button-text {
@@ -161,7 +163,7 @@ body.light.about .resume-box .time {
 
 body.light.about .resume-box .time,
 body.light.about .resume-box p {
-    color: #666;
+    color: #000;
 }
 
 body.light.about .resume-box .place:before {
@@ -347,7 +349,7 @@ body.light hr.separator {
     text-decoration: none !important;
     position: relative;
     z-index: 1;
-    padding: 16px 70px 16px 35px;
+    padding: 15px 68px 16px 36px;
     font-size: 15px;
     font-weight: 600;
     color: #fff;
@@ -458,6 +460,9 @@ body.light hr.separator {
     }
 }
 
+
+.sr-services {}
+
 .boxstats:hover:after {
     left: 16px;
     right: 16px;
@@ -469,7 +474,7 @@ body.light hr.separator {
     left: 45%;
     right: 45%;
     bottom: 1px;
-    background-color: #ffffff;
+    background-color: #ddd;
     height: 5px;
     position: absolute;
     content: '';
@@ -481,7 +486,7 @@ body.light hr.separator {
 .about .boxstats {
     padding: 20px 30px 20px 30px;
     border-radius: 5px;
-    border: 1px solid #ffffff;
+    border: 1px solid #ddd;
 }
 
 .about .boxstats.with-margin {
@@ -504,6 +509,143 @@ body.light hr.separator {
 .about .boxstats p {
     padding-left: 40px;
 }
+
+.sr-lbl {
+    align-self: center;
+}
+
+.srstrategy {
+    padding: 30px 0;
+}
+
+.box-sr .sr-strategy img {
+    width: 300px;
+    float: left;
+}
+
+.box-sr .sr-strategy h2 {
+    padding: 0 20px;
+    font-size: 23px;
+    overflow: hidden;
+}
+
+.box-sr {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+.accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px 0;
+
+}
+
+.accordion:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-label {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    background: #519900;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 0 !important;
+}
+
+.accordion-label:hover {
+    background: #72b626;
+}
+
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    padding: 0 16px;
+    color: rgba(4, 57, 94, 1);
+    background: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.accordion-content p {
+    margin: 0;
+    color: rgba(4, 57, 94, .7);
+    font-size: 18px;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion input:checked + .accordion-label {
+    background: #72b626;
+}
+
+.accordion input:checked + .accordion-label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.accordion input:checked ~ .accordion-content {
+    max-height: 100vh;
+    padding: 16px;
+}
+
+
+
+.accurate-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all linear 0.3s;
+}
+
+.accurate-box .icon img {
+    width: 100px;
+    margin: 30px 0;
+    transition: all linear 0.3s;
+}
+
+.accurate-box .content h2 {
+    padding: 20px 0px;
+    font-size: 23px;
+}
+
+
+.accurate-box:hover {
+    margin-top: -20px;
+    transition: all linear 0.3s;
+}
+
+
+.accurate-box:hover .icon img {
+    transform: scale(1.2);
+    transition: all linear 0.3s;
+}
+
 
 /*Extra Css ADD*/
 

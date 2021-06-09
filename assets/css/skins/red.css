@@ -14,7 +14,8 @@ body.light #menu li.active a,
 .portfolio .slideshow figcaption h3,
 .portfolio .slideshow a,
 .portfolio .grid figure:hover figcaption,
-.blog-post .meta i {
+.blog-post .meta i,
+.accurate-box .content h2 {
     color: #f72b1c;
 }
 
@@ -39,8 +40,14 @@ body.light .header ul.icon-menu li.icon-box:hover,
 .portfolio .slideshow .carousel-indicators li.active,
 .button:before,
 .button-icon,
-.boxstats:hover:after {
+.boxstats:hover:after,
+.accordion input:checked + .accordion-label,
+.accordion-label {
     background-color: #f72b1c;
+}
+
+.accordion-label:hover {
+    background-color: #dc3545;
 }
 
 .contact .contactform input[type=text]:focus,
