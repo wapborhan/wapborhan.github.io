@@ -461,6 +461,22 @@ body.light hr.separator {
 }
 
 
+@media (min-width: 576px) {
+    .boxstats {
+        padding: 20px 20px !important;
+
+    }
+
+    .about .boxstats h3 {
+        font-size: 20px !important;
+    }
+
+    .about .boxstats p {
+        padding-left: 30px !important;
+    }
+}
+
+
 .sr-services {}
 
 .boxstats:hover:after {
@@ -612,7 +628,12 @@ body.light hr.separator {
     padding: 16px;
 }
 
-
+@media (min-width: 576px) {
+    .accurate-box .icon img {
+        width: 75px !important;
+        margin: 15px 0 !important;
+    }
+}
 
 .accurate-box {
     border: 1px solid #ddd;
