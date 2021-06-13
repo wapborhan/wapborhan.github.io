@@ -704,14 +704,13 @@ body.light hr.separator {
     border: 1px solid #ddd;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: #72b626;
 }
 
 .ser-box {
-    width: 270px;
-    height: 270px;
-    /*    background-color: #1c1e22;*/
+    /*    width: 270px;*/
+    height: 250px;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
     border-style: none;
@@ -721,6 +720,7 @@ body.light hr.separator {
     position: relative;
     overflow: hidden;
     border: 1px solid #ddd;
+    margin-bottom: 20px;
 }
 
 .ser-box:hover {
@@ -751,7 +751,7 @@ body.light hr.separator {
 .ser-box .ser-boxb h3 {
     color: #72b626;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     opacity: 1;
     font-weight: 700;
     transition-duration: .5s;
@@ -810,6 +810,9 @@ body.light hr.separator {
     visibility: hidden;
 }
 
+.sr-social {
+    width: 100%;
+}
 
 .sr-social a:after,
 a:before {
@@ -824,11 +827,12 @@ a:before {
     margin: 0;
     padding: 0;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .sr-social ul li {
     list-style: none;
-    margin: 0 40px;
+    margin: 40px 40px;
 }
 
 .sr-social ul li:nth-child(1) a {
@@ -898,8 +902,8 @@ a:before {
 .sr-social ul li a {
     position: relative;
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     text-align: center;
     box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
