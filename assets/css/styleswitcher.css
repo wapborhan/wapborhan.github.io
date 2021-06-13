@@ -190,8 +190,12 @@
     }
 
     #showSwitcher {
-        top: 15px;
-/*        display: none;*/
+        top: 65px;
+        /*        display: none;*/
+    }
+
+    .srheading {
+        text-align: center;
     }
 }
 
