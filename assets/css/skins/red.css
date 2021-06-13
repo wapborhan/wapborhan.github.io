@@ -30,7 +30,6 @@ body.light.contact ul.social li a:hover,
 .blog .page-item.active .page-link,
 body.light.blog .page-link:hover,
 body.light.blog .page-item.active .page-link,
-.portfolio .grid li figure div,
 .header ul.icon-menu li.icon-box.active,
 .header ul.icon-menu li.icon-box:hover,
 body.light .header ul.icon-menu li.icon-box.active,
@@ -50,6 +49,10 @@ body.light .header ul.icon-menu li.icon-box:hover,
 .nav-pills .show > .nav-link,
 .ser-box:hover {
     background-color: #f72b1c !important;
+}
+
+.portfolio .grid li figure div {
+    background-image: linear-gradient(0deg, #c90d00d4, #ff000066) !important;
 }
 
 .nav-pills .nav-link.active,

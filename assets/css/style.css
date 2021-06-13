@@ -1387,7 +1387,7 @@ a:before {
     margin: 0;
     text-transform: uppercase;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 /* Slideshow */
@@ -1474,7 +1474,7 @@ a:before {
 }
 
 .portfolio .slideshow figure {
-/*
+    /*
     width: 100%;
     height: 100%;
 */
