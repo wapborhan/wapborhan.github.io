@@ -4,6 +4,7 @@
 
 .home h1,
 .about .box-stats h3,
+.about .boxstats h3,
 .title-section h1 span,
 #menu li.active a,
 body.light #menu li.active a,
@@ -13,8 +14,11 @@ body.light #menu li.active a,
 .portfolio .slideshow figcaption h3,
 .portfolio .slideshow a,
 .portfolio .grid figure:hover figcaption,
-.blog-post .meta i{
-	color: #fa5b0f;
+.blog-post .meta i,
+.accurate-box .content h2,
+.ser-box .ser-boxb h3,
+.nav-pills .nav-link{
+	color: #fa5b0f!important;
 }
 .home .home-details h1:before,
 .about .resume-box .icon,
@@ -26,16 +30,25 @@ body.light.contact ul.social li a:hover,
 body.light.blog .page-link:hover,
 body.light.blog .page-item.active .page-link,
 .portfolio .grid li figure div,
-.header ul.icon-menu li.icon-box.active, .header ul.icon-menu li.icon-box:hover,
-body.light .header ul.icon-menu li.icon-box.active, body.light  .header ul.icon-menu li.icon-box:hover,
+.header ul.icon-menu li.icon-box.active,
+.header ul.icon-menu li.icon-box:hover,
+body.light .header ul.icon-menu li.icon-box.active,
+body.light .header ul.icon-menu li.icon-box:hover,
 .btn,
 .header .icon-box h2,
 .home .color-block,
 .title-section hr,
 .portfolio .slideshow .carousel-indicators li.active,
 .button:before,
-.button-icon{
-	background-color: #fa5b0f;
+.button-icon,
+.boxstats:hover:after,
+.accordion input:checked + .accordion-label,
+.accordion-label,
+.srheading span,
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.ser-box:hover{
+	background-color: #fa5b0f!important;
 }
 .contact .contactform input[type=text]:focus,
 .contact .contactform input[type=email]:focus,

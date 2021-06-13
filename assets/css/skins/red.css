@@ -15,8 +15,10 @@ body.light #menu li.active a,
 .portfolio .slideshow a,
 .portfolio .grid figure:hover figcaption,
 .blog-post .meta i,
-.accurate-box .content h2 {
-    color: #f72b1c;
+.accurate-box .content h2,
+.ser-box .ser-boxb h3,
+.nav-pills .nav-link {
+    color: #f72b1c !important;
 }
 
 .home .home-details h1:before,
@@ -42,8 +44,17 @@ body.light .header ul.icon-menu li.icon-box:hover,
 .button-icon,
 .boxstats:hover:after,
 .accordion input:checked + .accordion-label,
-.accordion-label {
-    background-color: #f72b1c;
+.accordion-label,
+.srheading span,
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link,
+.ser-box:hover {
+    background-color: #f72b1c !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #fff;
 }
 
 .accordion-label:hover {
