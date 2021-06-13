@@ -529,45 +529,18 @@ body.light hr.separator {
     padding-left: 40px;
 }
 
-.sr-lbl {
-    align-self: center;
+
+.bimg img {
+    width: 100%;
+}
+
+.bcontent h2 {
+    font-size: 20px;
 }
 
 
-@media (min-width: 576px) {
-    .box-sr .sr-strategy img {
-        width: 150px !important;
-    }
 
-    .box-sr .sr-strategy h2 {
-        padding: 0 20px;
-        font-size: 16px !important;
-    }
 
-}
-
-.srstrategy {
-    padding: 30px 0;
-}
-
-.box-sr .sr-strategy img {
-    width: 300px;
-    float: left;
-}
-
-.box-sr .sr-strategy h2 {
-    padding: 0 20px;
-    font-size: 23px;
-    overflow: hidden;
-}
-
-.box-sr {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 
 
