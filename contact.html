@@ -177,20 +177,20 @@
                 <!-- Left Side Ends -->
                 <!-- Contact Form Starts -->
                 <div class="col-12 col-lg-8">
-                    <form class="contactform" method="post" action="#">
+                    <form class="contactform" method="post" action="javascript:sendMail()">
                         <div class="contactform">
                             <div class="row">
                                 <div class="col-12 col-md-4">
-                                    <input type="text" name="name" placeholder="YOUR NAME">
+                                    <input type="text" name="name" id="name" placeholder="YOUR NAME">
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <input type="email" name="email" placeholder="YOUR EMAIL">
+                                    <input type="email" name="email" id="email" placeholder="YOUR EMAIL">
                                 </div>
                                 <div class="col-12 col-md-4">
-                                    <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                                    <input type="text" name="subject" id="subj" placeholder="YOUR SUBJECT">
                                 </div>
                                 <div class="col-12">
-                                    <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                                    <textarea name="message" id="msg" placeholder="YOUR MESSAGE"></textarea>
                                     <button type="submit" class="button">
                                         <span class="button-text">Send Message</span>
                                         <span class="button-icon fa fa-send"></span>
@@ -208,6 +208,31 @@
         </div>
 
     </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_qIuBmEjmTGpGsMxxSS2vI");
+        })();
+
+
+        function sendMail(params) {
+            var tempParams = {
+                from_name: document.getElementById("name").value,
+                to_name: document.getElementById("email").value,
+                to_subject: document.getElementById("subj").value,
+                message: document.getElementById("msg").value
+            }
+
+
+            emailjs.send('service_63m8qhp', 'template_a484zod', tempParams)
+                .then(function(res) {
+                    console.log("Sucess", res.status);
+                })
+        }
+
+    </script>
     <!-- Template JS Files -->
     <script src="assets/js/jquery-3.5.0.min.js"></script>
     <script src="assets/js/styleswitcher.js"></script>
@@ -221,6 +246,8 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/custom.js"></script>
+
+
 
 </body>
 
