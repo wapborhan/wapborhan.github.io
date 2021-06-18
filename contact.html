@@ -228,9 +228,10 @@
 
             emailjs.send('service_63m8qhp', 'template_a484zod', tempParams)
                 .then(function(res) {
-                    console.log("Sucess", res.status);
-                })
-        }
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
 
     </script>
     <!-- Template JS Files -->
