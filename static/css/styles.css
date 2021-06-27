@@ -28,6 +28,8 @@ Table of contents
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900');
 
 
+
+
 /*---------------------------------
   01. Common
 -----------------------------------*/
@@ -43,6 +45,11 @@ body {
 img {
     max-width: 100%;
 }
+
+button:focus {
+    outline: 0;
+}
+
 
 .full-screen {
     min-height: 100vh;
@@ -609,15 +616,16 @@ body.dark-body {
 }
 
 .home-banner .social-icons a {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: #111;
     display: block;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     color: #fff;
     border-radius: 50%;
-    font-size: 12px;
+    font-size: 20px;
+    margin-top: 5px;
 }
 
 @media(max-width: 991px) {
@@ -645,7 +653,7 @@ body.dark-body {
 
 @media(max-width: 767px) {
     .home-text {
-        padding: 10px 10px 60px;
+        padding: 10px 10px 100px;
     }
 
     .home-banner .social-icons {
