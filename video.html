@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Do not name the function "play()"
+        function playVideo() {
+            var video = document.getElementById('video');
+            video.play();
+            video.addEventListener('ended', function() {
+                window.location = 'http://www.google.com';
+            });
+        }
+
+    </script>
+    <video controls id="video" width="500" height="400" onclick="playVideo()">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+    </video>
+
+
+
+</body>
+
+</html>
