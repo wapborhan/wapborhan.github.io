@@ -11,58 +11,132 @@
             padding: 200px 0;
         }
 
-        .main-video {
+        .mainvid {
             position: relative;
         }
 
-        .play-button-wrapper {
+        .video:hover .wrapper {
+            opacity: 1;
+            transition: all linear 0.3s;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .wrapper {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all linear 0.3s;
+        }
+
+        .wrapper .circle {
+            width: 70px;
+            height: 70px;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: auto;
-            pointer-events: none;
-        }
-
-        .play-button-wrapper #circle-play-b {
-            cursor: pointer;
-            pointer-events: auto;
-        }
-
-        .play-button-wrapper #circle-play-b svg {
-            width: 100px;
-            height: 100px;
-            fill: #fff;
-            stroke: #fff;
-            cursor: pointer;
-            background-color: rgba(0, 0, 0, 0.2);
             border-radius: 50%;
-            opacity: 0.9;
+            background-color: #ff0a0a;
+            margin: auto;
+            transform: scale(1, 1);
+        }
+
+        .wrapper .circle.pulse {
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+            -webkit-animation: pulse 2s infinite;
+            animation: pulse 2s infinite;
+            background-color: #99e699;
+        }
+
+        .wrapper svg {
+            fill: #279b27;
+            stroke: #279b27;
+            stroke-linejoin: round;
+            stroke-width: 5;
+            transition: all 0.3s;
+        }
+
+        .wrapper svg:hover {
+            cursor: pointer;
+            fill: #228722;
+            stroke: #228722;
+            transform: scale(1.2, 1.2);
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            25% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.2, 1.2);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            25% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.2, 1.2);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
         }
 
         button#vidbutton {
             z-index: 999;
         }
+
     </style>
 </head>
 
 <body>
 
-
     <div style="text-align:center">
-        <button id="vidbutton">Play</button>
-        <br><br>
-        <video id="video" width="420">
+        <div class="mainvid">
+            <div class="video">
+                <video id="video" width="820">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
 
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-            Your browser does not support HTML5 video.
+                </video>
+                <div class="wrapper">
+                    <div class="circle pulse"></div>
+                    <div id="vidbutton" class="circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 100 100">
+                            <polygon points="40,30 65,50 40,70"></polygon>
+                        </svg>
+                    </div>
+                </div>
+            </div>
 
-        </video>
+        </div>
 
     </div>
     <script>
@@ -73,7 +147,7 @@
         function playPause() {
             if (myVideo.paused) {
                 myVideo.play();
-                ppbutton.innerHTML = "Pause";
+                //  ppbutton.innerHTML = "Pause";
 
                 var video = document.getElementById('video');
                 video.play();
@@ -82,9 +156,10 @@
                 });
             } else {
                 myVideo.pause();
-                ppbutton.innerHTML = "Play";
+                //  ppbutton.innerHTML = "Play";
             }
         }
+
     </script>
 
 
@@ -111,4 +186,6 @@
     </script>
 
 -->
-</body></html>
+</body>
+
+</html>
