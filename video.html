@@ -16,6 +16,10 @@
 
 <body>
     <script type="text/javascript">
+        var vids = $("video");
+        $.each(vids, function() {
+            this.controls = false;
+        });
         // Do not name the function "play()"
         function playVideo() {
             var video = document.getElementById('video');
@@ -26,7 +30,7 @@
         }
 
     </script>
-    <video controls id="video" width="400" height="300" onclick="playVideo()">
+    <video id="video" width="370" height="200" onclick="playVideo()" controls="false">
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
     </video>
 
