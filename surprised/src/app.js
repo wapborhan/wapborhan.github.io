@@ -12,7 +12,7 @@ $(function () {
 
 // Redirect
 function DelayRedirect() {
-    var seconds = 5;
+    var seconds = 10;
     var dvCountDown = document.getElementById("dvCountDown");
     var lblCount = document.getElementById("lblCount");
     dvCountDown.style.display = "block";
