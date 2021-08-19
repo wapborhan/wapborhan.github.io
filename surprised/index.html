@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="envelope new">
+        <div class="front">
+            <div class="mail">
+                <p>Hi Dear</p>
+                <p>You Have a Surprised</p>
+                <p>Click Here to Open</p>
+            </div>
+        </div>
+        <div class="back">
+            <div class="letter">
+                <p>I hope you are a very excited </p>
+                <div class="btnsr">
+                    <input type="button" value="Redirect" onclick="DelayRedirect()" />
+                    <br /> <br /> <br />
+                    <div id="dvCountDown" style="display:none">
+                        You will be redirected after <span id="lblCount"></span>&nbsp;seconds.
+                    </div>
+                </div>
+
+            </div>
+            <div class="flip left-flip"></div>
+            <div class="flip right-flip"></div>
+            <div class="flip bottom-flip"></div>
+            <div class="flip top-flip"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.spritely/0.6.5/jquery.spritely.min.js"></script>
+    <script src="src/app.js"></script>
+</body></html>
