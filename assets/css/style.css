@@ -12360,6 +12360,11 @@ body.template-color-1 {
     transition: all 0.5s ease-out;
 }
 
+.sr-hd {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 @media only screen and (max-width: 479px) {
     .popup-mobile-menu .inner {
         width: 310px;
@@ -13986,7 +13991,7 @@ figcaption {
 
 @media only screen and (max-width: 479px) {
     .slide.slider-style-3 .slider-wrapper {
-        padding-top: 126px;
+        padding-top: 100px;
         padding-bottom: 16px;
     }
 }
@@ -14017,10 +14022,20 @@ figcaption {
     border-radius: 10px 10px 0 0;
 }
 
+.sr-user {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
 @media only screen and (max-width: 479px) {
     .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top {
         padding: 25px;
         padding-top: 41px;
+    }
+
+    .slider-style-3 .cd-headline .cd-words-wrapper b {
+        font-size: 25px;
     }
 }
 
@@ -14034,6 +14049,7 @@ figcaption {
     width: 40px;
     height: 40px;
     margin-bottom: 20px;
+    align-self: center;
 }
 
 .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header .user svg {
@@ -14095,6 +14111,25 @@ figcaption {
         font-size: 32px;
         line-height: 40px;
     }
+
+    .rn-right-demo {
+        display: none;
+    }
+
+    .white-version .backto-top > div {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 999;
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+    }
+
+    a.rn-btn {
+        padding: 15px 15px;
+    }
 }
 
 .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header .title span {
@@ -14152,7 +14187,7 @@ figcaption {
 
 @media only screen and (max-width: 479px) {
     .slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom .button-wrapper {
-        display: block !important;
+        display: inline-block;
     }
 }
 
@@ -15451,15 +15486,17 @@ div#featured-project-carousel {
     }
 }
 
+
+
 .rn-nav-list .nav-item {
-    flex-basis: 25%;
+    flex-basis: 50%;
     text-align: center;
     margin-top: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .rn-nav-list .nav-item {
-        flex-basis: 25%;
+        flex-basis: 50%;
     }
 }
 
@@ -15477,7 +15514,7 @@ div#featured-project-carousel {
 
 @media only screen and (max-width: 479px) {
     .rn-nav-list .nav-item {
-        flex-basis: 100%;
+        flex-basis: 50%;
     }
 }
 
@@ -15512,7 +15549,7 @@ div#featured-project-carousel {
 
 @media only screen and (max-width: 767px) {
     .rn-nav-list .nav-item .nav-link {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
