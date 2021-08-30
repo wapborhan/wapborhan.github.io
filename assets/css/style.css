@@ -14373,6 +14373,55 @@ figcaption {
     height: 100%;
 }
 
+@media only screen and (max-width: 479px) {
+    .havatar .image {
+        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: morph 8s ease-in-out infinite 1s;
+        background-blend-mode: multiply;
+        -webkit-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+        -moz-box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3);
+        box-shadow: inset 0 0 0 9px rgba(255, 255, 255, .3)
+    }
+}
+
+.havatar:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 120%;
+    width: 120%;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: 50%;
+    z-index: -1;
+    animation: animatedgradient 2s ease alternate infinite;
+    background-size: 300% 300%;
+    transform: translate(-50%, -50%);
+    --borderWidth: 3px;
+    background: transparent;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+    }
+}
+
 .slide.slider-style-3 .slider-wrapper .background-image-area .thumbnail-image img {
     width: 100%;
     height: 100%;
