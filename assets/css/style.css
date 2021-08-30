@@ -14295,6 +14295,10 @@ figcaption {
     margin-bottom: 13px;
 }
 
+.slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-footer .info span a {
+    color: var(--color-primary);
+}
+
 .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-footer .info svg {
     color: var(--color-primary);
     margin-right: 10px;
@@ -15723,6 +15727,28 @@ div#featured-project-carousel {
     font-weight: 700;
     line-height: 62px;
     color: var(--color-lightn);
+}
+
+.content.pd-t {
+    padding-top: 105px;
+}
+
+@media only screen and (max-width: 479px) {
+    .content.pd-t {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .content.pd-t {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .content.pd-t {
+        padding-top: 0;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -19147,6 +19173,11 @@ div#featured-project-carousel {
     display: inline-block;
 }
 
+.rn-blog {
+    position: relative;
+    padding: 60px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     .rn-portfolio,
@@ -19647,6 +19678,13 @@ div#featured-project-carousel {
     font-size: 16px;
     line-height: 28px;
     color: var(--color-lightn);
+    margin-bottom: 30px;
+}
+
+.portfolio-single .inner p.discriptions {
+    font-size: 20px;
+    line-height: 28px;
+    /*    color: var(--color-lightn);*/
     margin-bottom: 30px;
 }
 
