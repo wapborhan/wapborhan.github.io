@@ -22,7 +22,7 @@ function DelayRedirect() {
         lblCount.innerHTML = seconds;
         if (seconds == 0) {
             dvCountDown.style.display = "none";
-            window.location = "card.html";
+            window.location = "birthday_wish.html";
         }
     }, 1000);
 }

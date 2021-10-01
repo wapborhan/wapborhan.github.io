@@ -88,6 +88,7 @@ body {
     line-height: 20px;
     letter-spacing: 2px;
     color: #ff969f;
+    margin-left: 80px;
 }
 
 .envelope .front .mail p:first-child {
@@ -549,6 +550,7 @@ input {
     left: 50%;
     top: 50px;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 input:hover {
