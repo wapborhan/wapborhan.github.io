@@ -458,6 +458,14 @@ var {
     font-family: "Poppins", sans-serif;
 }
 
+.circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    position: absolute;
+    border-radius: 15px;
+}
+
 /*---------------------------
 	List Style 
 ---------------------------*/
