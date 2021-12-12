@@ -13124,6 +13124,45 @@ a.btn.card-btn:hover {
     color: #fff;
 }
 
+.rn-portfolio .inner .content .tags span {
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff
+}
+
+.rn-portfolio .inner .content .tags span.html {
+    background: #ff5722;
+}
+
+.rn-portfolio .inner .content .tags span.css {
+    background: #2257ea;
+}
+
+.rn-portfolio .inner .content .tags span.javascript {
+    background: #dab92d;
+}
+
+.rn-portfolio .inner .content .tags span.react {
+    background: #53e1fc;
+}
+
+.rn-portfolio .inner .content .tags span.vue {
+    background: #41b883;
+}
+
+.rn-portfolio .inner .content .tags span.typescript {
+    background: #2d79c7;
+}
+
+.rn-portfolio .inner .content .tags span.angular {
+    background: #a70a05;
+}
+
+.rn-portfolio:hover {
+    background: linear-gradient(145deg, #ffffff, #e2e8ec) !important;
+}
+
 /**/
 
 
