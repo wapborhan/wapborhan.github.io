@@ -13106,6 +13106,23 @@ a:before {
     border-radius: 10px;
 }
 
+a.btn.card-btn {
+    font-size: 20px;
+    background: var(--gradient-box-w);
+    -webkit-box-shadow: var(--shadow-white-3);
+    box-shadow: var(--shadow-white-3);
+    margin-left: 10px;
+    border-radius: 10px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+a.btn.card-btn:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    background: var(--color-primary);
+    color: #fff;
+}
 
 /**/
 
@@ -20252,6 +20269,7 @@ div#featured-project-carousel {
     font-size: 23px;
     line-height: 34px;
     display: inline-block;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 479px) {
