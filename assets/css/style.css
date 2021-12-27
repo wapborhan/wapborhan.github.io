@@ -13162,7 +13162,9 @@ a.btn.card-btn:hover {
 .rn-portfolio:hover {
     background: linear-gradient(145deg, #ffffff, #e2e8ec) !important;
 }
-
+.rn-portfolio .inner .thumbnail {
+    cursor: pointer;
+}
 /**/
 
 
