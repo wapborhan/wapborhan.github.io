@@ -13198,6 +13198,17 @@
     }
 
 
+    .tooltip-inner {
+        max-width: 350px;
+        padding: 0.25rem 0.5rem;
+        color: #fff;
+        text-align: center;
+        background-color: #000;
+        border-radius: 0.25rem;
+
+        opacity: 99;
+    }
+
 
 
     .rn-portfolio:hover {

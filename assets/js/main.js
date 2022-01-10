@@ -525,4 +525,6 @@ for (var i = 0; i < jlen; i++) {
   jsLink.setAttribute("target", "_blank");
 }
 
-source;
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
