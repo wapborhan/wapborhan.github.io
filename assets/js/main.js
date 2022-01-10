@@ -478,3 +478,51 @@
 //             circle.style.borderWidth = '5px';
 //             circle.style.opacity = 0;
 //         }
+
+//attribute add
+let source = document.getElementsByClassName("source");
+let sourcel = source.length;
+for (var i = 0; i < sourcel; i++) {
+  sourceLink = source[i];
+  sourceLink.setAttribute("target", "_blank");
+  sourceLink.classList.add("w-100", "btn", "btn-success");
+  sourceLink.style.textDecoration = "none";
+  sourceLink.style.textTransform = "uppercase";
+}
+
+let live = document.getElementsByClassName("live");
+let livel = live.length;
+for (var i = 0; i < livel; i++) {
+  liveLink = live[i];
+  liveLink.setAttribute("target", "_blank");
+  liveLink.classList.add("w-100", "btn", "btn-info");
+  liveLink.style.textDecoration = "none";
+  liveLink.style.textTransform = "uppercase";
+}
+
+//Add Anchor
+let html = document.getElementsByClassName("html");
+let hlen = html.length;
+for (var i = 0; i < hlen; i++) {
+  htmlLink = html[i];
+  htmlLink.setAttribute("href", "https://html.com/");
+  htmlLink.setAttribute("target", "_blank");
+}
+
+let css = document.getElementsByClassName("css");
+let clen = css.length;
+for (var i = 0; i < clen; i++) {
+  cssLink = css[i];
+  cssLink.setAttribute("href", "https://en.wikipedia.org/wiki/CSS");
+  cssLink.setAttribute("target", "_blank");
+}
+
+let js = document.getElementsByClassName("javascript");
+let jlen = css.length;
+for (var i = 0; i < jlen; i++) {
+  jsLink = js[i];
+  jsLink.setAttribute("href", "https://www.javascript.com/");
+  jsLink.setAttribute("target", "_blank");
+}
+
+source;
