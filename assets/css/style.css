@@ -20489,8 +20489,8 @@
     .backto-top svg {
         font-size: 14px !important;
         color: var(--color-light);
-        width: 27px;
-        height: 27px;
+        width: 50px;
+        height: 50px;
         position: relative;
         z-index: 1;
     }
@@ -22369,8 +22369,17 @@
 
     .white-version .backto-top > div:hover svg {
         color: var(--color-white);
-    }
 
+    }.white-version .backto-top > div:hover .progress svg.progress-circle path {
+        stroke: rgb(255, 255, 255);
+        stroke-width: 8;
+        color: var(--color-white);
+
+    }
+    .white-version .backto-top > div:hover .progress::after{
+        color: var(--color-white);
+    }
+    
     .white-version .rn-resume-area .rn-nav-list {
         background: var(--gradient-box-w);
         -webkit-box-shadow: var(--shadow-white-3);
@@ -23107,6 +23116,7 @@
 
     .white-version .backto-top > div:hover svg {
         color: var(--color-white);
+      
     }
 
     .white-version .backto-top svg {
