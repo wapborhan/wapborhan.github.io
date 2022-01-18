@@ -23123,6 +23123,45 @@
         color: #282a2f;
     }
 
+
+    .progress {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: var(--gradient-box-w);
+        -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+        box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+        position: relative;
+      }
+  
+      .progress svg path {
+        fill: none;
+      }
+  
+      .progress svg.progress-circle path {
+        stroke: rgba(255, 0, 0, 0.55);
+        stroke-width: 8;
+      }
+  
+      .progress::after {
+        position: absolute;
+        content: "\e914";
+        font-family: 'feather' !important;
+        text-align: center;
+        line-height: 50px;
+        font-size: 24px;
+        color: rgba(255, 0, 0, 0.55);
+        left: 0;
+        top: 0;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        display: block;
+        z-index: 1;
+        -webkit-transition: all 200ms linear;
+        transition: all 200ms linear;
+      }
+
     .white-version .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top {
         background: var(--gradient-box-w);
         -webkit-box-shadow: var(--shadow-white-3);
