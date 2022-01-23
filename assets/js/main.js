@@ -478,7 +478,7 @@
 //             circle.style.borderWidth = '5px';
 //             circle.style.opacity = 0;
 //
-         }
+
 //hide table th
 let trAll = document.querySelectorAll("tr th:nth-child(1)");
 let trAlll = trAll.length;
