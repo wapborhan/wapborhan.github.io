@@ -477,7 +477,23 @@
 //             circle.style.height = '50px';
 //             circle.style.borderWidth = '5px';
 //             circle.style.opacity = 0;
-//         }
+//
+         }
+//hide table th
+let trAll = document.querySelectorAll("tr th:nth-child(1)");
+let trAlll = trAll.length;
+for (var i = 0; i < trAlll; i++) {
+  trAllLink = trAll[i];
+  trAllLink.setAttribute("class", "mobile-hide");
+}
+//hide table td
+let tdAll = document.getElementsByClassName("tags");
+// console.log(tdAll);
+let tdAlll = tdAll.length;
+for (var i = 0; i < tdAlll; i++) {
+  tdAllLink = tdAll[i];
+  tdAllLink.classList.add("mobile-hide");
+}
 
 //attribute add
 let source = document.getElementsByClassName("source");

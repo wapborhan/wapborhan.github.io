@@ -506,7 +506,7 @@
         top: 10px;
     }
 
-    ul.liststyle.bullet li + li {
+    ul.liststyle.bullet li+li {
         margin-top: 8px;
     }
 
@@ -6258,8 +6258,8 @@
         list-style-image: none;
     }
 
-    li > ul,
-    li > ol {
+    li>ul,
+    li>ol {
         margin: 0;
     }
 
@@ -6880,8 +6880,8 @@
         position: absolute;
     }
 
-    input[type=checkbox] ~ label,
-    input[type=radio] ~ label {
+    input[type=checkbox]~label,
+    input[type=radio]~label {
         position: relative;
         font-size: 12px;
         line-height: 17px;
@@ -6891,8 +6891,8 @@
         cursor: pointer;
     }
 
-    input[type=checkbox] ~ label::before,
-    input[type=radio] ~ label::before {
+    input[type=checkbox]~label::before,
+    input[type=radio]~label::before {
         content: " ";
         position: absolute;
         top: 2px;
@@ -6906,8 +6906,8 @@
         transition: all 0.3s;
     }
 
-    input[type=checkbox] ~ label::after,
-    input[type=radio] ~ label::after {
+    input[type=checkbox]~label::after,
+    input[type=radio]~label::after {
         content: " ";
         position: absolute;
         top: 5px;
@@ -6925,22 +6925,22 @@
         transition: all 0.3s;
     }
 
-    input[type=checkbox]:checked ~ label::before,
-    input[type=radio]:checked ~ label::before {
+    input[type=checkbox]:checked~label::before,
+    input[type=radio]:checked~label::before {
         background-color: var(--color-primary);
         border: var(--border-width) solid var(--color-primary);
     }
 
-    input[type=checkbox]:checked ~ label::after,
-    input[type=radio]:checked ~ label::after {
+    input[type=checkbox]:checked~label::after,
+    input[type=radio]:checked~label::after {
         opacity: 1;
     }
 
-    input[type=radio] ~ label::before {
+    input[type=radio]~label::before {
         border-radius: 50%;
     }
 
-    input[type=radio] ~ label::after {
+    input[type=radio]~label::after {
         width: 8px;
         height: 8px;
         left: 3px;
@@ -7260,7 +7260,7 @@
         margin-right: 0px;
     }
 
-    .row--0 > [class*=col] {
+    .row--0>[class*=col] {
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -7270,7 +7270,7 @@
         margin-right: -5px;
     }
 
-    .row--5 > [class*=col] {
+    .row--5>[class*=col] {
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -7280,7 +7280,7 @@
         margin-right: -10px;
     }
 
-    .row--10 > [class*=col] {
+    .row--10>[class*=col] {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -7318,16 +7318,16 @@
         }
     }
 
-    .row--20 > [class*=col],
-    .row--20 > [class*=col-] {
+    .row--20>[class*=col],
+    .row--20>[class*=col-] {
         padding-left: 20px;
         padding-right: 20px;
     }
 
     @media only screen and (min-width: 1200px) and (max-width: 1599px) {
 
-        .row--20 > [class*=col],
-        .row--20 > [class*=col-] {
+        .row--20>[class*=col],
+        .row--20>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7335,8 +7335,8 @@
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-        .row--20 > [class*=col],
-        .row--20 > [class*=col-] {
+        .row--20>[class*=col],
+        .row--20>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7344,8 +7344,8 @@
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-        .row--20 > [class*=col],
-        .row--20 > [class*=col-] {
+        .row--20>[class*=col],
+        .row--20>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7353,8 +7353,8 @@
 
     @media only screen and (max-width: 767px) {
 
-        .row--20 > [class*=col],
-        .row--20 > [class*=col-] {
+        .row--20>[class*=col],
+        .row--20>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7393,16 +7393,16 @@
         }
     }
 
-    .row--25 > [class*=col],
-    .row--25 > [class*=col-] {
+    .row--25>[class*=col],
+    .row--25>[class*=col-] {
         padding-left: 25px;
         padding-right: 25px;
     }
 
     @media only screen and (min-width: 1200px) and (max-width: 1599px) {
 
-        .row--25 > [class*=col],
-        .row--25 > [class*=col-] {
+        .row--25>[class*=col],
+        .row--25>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7410,8 +7410,8 @@
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-        .row--25 > [class*=col],
-        .row--25 > [class*=col-] {
+        .row--25>[class*=col],
+        .row--25>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7419,8 +7419,8 @@
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-        .row--25 > [class*=col],
-        .row--25 > [class*=col-] {
+        .row--25>[class*=col],
+        .row--25>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7428,8 +7428,8 @@
 
     @media only screen and (max-width: 767px) {
 
-        .row--25 > [class*=col],
-        .row--25 > [class*=col-] {
+        .row--25>[class*=col],
+        .row--25>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7468,16 +7468,16 @@
         }
     }
 
-    .row--30 > [class*=col],
-    .row--30 > [class*=col-] {
+    .row--30>[class*=col],
+    .row--30>[class*=col-] {
         padding-left: 30px;
         padding-right: 30px;
     }
 
     @media only screen and (min-width: 1200px) and (max-width: 1599px) {
 
-        .row--30 > [class*=col],
-        .row--30 > [class*=col-] {
+        .row--30>[class*=col],
+        .row--30>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7485,8 +7485,8 @@
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-        .row--30 > [class*=col],
-        .row--30 > [class*=col-] {
+        .row--30>[class*=col],
+        .row--30>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7494,8 +7494,8 @@
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-        .row--30 > [class*=col],
-        .row--30 > [class*=col-] {
+        .row--30>[class*=col],
+        .row--30>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7503,8 +7503,8 @@
 
     @media only screen and (max-width: 767px) {
 
-        .row--30 > [class*=col],
-        .row--30 > [class*=col-] {
+        .row--30>[class*=col],
+        .row--30>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7543,16 +7543,16 @@
         }
     }
 
-    .row--45 > [class*=col],
-    .row--45 > [class*=col-] {
+    .row--45>[class*=col],
+    .row--45>[class*=col-] {
         padding-left: 45px;
         padding-right: 45px;
     }
 
     @media only screen and (min-width: 1200px) and (max-width: 1599px) {
 
-        .row--45 > [class*=col],
-        .row--45 > [class*=col-] {
+        .row--45>[class*=col],
+        .row--45>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7560,8 +7560,8 @@
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-        .row--45 > [class*=col],
-        .row--45 > [class*=col-] {
+        .row--45>[class*=col],
+        .row--45>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7569,8 +7569,8 @@
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-        .row--45 > [class*=col],
-        .row--45 > [class*=col-] {
+        .row--45>[class*=col],
+        .row--45>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7578,8 +7578,8 @@
 
     @media only screen and (max-width: 767px) {
 
-        .row--45 > [class*=col],
-        .row--45 > [class*=col-] {
+        .row--45>[class*=col],
+        .row--45>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7618,16 +7618,16 @@
         }
     }
 
-    .row--40 > [class*=col],
-    .row--40 > [class*=col-] {
+    .row--40>[class*=col],
+    .row--40>[class*=col-] {
         padding-left: 40px;
         padding-right: 40px;
     }
 
     @media only screen and (min-width: 1200px) and (max-width: 1599px) {
 
-        .row--40 > [class*=col],
-        .row--40 > [class*=col-] {
+        .row--40>[class*=col],
+        .row--40>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7635,8 +7635,8 @@
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-        .row--40 > [class*=col],
-        .row--40 > [class*=col-] {
+        .row--40>[class*=col],
+        .row--40>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7644,8 +7644,8 @@
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-        .row--40 > [class*=col],
-        .row--40 > [class*=col-] {
+        .row--40>[class*=col],
+        .row--40>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7653,8 +7653,8 @@
 
     @media only screen and (max-width: 767px) {
 
-        .row--40 > [class*=col],
-        .row--40 > [class*=col-] {
+        .row--40>[class*=col],
+        .row--40>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7693,16 +7693,16 @@
         }
     }
 
-    .row--60 > [class*=col],
-    .row--60 > [class*=col-] {
+    .row--60>[class*=col],
+    .row--60>[class*=col-] {
         padding-left: 60px;
         padding-right: 60px;
     }
 
     @media only screen and (min-width: 1200px) and (max-width: 1599px) {
 
-        .row--60 > [class*=col],
-        .row--60 > [class*=col-] {
+        .row--60>[class*=col],
+        .row--60>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7710,8 +7710,8 @@
 
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
-        .row--60 > [class*=col],
-        .row--60 > [class*=col-] {
+        .row--60>[class*=col],
+        .row--60>[class*=col-] {
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -7719,8 +7719,8 @@
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-        .row--60 > [class*=col],
-        .row--60 > [class*=col-] {
+        .row--60>[class*=col],
+        .row--60>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7728,8 +7728,8 @@
 
     @media only screen and (max-width: 767px) {
 
-        .row--60 > [class*=col],
-        .row--60 > [class*=col-] {
+        .row--60>[class*=col],
+        .row--60>[class*=col-] {
             padding-left: 15px !important;
             padding-right: 15px !important;
         }
@@ -7772,12 +7772,12 @@
         z-index: 2;
     }
 
-    [data-overlay] > div,
-    [data-overlay] > *,
-    [data-black-overlay] > div,
-    [data-black-overlay] > *,
-    [data-white-overlay] > div,
-    [data-white-overlay] > * {
+    [data-overlay]>div,
+    [data-overlay]>*,
+    [data-black-overlay]>div,
+    [data-black-overlay]>*,
+    [data-white-overlay]>div,
+    [data-white-overlay]>* {
         position: relative;
         z-index: 2;
     }
@@ -8200,7 +8200,7 @@
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
     }
 
-    .box-wrapper .backto-top > div {
+    .box-wrapper .backto-top>div {
         bottom: 45px;
         right: 45px;
     }
@@ -11969,7 +11969,7 @@
     }
 
     .nav-pills .nav-link.active,
-    .nav-pills .show > .nav-link {
+    .nav-pills .show>.nav-link {
         color: #fff;
         background-color: transparent;
         position: relative;
@@ -13106,6 +13106,20 @@
         border-radius: 10px;
     }
 
+
+    @media only screen and (max-width: 575px) {
+        .sr-content .sect-main {
+
+            padding: 20px 0;
+        }
+        .table .thead-dark th {
+            font-size: 12px;
+        }
+        .mobile-hide{
+            display: none;
+        }
+    }
+
     a.btn.card-btn {
         font-size: 20px;
         background: var(--gradient-box-w);
@@ -13193,6 +13207,7 @@
     .tags a.typescript {
         background: #2d79c7;
     }
+
     .tags a.angular {
         background: #a70a05;
     }
@@ -13214,9 +13229,11 @@
     .rn-portfolio:hover {
         background: linear-gradient(145deg, #ffffff, #e2e8ec) !important;
     }
+
     .rn-portfolio .inner .thumbnail {
         cursor: pointer;
     }
+
     /**/
 
 
@@ -14784,7 +14801,7 @@
             display: none;
         }
 
-        .white-version .backto-top > div {
+        .white-version .backto-top>div {
             position: fixed;
             bottom: 15px;
             right: 15px;
@@ -14845,7 +14862,7 @@
         }
     }
 
-    .slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom > span {
+    .slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom>span {
         color: var(--color-lightn);
         font-size: 16px;
     }
@@ -15962,14 +15979,14 @@
         opacity: 1;
     }
 
-    .rn-service .inner > * {
+    .rn-service .inner>* {
         -webkit-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
         transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
         -webkit-transform: translateY(20px);
         transform: translateY(20px);
     }
 
-    .rn-service:hover .inner > * {
+    .rn-service:hover .inner>* {
         -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
@@ -16990,7 +17007,7 @@
         overflow: hidden;
     }
 
-    .progress-charts + .progress-charts {
+    .progress-charts+.progress-charts {
         margin-top: 30px;
     }
 
@@ -20443,7 +20460,7 @@
         }
     }
 
-    .backto-top > div {
+    .backto-top>div {
         position: fixed;
         bottom: 50px;
         right: 30px;
@@ -20461,16 +20478,16 @@
     }
 
     @media only screen and (max-width: 575px) {
-        .backto-top > div {
+        .backto-top>div {
             bottom: 30px;
         }
     }
 
-    .backto-top > div:hover::after {
+    .backto-top>div:hover::after {
         opacity: 1;
     }
 
-    .backto-top > div::after {
+    .backto-top>div::after {
         content: "";
         position: absolute;
         -webkit-transition: var(--transition);
@@ -22351,35 +22368,38 @@
         border: 2px solid var(--color-primary);
     }
 
-    .white-version .backto-top > div {
+    .white-version .backto-top>div {
         background-color: var(--color-white);
         -webkit-box-shadow: var(--shadow-white-3);
         box-shadow: var(--shadow-white-3);
     }
 
-    .white-version .backto-top > div svg {
+    .white-version .backto-top>div svg {
         color: var(--color-primary);
     }
 
-    .white-version .backto-top > div::after {
+    .white-version .backto-top>div::after {
         -webkit-transition: var(--transition);
         transition: var(--transition);
         background: var(--gradient-red-hover);
     }
 
-    .white-version .backto-top > div:hover svg {
+    .white-version .backto-top>div:hover svg {
         color: var(--color-white);
 
-    }.white-version .backto-top > div:hover .progress svg.progress-circle path {
+    }
+
+    .white-version .backto-top>div:hover .progress svg.progress-circle path {
         stroke: rgb(255, 255, 255);
         stroke-width: 8;
         color: var(--color-white);
 
     }
-    .white-version .backto-top > div:hover .progress::after{
+
+    .white-version .backto-top>div:hover .progress::after {
         color: var(--color-white);
     }
-    
+
     .white-version .rn-resume-area .rn-nav-list {
         background: var(--gradient-box-w);
         -webkit-box-shadow: var(--shadow-white-3);
@@ -23093,7 +23113,7 @@
         color: var(--color-white);
     }
 
-    .white-version .backto-top > div {
+    .white-version .backto-top>div {
         position: fixed;
         bottom: 30px;
         right: 30px;
@@ -23110,13 +23130,13 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .white-version .backto-top > div::after {
+    .white-version .backto-top>div::after {
         background: var(--gradient-red-hover);
     }
 
-    .white-version .backto-top > div:hover svg {
+    .white-version .backto-top>div:hover svg {
         color: var(--color-white);
-      
+
     }
 
     .white-version .backto-top svg {
@@ -23132,18 +23152,18 @@
         -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 10%);
         box-shadow: 0 0 10px rgb(0 0 0 / 10%);
         position: relative;
-      }
-  
-      .progress svg path {
+    }
+
+    .progress svg path {
         fill: none;
-      }
-  
-      .progress svg.progress-circle path {
+    }
+
+    .progress svg.progress-circle path {
         stroke: rgba(255, 0, 0, 0.55);
         stroke-width: 8;
-      }
-  
-      .progress::after {
+    }
+
+    .progress::after {
         position: absolute;
         content: "\e914";
         font-family: 'feather' !important;
@@ -23160,7 +23180,7 @@
         z-index: 1;
         -webkit-transition: all 200ms linear;
         transition: all 200ms linear;
-      }
+    }
 
     .white-version .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top {
         background: var(--gradient-box-w);
@@ -23230,7 +23250,7 @@
 
     .white-version .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-header p.disc,
     .white-version .slide.slider-style-3 .slider-wrapper .slider-info .user-info-top .user-info-footer .info span,
-    .white-version .slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom > span,
+    .white-version .slide.slider-style-3 .slider-wrapper .slider-info .user-info-bottom>span,
     .white-version .footer-area .description a {
         color: var(--color-body-white);
     }
