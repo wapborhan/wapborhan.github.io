@@ -20174,7 +20174,7 @@
   margin: 0;
  }
 .txt-success{
-  color: #00cf5d;
+  color: var(--color-primary);
   font-weight: 400;
 }
  .rn-portfolio-area .catt-title .text-right {
