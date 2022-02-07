@@ -13041,6 +13041,9 @@
  .rn-portfolio .inner .content .tags span.angular {
    background: #a70a05;
  }
+ .rn-portfolio .inner .content .tags span.php {
+  background: #474A8A;
+}
 
  .tags a {
    font-size: 10px;
