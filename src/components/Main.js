@@ -12,10 +12,7 @@ export default function Main() {
       <div className=" d-flex justify-content-around">
         <h2>Visit Our Old Site to</h2>
         <h2>
-          <a
-            href="http://code.wapborhan.com/html"
-            className="btn btn-warning ms-2"
-          >
+          <a href="https://wapborhan.com/old/" className="btn btn-warning ms-2">
             {" "}
             Here
           </a>
