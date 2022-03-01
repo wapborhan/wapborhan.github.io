@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../logo.png";
 
-export default function Main() {
+export default function CoomingSoon() {
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
