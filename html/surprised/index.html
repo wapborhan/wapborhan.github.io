@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Surprise By Borhan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Surprise By Borhan">
+    <meta property="og:image" content="img/screenshoot.jpg">
+    <meta name="twitter:image" content="img/screenshoot.jpg">
+    <meta property="og:image:width" content="700" />
+    <meta property="og:image:height" content="400" />
+    <meta name="Developer" content="Borhan Uddin" />
+    <meta name="description" content="Dear Zihad There is a small surprise for you." />
+    <meta property="og:url" content="https://wapborhan.com" />
+    <meta property="og:type" content="WEBSITE" />
+    <meta property="og:title" content="Surprise By Borhan" />
+    <meta property="og:description" content="Zihad There is a small surprise for you." />
+    <meta property="og:site_name" content="WapBorhan" />
+    <meta name="twitter:title" content="Surprise By Borhan">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Zihad There is a small surprise for you.">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="envelope new">
+        <div class="front">
+            <div class="mail">
+                <p>Hi Dear</p>
+                <p>You Have a Surprise</p>
+                <p>Click Here to Open</p>
+            </div>
+        </div>
+        <div class="back">
+            <div class="letter">
+                <p>I hope you are a very excited </p>
+                <div class="btnsr">
+                    <input type="button" value="Click Here" onclick="DelayRedirect()" />
+                    <br /> <br /> <br />
+                    <div id="dvCountDown" style="display:none;text-align: center">
+                        Wait <span id="lblCount"></span>&nbsp;seconds for the surprise.
+                    </div>
+                </div>
+
+            </div>
+            <div class="flip left-flip"></div>
+            <div class="flip right-flip"></div>
+            <div class="flip bottom-flip"></div>
+            <div class="flip top-flip"></div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.spritely/0.6.5/jquery.spritely.min.js"></script>
+    <script src="src/app.js"></script>
+</body>
+
+</html>
