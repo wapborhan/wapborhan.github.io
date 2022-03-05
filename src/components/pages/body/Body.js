@@ -1,7 +1,7 @@
 import React from "react";
 import Wordpress from "./Wordpress";
 // import PsdtoHtml from "./PsdtoHtml";
-import Javascript from "./Javascript";
+// import Javascript from "./Javascript";
 
 export default function Body() {
   return (
@@ -35,7 +35,7 @@ export default function Body() {
               {/* <PsdtoHtml /> */}
 
               {/* Javascript */}
-              <Javascript />
+              {/* <Javascript /> */}
             </div>
           </div>
           {/* <!-- End portfolio Area --> */}

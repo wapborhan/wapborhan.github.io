@@ -13,7 +13,7 @@ export default function PsdtoHtml() {
             <div className="text-right">
               <a
                 className="rn-btn btn-brd mr--30"
-                style="line-height: 1;"
+                style={{ lineHeight: 1 }}
                 href="more/portfolio/psdtohtml.html"
               >
                 <span>PSD to HTML</span>
@@ -40,7 +40,7 @@ export default function PsdtoHtml() {
               <div className="thumbnail">
                 <a>
                   <img
-                    src="assets/images/portfolio/psdtohtml/project-01.jpg"
+                    src="images/portfolio/psdtohtml/project-01.jpg"
                     alt="Personal Portfolio Images"
                   />
                 </a>
@@ -113,7 +113,7 @@ export default function PsdtoHtml() {
               <div className="thumbnail">
                 <a>
                   <img
-                    src="assets/images/portfolio/psdtohtml/project-02.jpg"
+                    src="images/portfolio/psdtohtml/project-02.jpg"
                     alt="Personal Portfolio Images"
                   />
                 </a>
@@ -191,7 +191,7 @@ export default function PsdtoHtml() {
               <div className="thumbnail">
                 <a href="#">
                   <img
-                    src="assets/images/portfolio/psdtohtml/project-03.jpg"
+                    src="images/portfolio/psdtohtml/project-03.jpg"
                     alt="Personal Portfolio Images"
                   />
                 </a>
@@ -269,7 +269,7 @@ export default function PsdtoHtml() {
               <div className="thumbnail">
                 <a href="#">
                   <img
-                    src="assets/images/portfolio/psdtohtml/project-04.jpg"
+                    src="images/portfolio/psdtohtml/project-04.jpg"
                     alt="Personal Portfolio Images"
                   />
                 </a>
@@ -347,7 +347,7 @@ export default function PsdtoHtml() {
               <div className="thumbnail">
                 <a href="#">
                   <img
-                    src="assets/images/portfolio/psdtohtml/project-05.jpg"
+                    src="images/portfolio/psdtohtml/project-05.jpg"
                     alt="Personal Portfolio Images"
                   />
                 </a>
@@ -425,7 +425,7 @@ export default function PsdtoHtml() {
               <div className="thumbnail">
                 <a href="#">
                   <img
-                    src="assets/images/portfolio/psdtohtml/project-06.jpg"
+                    src="images/portfolio/psdtohtml/project-06.jpg"
                     alt="Personal Portfolio Images"
                   />
                 </a>

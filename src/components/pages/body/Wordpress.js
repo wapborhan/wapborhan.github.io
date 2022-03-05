@@ -1,5 +1,5 @@
 import React from "react";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiEye, FiExternalLink } from "react-icons/fi";
 
 export default function Wordpress() {
   return (
@@ -56,7 +56,9 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Source Code"
                         >
-                          <i className="feather-github"></i>
+                          <i>
+                            <FiGithub />
+                          </i>
                         </a>
                       </div>
                       <div>
@@ -65,7 +67,9 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Details"
                         >
-                          <i className="feather-eye"></i>
+                          <i>
+                            <FiEye />
+                          </i>
                         </a>
                       </div>
                       <div>
@@ -74,7 +78,9 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Live"
                         >
-                          <i className="feather-external-link"></i>
+                          <i>
+                            <FiExternalLink />
+                          </i>
                         </a>
                       </div>
                     </div>
@@ -125,7 +131,9 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Source Code"
                         >
-                          <i className="feather-github"></i>
+                          <i>
+                            <FiGithub />
+                          </i>
                         </a>
                       </div>
                       <div>
@@ -134,7 +142,9 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Details"
                         >
-                          <i className="feather-eye"></i>
+                          <i>
+                            <FiEye />
+                          </i>
                         </a>
                       </div>
                       <div>
@@ -143,7 +153,9 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Live"
                         >
-                          <i className="feather-external-link"></i>
+                          <i>
+                            <FiExternalLink />
+                          </i>
                         </a>
                       </div>
                     </div>
@@ -199,7 +211,7 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Source Code"
                         >
-                          <i className="feather-github">
+                          <i>
                             <FiGithub />
                           </i>
                         </a>
@@ -210,7 +222,9 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Details"
                         >
-                          <i className="feather-eye"></i>
+                          <i>
+                            <FiEye />
+                          </i>
                         </a>
                       </div>
                       <div>
@@ -219,7 +233,9 @@ export default function Wordpress() {
                           className="btn card-btn"
                           title="Live"
                         >
-                          <i className="feather-external-link"></i>
+                          <i>
+                            <FiExternalLink />
+                          </i>
                         </a>
                       </div>
                     </div>

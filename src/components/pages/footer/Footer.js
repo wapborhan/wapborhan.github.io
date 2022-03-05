@@ -2,18 +2,18 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div class="rn-footer-area rn-section-gap">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="footer-area text-center">
-              <div class="logo">
+    <div className="rn-footer-area rn-section-gap">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="footer-area text-center">
+              <div className="logo">
                 <a href="index.html">
                   <img src="images/logo/logo-vertical-dark.png" alt="logo" />
                 </a>
               </div>
 
-              <p class="description mt--30">
+              <p className="description mt--30">
                 © 2022. All rights reserved by{" "}
                 <a target="_blank" href="https://wapborhan.com">
                   WapBorhan
