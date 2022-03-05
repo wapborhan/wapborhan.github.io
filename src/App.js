@@ -1,11 +1,11 @@
-// import CoomingSoon from "./components/CoomingSoon";
-import MainComponent from "./components/MainComponent";
+import CoomingSoon from "./components/CoomingSoon";
+// import MainComponent from "./components/MainComponent";
 
 function App() {
   return (
     <div>
-      <MainComponent />
-      {/* <CoomingSoon /> */}
+      {/* <MainComponent /> */}
+      <CoomingSoon />
     </div>
   );
 }
