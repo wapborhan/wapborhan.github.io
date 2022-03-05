@@ -1,4 +1,4 @@
-import "./App.css";
+import "./assets/css/styles.css";
 import CoomingSoon from "./components/CoomingSoon";
 import "bootstrap/dist/css/bootstrap.min.css";
 
