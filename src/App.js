@@ -1,11 +1,11 @@
-import "./assets/css/styles.css";
-import CoomingSoon from "./components/CoomingSoon";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import CoomingSoon from "./components/CoomingSoon";
+import MainComponent from "./components/MainComponent";
 
 function App() {
   return (
-    <div className="App">
-      <CoomingSoon />
+    <div>
+      <MainComponent />
+      {/* <CoomingSoon /> */}
     </div>
   );
 }
