@@ -1,12 +1,13 @@
-import CoomingSoon from "./components/CoomingSoon";
-// import MainComponent from "./components/MainComponent";
+// import CoomingSoon from "./components/CoomingSoon";
+import { BrowserRouter } from "react-router-dom";
+import MainComponent from "./components/MainComponent";
 
 function App() {
   return (
-    <div>
-      {/* <MainComponent /> */}
-      <CoomingSoon />
-    </div>
+    <BrowserRouter>
+      <MainComponent />
+      {/* <CoomingSoon /> */}
+    </BrowserRouter>
   );
 }
 

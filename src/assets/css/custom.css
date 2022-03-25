@@ -1,0 +1,19 @@
+.skill-share-inner .content li a {
+  color: var(--color-primary) !important;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.rn-portfolio .inner .thumbnail {
+  position: relative;
+}
+
+.rn-portfolio .inner .owner {
+  position: absolute;
+  left: 10px;
+  bottom: -25px;
+}
+
+.rn-portfolio .inner .content p span {
+  color: var(--color-primary);
+}

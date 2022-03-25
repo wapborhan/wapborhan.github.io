@@ -1,6 +1,10 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
-export default function Banner() {
+export default function Banner(user) {
+  const twitter = user.profile.twitter_username;
+  const blogurl = user.profile.blog;
   return (
     <div className="main-page-wrapper">
       <div className="rn-header-image-area">
@@ -17,16 +21,20 @@ export default function Banner() {
             <div className="col-lg-6">
               <div className="header-left">
                 <div className="header-thumbnail">
-                  <img
-                    src="images/logo/banner-02.png"
-                    alt="personal_portfolio"
-                  />
+                  <img src={user.profile.avatar_url} alt="WapBorhan" />
                 </div>
                 <div className="header-info-content">
                   <h4 className="title">
-                    <a href="http://www.wapborhan.com">Borhan Uddin</a>
+                    <a href={user.profile.html_url}>
+                      {user.profile.name}
+                      <FaExternalLinkAlt className="ms-3" />
+                    </a>
                   </h4>
-                  <div className="status-info">I am a Front-End Developer</div>
+                  <div className="status-info mb-3">{user.profile.bio}</div>
+                  <div className="status-info mb-3">
+                    {user.profile.location}
+                  </div>
+
                   {/* <!-- social sharea area --> */}
                   <div className="social-share-style-1 border-none mt--40">
                     <ul className="social-share d-flex liststyle">
@@ -107,35 +115,36 @@ export default function Banner() {
                 {/* <!-- Start skiull area --> */}
                 <div className="skill-area section-height skill-main">
                   <div className="inner slide">
+                    <div className="d-flex justify-content-left">
+                      <span className="badge bg-success">
+                        Followers: {user.profile.followers}
+                      </span>
+                      <span className="badge bg-warning ms-3">
+                        Following: {user.profile.following}
+                      </span>
+                      <span className="badge bg-primary ms-3">
+                        Public Repos: {user.profile.public_repos}
+                      </span>
+                      <span className="badge bg-info ms-3">
+                        Public Gists: {user.profile.public_gists}
+                      </span>
+                    </div>
                     <div className="skill-share-inner ">
-                      <span className="title">Primary Skills on</span>
-                      <ul className="skill-share d-flex liststyle justify-content-center">
+                      <ul className="text-left content mt-4 mb-2 p-0">
+                        <li>Company: {user.profile.company}</li>
                         <li>
-                          <img src="images/icons/html.png" alt="Icons Images" />
+                          Website:
+                          <a
+                            className="text-decoration-none color-dark"
+                            href={`http://${blogurl}`}
+                          >
+                            {user.profile.blog}
+                          </a>
                         </li>
+
                         <li>
-                          <img src="images/icons/css.png" alt="Icons Images" />
-                        </li>
-                        <li>
-                          <img src="images/icons/js.png" alt="Icons Images" />
-                        </li>
-                        <li>
-                          <img
-                            src="images/icons/react.png"
-                            alt="Icons Images"
-                          />
-                        </li>
-                        <li>
-                          <img src="images/icons/vue.png" alt="Icons Images" />
-                        </li>
-                        <li>
-                          <img src="images/icons/ts.png" alt="Icons Images" />
-                        </li>
-                        <li>
-                          <img
-                            src="images/icons/angular.png"
-                            alt="Icons Images"
-                          />
+                          Member Since:
+                          {/* {dateFormat(user.profile.created_at, "dS mmmm yyyy")} */}
                         </li>
                       </ul>
                     </div>

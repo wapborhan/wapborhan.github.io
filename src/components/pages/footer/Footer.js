@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Fragment } from "react";
+import BackToTop from "react-custom-back-to-top-button";
 
 export default function Footer() {
   return (
@@ -28,6 +29,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <Fragment>
+        <BackToTop style={{ fontSize: 25 }} />
+      </Fragment>
     </div>
   );
 }
