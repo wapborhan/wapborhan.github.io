@@ -22,7 +22,7 @@ export default function Body(props) {
                     <span className="subtitle">
                       Visit my portfolio and keep your feedback
                     </span>
-                    <h2 className="title">My Repos</h2>
+                    <h2 className="title">My Repositories</h2>
                   </div>
                 </div>
               </div>

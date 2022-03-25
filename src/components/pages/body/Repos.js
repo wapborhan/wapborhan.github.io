@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { FaRegStar, FaEye, FaExternalLinkAlt } from "react-icons/fa";
 import { VscRepoForked } from "react-icons/vsc";
+import dateFormat from "dateformat";
 
 export default function Repos(user) {
   const repos = user.repos;
@@ -12,14 +13,11 @@ export default function Repos(user) {
         <div className="col-md-8">
           <div className="catt-title">
             <h3>
-              Some <span className="txt-success">Projects</span> I've Build By
+              Some <span className="txt-success">Projects</span> I've Build On
             </h3>
             <div className="text-right">
-              <a
-                className="rn-btn btn-brd mr--30"
-                href="more/portfolio/javascript.html"
-              >
-                <span>Javascript</span>
+              <a className="rn-btn btn-brd mr--30">
+                <span>Github</span>
               </a>
             </div>
           </div>
@@ -111,6 +109,17 @@ export default function Repos(user) {
                         </div>
                       </div>
                     </div>
+                    <p className="justify-content-start m-0">
+                      <div className=" d-block mt-5 h6 fw-normal text-dark">
+                        <span>Crated on:</span>{" "}
+                        {dateFormat(repo.created_at, "dS mmm yyyy")}
+                      </div>
+
+                      <div className=" d-block mt-3 mb-4 h6 fw-normal text-dark">
+                        <span>Update on:</span>{" "}
+                        {dateFormat(repo.updated_at, "dS mmm yyyy")}
+                      </div>
+                    </p>
                     <p>
                       <span>Description:</span> {repo.description}
                     </p>

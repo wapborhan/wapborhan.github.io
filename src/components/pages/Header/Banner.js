@@ -1,6 +1,6 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import dateFormat from "dateformat";
 
 export default function Banner(user) {
   const twitter = user.profile.twitter_username;
@@ -144,7 +144,7 @@ export default function Banner(user) {
 
                         <li>
                           Member Since:
-                          {/* {dateFormat(user.profile.created_at, "dS mmmm yyyy")} */}
+                          {dateFormat(user.profile.created_at, " dS mmmm yyyy")}
                         </li>
                       </ul>
                     </div>

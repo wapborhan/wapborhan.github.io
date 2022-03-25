@@ -20129,7 +20129,7 @@ div#featured-project-carousel {
   content: "";
   display: block;
   height: 1px;
-  width: 70%;
+  width: 85%;
   background-color: var(--color-primary);
   position: relative;
   right: 0;
