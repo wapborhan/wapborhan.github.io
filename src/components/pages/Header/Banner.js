@@ -113,9 +113,9 @@ export default function Banner(user) {
             <div className="col-lg-6">
               <div className="header-right">
                 {/* <!-- Start skiull area --> */}
-                <div className="skill-area section-height skill-main flex-wrap">
+                <div className="skill-area section-height skill-main ">
                   <div className="inner slide">
-                    <div className="d-flex justify-content-left">
+                    <div className="d-flex justify-content-left flex-wrap">
                       <span className="badge bg-success mt-3">
                         Followers: {user.profile.followers}
                       </span>
