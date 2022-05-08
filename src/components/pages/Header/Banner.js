@@ -113,19 +113,19 @@ export default function Banner(user) {
             <div className="col-lg-6">
               <div className="header-right">
                 {/* <!-- Start skiull area --> */}
-                <div className="skill-area section-height skill-main">
+                <div className="skill-area section-height skill-main flex-wrap">
                   <div className="inner slide">
                     <div className="d-flex justify-content-left">
-                      <span className="badge bg-success">
+                      <span className="badge bg-success mt-3">
                         Followers: {user.profile.followers}
                       </span>
-                      <span className="badge bg-warning ms-3">
+                      <span className="badge bg-warning ms-3 mt-3">
                         Following: {user.profile.following}
                       </span>
-                      <span className="badge bg-primary ms-3">
+                      <span className="badge bg-primary ms-3 mt-3">
                         Public Repos: {user.profile.public_repos}
                       </span>
-                      <span className="badge bg-info ms-3">
+                      <span className="badge bg-info ms-3 mt-3">
                         Public Gists: {user.profile.public_gists}
                       </span>
                     </div>

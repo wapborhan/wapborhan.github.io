@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import BackToTop from "react-custom-back-to-top-button";
+import { GiArrowWings } from "react-icons/gi";
 
 export default function Footer() {
   return (
@@ -30,7 +31,18 @@ export default function Footer() {
         </div>
       </div>
       <Fragment>
-        <BackToTop style={{ fontSize: 25 }} />
+        <BackToTop
+          style={{
+            fontSize: 25,
+            backgroundColor: "#ff014f",
+            width: "5rem",
+            height: "5rem",
+            bottom: 30,
+            right: 30,
+            transform: "rotate(312deg)",
+          }}
+          icon={<GiArrowWings />}
+        />
       </Fragment>
     </div>
   );
