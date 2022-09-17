@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { clientID, clientSecret } from "./Credintials";
 import axios from "axios";
-import Banner from "./pages/Header/Banner";
+import { Route, Routes } from "react-router-dom";
+import Banner from "./Banner";
 import Body from "./pages/body/Body";
-import Footer from "./pages/footer/Footer";
+import Footer from "./Footer";
 
 export default class MainComponent extends Component {
   constructor(props) {
@@ -49,7 +50,15 @@ export default class MainComponent extends Component {
     return (
       <div>
         <Banner profile={this.state.profile} />
-        {this.state.repos ? <Body repos={this.state.repos} /> : null}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              this.state.repos ? <Body repos={this.state.repos} /> : null
+            }
+          />
+          <Route path="*" element={<MainComponent />} />
+        </Routes>
 
         <Footer />
       </div>

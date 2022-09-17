@@ -1,12 +1,13 @@
-// import CoomingSoon from "./components/CoomingSoon";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainComponent from "./components/MainComponent";
 
 function App() {
   return (
     <BrowserRouter>
-      <MainComponent />
-      {/* <CoomingSoon /> */}
+      <Routes>
+        <Route path="/" element={<MainComponent />} />
+        <Route path="*" element={<MainComponent />} />
+      </Routes>
     </BrowserRouter>
   );
 }
