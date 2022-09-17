@@ -5,6 +5,7 @@ import dateFormat from "dateformat";
 
 export default function Repos(user) {
   const repos = user.repos;
+  // console.log(repos);
 
   return (
     <Fragment>
@@ -43,21 +44,21 @@ export default function Repos(user) {
                 <div className="inner">
                   <div className="thumbnail">
                     <a>
-                      {/* <img
+                      <img
                         src="https://library.fresnostate.edu/sites/all/assets/img/lense/fsdr-lense.png"
                         alt="WapBorhan"
-                      /> */}
+                      />
                     </a>
-                    {/* <div className="owner d-flex align-items-end">
+                    <div className="owner d-flex align-items-end">
                       <img
                         src={repo.owner.avatar_url}
                         className="img-fluid w-25 rounded-circle "
-                        alt=""
-                      />{" "}
-                      <h5 className="bg-dark px-3 bg-opacity-50 rounded">
+                        alt="Profile"
+                      />
+                      {/* <h6 className="bg-dark px-3 bg-opacity-50 rounded">
                         Borhan Uddin
-                      </h5>
-                    </div> */}
+                      </h6> */}
+                    </div>
                   </div>
 
                   <div className="content">
@@ -93,23 +94,26 @@ export default function Repos(user) {
                         <div className="card-btn-container d-flex">
                           <div>
                             <a className="btn card-btn" title="Star">
-                              <FaRegStar /> {repo.stargazers_count}
+                              <FaRegStar /> <br />
+                              {repo.stargazers_count}
                             </a>
                           </div>
                           <div>
                             <a className="btn card-btn" title="Watch">
-                              <FaEye /> {repo.watchers_count}
+                              <FaEye /> <br />
+                              {repo.watchers_count}
                             </a>
                           </div>
                           <div>
                             <a className="btn card-btn" title="Fork">
-                              <VscRepoForked /> {repo.forks_count}
+                              <VscRepoForked />
+                              <br /> {repo.forks_count}
                             </a>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <p className="justify-content-start m-0">
+                    {/* <p className="justify-content-start m-0">
                       <div className=" d-block mt-5 h6 fw-normal text-dark">
                         <span>Crated on:</span>{" "}
                         {dateFormat(repo.created_at, "dS mmm yyyy")}
@@ -119,10 +123,10 @@ export default function Repos(user) {
                         <span>Update on:</span>{" "}
                         {dateFormat(repo.updated_at, "dS mmm yyyy")}
                       </div>
-                    </p>
-                    <p>
+                    </p> */}
+                    {/* <p>
                       <span>Description:</span> {repo.description}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>

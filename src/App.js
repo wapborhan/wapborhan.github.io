@@ -6,6 +6,8 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Repo from "./pages/repos/Repo";
 import Followers from "./pages/followers/Followers";
+import Following from "./pages/following/Following";
+import Overview from "./pages/overview/Overview";
 
 export default class App extends Component {
   constructor(props) {
@@ -14,6 +16,8 @@ export default class App extends Component {
       username: "wapborhan",
       profile: "",
       repos: null,
+      followers: null,
+      following: null,
     };
   }
 
@@ -32,7 +36,7 @@ export default class App extends Component {
         console.error(err);
       });
 
-    // Profile Repos Data
+    // Repos Data
     axios
       .get(
         `https://api.github.com/users/${this.state.username}/repos?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
@@ -45,6 +49,34 @@ export default class App extends Component {
       .catch((err) => {
         console.error(err);
       });
+
+    // Followers Data
+    axios
+      .get(
+        `https://api.github.com/users/${this.state.username}/followers?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
+      )
+      .then((res) => {
+        this.setState({
+          followers: res.data,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+
+    // Following Data
+    axios
+      .get(
+        `https://api.github.com/users/${this.state.username}/following?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
+      )
+      .then((res) => {
+        this.setState({
+          following: res.data,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }
 
   render() {
@@ -52,13 +84,21 @@ export default class App extends Component {
       <div>
         <Banner profile={this.state.profile} />
         <Routes>
-          <Route path="/" element={<Repo repos={this.state.repos} />} />
-          <Route path="*" element={<Followers />} />
+          <Route path="/" exact element={<Repo repos={this.state.repos} />} />
+          <Route
+            path="/followers"
+            exact
+            element={<Followers followers={this.state.followers} />}
+          />
+          <Route
+            path="/following"
+            exact
+            element={<Following following={this.state.following} />}
+          />
+          <Route path="/overview" exact element={<Overview />} />
         </Routes>
         <Footer />
       </div>
     );
   }
 }
-
-// this.state.repos ? <Body /> : null

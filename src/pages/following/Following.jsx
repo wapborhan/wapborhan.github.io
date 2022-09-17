@@ -1,8 +1,7 @@
 import React from "react";
-import FollowersList from "./FollowersList";
+import FollowingList from "./FollowingList";
 
-const Followers = (props) => {
-  // console.log(props.followers);
+const Following = (props) => {
   return (
     <div className="sr-content pt--30">
       <div className="container">
@@ -20,14 +19,14 @@ const Followers = (props) => {
                     className="section-title text-center"
                   >
                     {/* <span className="subtitle">
-                      Visit my portfolio and keep your feedback
-                    </span> */}
-                    <h2 className="title">My Followers</h2>
+                  Visit my portfolio and keep your feedback
+                </span> */}
+                    <h2 className="title">My Following</h2>
                   </div>
                 </div>
               </div>
-              {props.followers ? (
-                <FollowersList followers={props.followers} />
+              {props.following ? (
+                <FollowingList following={props.following} />
               ) : null}
             </div>
           </div>
@@ -37,4 +36,4 @@ const Followers = (props) => {
   );
 };
 
-export default Followers;
+export default Following;

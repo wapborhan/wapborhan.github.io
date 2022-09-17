@@ -26,8 +26,7 @@ export default function Body(props) {
                   </div>
                 </div>
               </div>
-
-              <RepoList repos={props.repos} />
+              {props.repos ? <RepoList repos={props.repos} /> : null}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import dateFormat from "dateformat";
 import headBG from "../assets/images/bg-image-9.jpg";
+import { NavLink } from "react-router-dom";
 
 export default function Banner(user) {
   const twitter = user.profile.twitter_username;
@@ -152,6 +153,24 @@ export default function Banner(user) {
                   </div>
                 </div>
                 {/* <!-- End skiull area -->/ */}
+              </div>
+            </div>
+            <div className="col-md-12">
+              <div className="nav text-center">
+                <ul className="d-flex">
+                  <NavLink to="/overview">
+                    <li>Overview</li>
+                  </NavLink>
+                  <NavLink to="/">
+                    <li>Repo</li>
+                  </NavLink>
+                  <NavLink to="/followers">
+                    <li>Followers</li>
+                  </NavLink>
+                  <NavLink to="/following">
+                    <li>Following</li>
+                  </NavLink>
+                </ul>
               </div>
             </div>
           </div>

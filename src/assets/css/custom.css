@@ -17,3 +17,12 @@
 .rn-portfolio .inner .content p span {
   color: var(--color-primary);
 }
+
+.nav ul li {
+  list-style: none;
+  padding: 5px 15px;
+}
+
+.nav ul a.active {
+  background-color: green;
+}
