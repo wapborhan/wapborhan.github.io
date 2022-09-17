@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
 import BackToTop from "react-custom-back-to-top-button";
 import { GiArrowWings } from "react-icons/gi";
+import footBG from "../assets/images/logo-vertical-dark.png";
 
 export default function Footer() {
+  const d = new Date();
   return (
     <div className="rn-footer-area rn-section-gap">
       <div className="container">
@@ -10,21 +12,20 @@ export default function Footer() {
           <div className="col-lg-12">
             <div className="footer-area text-center">
               <div className="logo">
-                <a href="index.html">
-                  <img src="images/logo/logo-vertical-dark.png" alt="logo" />
+                <a>
+                  <img src={footBG} alt="logo" />
                 </a>
               </div>
-
               <p className="description mt--30">
-                © 2022. All rights reserved by{" "}
+                © {d.getFullYear()}. All rights reserved by{" "}
                 <a target="_blank" href="https://wapborhan.com">
-                  WapBorhan
-                </a>{" "}
-                | Designer{" "}
-                <a target="_blank" href="https://facebook.com/infoborhan">
-                  Borhan Uddin
+                  WapBorhan{" "}
                 </a>
-                .{" "}
+                | Designer
+                <a target="_blank" href="https://www.srdreamlab.com">
+                  SR Dream Lab
+                </a>
+                .
               </p>
             </div>
           </div>

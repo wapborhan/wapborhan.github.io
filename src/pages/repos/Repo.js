@@ -1,5 +1,5 @@
 import React from "react";
-import Repos from "./Repos";
+import Repos from "./RepoList";
 
 export default function Body(props) {
   // console.log(props);
@@ -27,7 +27,7 @@ export default function Body(props) {
                 </div>
               </div>
 
-              <Repos repos={props.repos} />
+              {/* <Repos repos={props.repos} /> */}
             </div>
           </div>
         </div>

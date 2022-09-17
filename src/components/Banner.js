@@ -1,6 +1,7 @@
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import dateFormat from "dateformat";
+import headBG from "../assets/images/bg-image-9.jpg";
 
 export default function Banner(user) {
   const twitter = user.profile.twitter_username;
@@ -11,7 +12,7 @@ export default function Banner(user) {
         <div
           className="bg_image--9 bg_image h-100"
           style={{
-            backgroundImage: `url("images/bg-image-9.jpg")`,
+            backgroundImage: `url(${headBG})`,
           }}
         ></div>
       </div>

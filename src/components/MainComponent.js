@@ -3,7 +3,7 @@ import { clientID, clientSecret } from "./Credintials";
 import axios from "axios";
 import { Route, Routes } from "react-router-dom";
 import Banner from "./Banner";
-import Body from "./pages/body/Body";
+import Body from "./pages/repos/Body";
 import Footer from "./Footer";
 
 export default class MainComponent extends Component {
