@@ -1,8 +1,8 @@
 import React from "react";
-import Repos from "./RepoList";
+import RepoList from "./RepoList";
 
 export default function Body(props) {
-  // console.log(props);
+  console.log(props);
   return (
     <div className="sr-content pt--30">
       <div className="container">
@@ -27,7 +27,7 @@ export default function Body(props) {
                 </div>
               </div>
 
-              {/* <Repos repos={props.repos} /> */}
+              <RepoList repos={props.repos} />
             </div>
           </div>
         </div>
