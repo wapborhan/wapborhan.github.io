@@ -1,6 +1,7 @@
 import React from "react";
 import { FaRegStar, FaEye, FaExternalLinkAlt } from "react-icons/fa";
 import { VscRepoForked } from "react-icons/vsc";
+import StarredIMG from "../../assets/images/starred.jpg";
 
 const StarredList = (props) => {
   const starred = props.starred;
@@ -22,10 +23,7 @@ const StarredList = (props) => {
               <div className="inner">
                 <div className="thumbnail">
                   <a>
-                    <img
-                      src="https://library.fresnostate.edu/sites/all/assets/img/lense/fsdr-lense.png"
-                      alt="WapBorhan"
-                    />
+                    <img src={StarredIMG} alt="WapBorhan" />
                   </a>
                   <div className="owner d-flex align-items-end">
                     <img
