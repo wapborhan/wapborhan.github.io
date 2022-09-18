@@ -98,7 +98,7 @@ export default class App extends Component {
     // Stared Data
     axios
       .get(
-        `https://api.github.com/users/${this.state.username}/starred?clientId=${clientID}&clientSecret=${clientSecret}`
+        `https://api.github.com/users/${this.state.username}/starred?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
       )
       .then((res) => {
         this.setState({

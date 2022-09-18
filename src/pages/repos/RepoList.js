@@ -1,9 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { FaRegStar, FaEye, FaExternalLinkAlt } from "react-icons/fa";
 import { VscRepoForked } from "react-icons/vsc";
-import dateFormat from "dateformat";
-import axios from "axios";
-import { clientID, clientSecret } from "../../components/Credintials";
+import RepoIMG from "../../assets/images/repo.png";
 
 export default function Repos(user) {
   const repo = user.repos;
@@ -24,10 +22,7 @@ export default function Repos(user) {
           <div className="inner">
             <div className="thumbnail">
               <a>
-                <img
-                  src="https://library.fresnostate.edu/sites/all/assets/img/lense/fsdr-lense.png"
-                  alt="WapBorhan"
-                />
+                <img src={RepoIMG} alt="WapBorhan" />
               </a>
               <div className="owner d-flex align-items-end">
                 <img
