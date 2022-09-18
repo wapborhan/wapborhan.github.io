@@ -2,7 +2,8 @@ import React from "react";
 import RepoList from "./RepoList";
 
 export default function Body(props) {
-  console.log(props);
+  // console.log(props);
+
   return (
     <div className="sr-content pt--30">
       <div className="container">
@@ -26,7 +27,28 @@ export default function Body(props) {
                   </div>
                 </div>
               </div>
-              {props.repos ? <RepoList repos={props.repos} /> : null}
+              <div className="row">
+                <div className="col-md-8">
+                  <div className="catt-title">
+                    <h3>
+                      Some <span className="txt-success">Projects</span> I've
+                      Build On
+                    </h3>
+                    <div className="text-right">
+                      <a className="rn-btn btn-brd mr--30">
+                        <span>Github</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
+                {props.repos
+                  ? props.repos.map((repo) => {
+                      return <RepoList repos={repo} key={repo.id} />;
+                    })
+                  : null}
+              </div>
             </div>
           </div>
         </div>

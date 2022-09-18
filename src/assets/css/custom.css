@@ -18,11 +18,14 @@
   color: var(--color-primary);
 }
 
-.nav ul li {
+.navs ul li {
   list-style: none;
   padding: 5px 15px;
 }
 
-.nav ul a.active {
-  background-color: green;
+.navs ul a[aria-current] {
+  border-top: 1px solid #888;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  border-radius: 10px 10px 0px 0px;
 }

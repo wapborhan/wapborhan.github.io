@@ -43,7 +43,7 @@ export default function Banner(user) {
                       <li className="facebook">
                         <a
                           href="http://www.facebook.com/infoborhan"
-                          target="_blink"
+                          target="_bNavLink"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -64,14 +64,14 @@ export default function Banner(user) {
                       <li className="github">
                         <a
                           href="http://www.github.com/wapborhan"
-                          target="_blink"
+                          target="_bNavLink"
                         >
                           <svg
                             aria-hidden="true"
                             focusable="false"
                             data-prefix="fab"
                             data-icon="github"
-                            className="feather feather-linkedin  fa-w-16"
+                            className="feather feather-NavLinkedin  fa-w-16"
                             role="img"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 496 512"
@@ -83,10 +83,10 @@ export default function Banner(user) {
                           </svg>
                         </a>
                       </li>
-                      <li className="linkedin">
+                      <li className="NavLinkedin">
                         <a
-                          href="http://linkedin.com/in/wapborhan"
-                          target="_blink"
+                          href="http://NavLinkedin.com/in/wapborhan"
+                          target="_bNavLink"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ export default function Banner(user) {
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="feather feather-linkedin"
+                            className="feather feather-NavLinkedin"
                           >
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                             <rect x="2" y="9" width="4" height="12"></rect>
@@ -156,18 +156,18 @@ export default function Banner(user) {
               </div>
             </div>
             <div className="col-md-12">
-              <div className="nav text-center">
+              <div className="navs text-center d-flex justify-content-center">
                 <ul className="d-flex">
-                  <NavLink to="/">
+                  <NavLink to="" aria-current="step">
                     <li>Overview</li>
                   </NavLink>
-                  <NavLink to="/repo">
+                  <NavLink to="repo">
                     <li>Repo</li>
                   </NavLink>
-                  <NavLink to="/followers">
+                  <NavLink to="followers">
                     <li>Followers</li>
                   </NavLink>
-                  <NavLink to="/following">
+                  <NavLink to="following">
                     <li>Following</li>
                   </NavLink>
                 </ul>

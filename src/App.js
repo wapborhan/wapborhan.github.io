@@ -84,19 +84,19 @@ export default class App extends Component {
       <div>
         <Banner profile={this.state.profile} />
         <Routes>
-          <Route path="/" exact element={<Overview />} />
+          <Route path="" exact element={<Overview />} />
           <Route
-            path="/repo"
+            path="repo"
             exact
             element={<Repo repos={this.state.repos} />}
           />
           <Route
-            path="/followers"
+            path="followers"
             exact
             element={<Followers followers={this.state.followers} />}
           />
           <Route
-            path="/following"
+            path="following"
             exact
             element={<Following following={this.state.following} />}
           />
