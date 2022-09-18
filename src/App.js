@@ -84,7 +84,12 @@ export default class App extends Component {
       <div>
         <Banner profile={this.state.profile} />
         <Routes>
-          <Route path="/" exact element={<Repo repos={this.state.repos} />} />
+          <Route path="/" exact element={<Overview />} />
+          <Route
+            path="/repo"
+            exact
+            element={<Repo repos={this.state.repos} />}
+          />
           <Route
             path="/followers"
             exact
@@ -95,7 +100,6 @@ export default class App extends Component {
             exact
             element={<Following following={this.state.following} />}
           />
-          <Route path="/overview" exact element={<Overview />} />
         </Routes>
         <Footer />
       </div>

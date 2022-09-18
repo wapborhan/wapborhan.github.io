@@ -158,10 +158,10 @@ export default function Banner(user) {
             <div className="col-md-12">
               <div className="nav text-center">
                 <ul className="d-flex">
-                  <NavLink to="/overview">
+                  <NavLink to="/">
                     <li>Overview</li>
                   </NavLink>
-                  <NavLink to="/">
+                  <NavLink to="/repo">
                     <li>Repo</li>
                   </NavLink>
                   <NavLink to="/followers">
