@@ -14,6 +14,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       username: "wapborhan",
+      overview: "",
       profile: "",
       repos: null,
       followers: null,
@@ -22,6 +23,20 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    // Profile Data
+    axios
+      .get(
+        `https://api.github.com/repos/${this.state.username}/${this.state.username}/contents/README.md?clientId=${clientID}&clientSecret=${clientSecret}`
+      )
+      .then((res) => {
+        this.setState({
+          overview: res.data,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+
     // Profile Data
     axios
       .get(
@@ -80,11 +95,17 @@ export default class App extends Component {
   }
 
   render() {
+    console.log(this.state.overview);
     return (
       <div>
         <Banner profile={this.state.profile} />
         <Routes>
-          <Route path="" exact element={<Overview />} />
+          <Route
+            path="/"
+            exact
+            element={<Overview overview={this.state.overview} />}
+          />
+          <Route path="overview" exact element={<Overview />} />
           <Route
             path="repo"
             exact
