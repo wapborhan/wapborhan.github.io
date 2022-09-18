@@ -14,7 +14,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       username: "wapborhan",
-      overview: "",
+      overview: "TG9hZGluZy4uLg==",
       profile: "",
       repos: null,
       followers: null,
@@ -30,7 +30,7 @@ export default class App extends Component {
       )
       .then((res) => {
         this.setState({
-          overview: res.data,
+          overview: res.data.content,
         });
       })
       .catch((err) => {
@@ -95,7 +95,7 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.overview);
+    // console.log(this.state.overview);
     return (
       <div>
         <Banner profile={this.state.profile} />
@@ -105,7 +105,11 @@ export default class App extends Component {
             exact
             element={<Overview overview={this.state.overview} />}
           />
-          <Route path="overview" exact element={<Overview />} />
+          <Route
+            path="overview"
+            exact
+            element={<Overview overview={this.state.overview} />}
+          />
           <Route
             path="repo"
             exact
