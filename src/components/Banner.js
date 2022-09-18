@@ -162,13 +162,13 @@ export default function Banner(user) {
                     <li>Overview</li>
                   </NavLink>
                   <NavLink to="repo">
-                    <li>Repo</li>
+                    <li>Repositories ({user.profile.public_repos})</li>
                   </NavLink>
                   <NavLink to="followers">
-                    <li>Followers</li>
+                    <li>Followers ({user.profile.followers})</li>
                   </NavLink>
                   <NavLink to="following">
-                    <li>Following</li>
+                    <li>Following ({user.profile.following})</li>
                   </NavLink>
                 </ul>
               </div>
