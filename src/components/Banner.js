@@ -170,6 +170,9 @@ export default function Banner(user) {
                   <NavLink to="following">
                     <li>Following ({user.profile.following})</li>
                   </NavLink>
+                  <NavLink to="starred">
+                    <li>Starred </li>
+                  </NavLink>
                 </ul>
               </div>
             </div>

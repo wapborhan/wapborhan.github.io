@@ -8,6 +8,7 @@ import Repo from "./pages/repos/Repo";
 import Followers from "./pages/followers/Followers";
 import Following from "./pages/following/Following";
 import Overview from "./pages/overview/Overview";
+import Starred from "./pages/starred/Starred";
 
 export default class App extends Component {
   constructor(props) {
@@ -19,11 +20,12 @@ export default class App extends Component {
       repos: null,
       followers: null,
       following: null,
+      starred: null,
     };
   }
 
   componentDidMount() {
-    // Profile Data
+    // Overview Data
     axios
       .get(
         `https://api.github.com/repos/${this.state.username}/${this.state.username}/contents/README.md?clientId=${clientID}&clientSecret=${clientSecret}`
@@ -92,6 +94,20 @@ export default class App extends Component {
       .catch((err) => {
         console.error(err);
       });
+
+    // Stared Data
+    axios
+      .get(
+        `https://api.github.com/users/${this.state.username}/starred?clientId=${clientID}&clientSecret=${clientSecret}`
+      )
+      .then((res) => {
+        this.setState({
+          starred: res.data,
+        });
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }
 
   render() {
@@ -124,6 +140,11 @@ export default class App extends Component {
             path="following"
             exact
             element={<Following following={this.state.following} />}
+          />
+          <Route
+            path="starred"
+            exact
+            element={<Starred starred={this.state.starred} />}
           />
         </Routes>
         <Footer />
