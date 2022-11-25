@@ -22,9 +22,9 @@ const StarredList = (props) => {
             <div className="rn-portfolio w-100">
               <div className="inner">
                 <div className="thumbnail">
-                  <a>
+                  {/* <a>
                     <img src={StarredIMG} alt="WapBorhan" />
-                  </a>
+                  </a> */}
                   <div className="owner d-flex align-items-end">
                     <img
                       src={starred.owner.avatar_url}

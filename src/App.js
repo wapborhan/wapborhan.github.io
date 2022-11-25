@@ -9,6 +9,7 @@ import Followers from "./pages/followers/Followers";
 import Following from "./pages/following/Following";
 import Overview from "./pages/overview/Overview";
 import Starred from "./pages/starred/Starred";
+import RightDemo from "./components/RightDemo";
 
 export default class App extends Component {
   constructor(props) {
@@ -147,6 +148,7 @@ export default class App extends Component {
             element={<Starred starred={this.state.starred} />}
           />
         </Routes>
+        <RightDemo />
         <Footer />
       </div>
     );

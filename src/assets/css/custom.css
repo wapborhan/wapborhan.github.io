@@ -11,7 +11,7 @@
 .rn-portfolio .inner .owner {
   position: absolute;
   left: 10px;
-  bottom: -25px;
+  bottom: -10px;
 }
 
 .rn-portfolio .inner .content p span {
@@ -29,3 +29,12 @@
   border-right: 1px solid #888;
   border-radius: 10px 10px 0px 0px;
 }
+
+.white-version .owner img{
+border: 5px solid #ecf0f3;
+}.owner img{
+border: 5px solid #1d1e24;
+}
+
+.rn-portfolio::before:hover, .rn-blog::before:hover{
+opacity: 1;}

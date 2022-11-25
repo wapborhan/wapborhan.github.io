@@ -4,7 +4,7 @@ import { VscRepoForked } from "react-icons/vsc";
 import dateFormat from "dateformat";
 
 const FollowersList = (props) => {
-  console.log(props.followers);
+  // console.log(props.followers);
   return (
     <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
       {props.followers.map((follower) => {

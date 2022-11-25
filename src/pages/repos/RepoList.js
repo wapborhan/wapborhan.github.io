@@ -21,9 +21,9 @@ export default function Repos(user) {
         <div className="rn-portfolio w-100">
           <div className="inner">
             <div className="thumbnail">
-              <a>
+              {/* <a>
                 <img src={RepoIMG} alt="WapBorhan" />
-              </a>
+              </a> */}
               <div className="owner d-flex align-items-end">
                 <img
                   src={repo.owner.avatar_url}
