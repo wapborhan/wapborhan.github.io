@@ -1,15 +1,11 @@
 import React, { Fragment } from "react";
-import { FaRegStar, FaEye, FaExternalLinkAlt } from "react-icons/fa";
-import { VscRepoForked } from "react-icons/vsc";
-import dateFormat from "dateformat";
 
 const FollowersList = (props) => {
-  // console.log(props.followers);
+  console.log(props.followers);
+
   return (
     <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
       {props.followers.map((follower) => {
-        // const pages = repo.homepage;
-
         return (
           <div
             key={follower.id}
@@ -22,15 +18,46 @@ const FollowersList = (props) => {
           >
             <div className="rn-portfolio w-100">
               <div className="inner">
-                <div className="owners d-block align-items-center text-center">
-                  <img
-                    src={follower.avatar_url}
-                    className="img-fluid w-25 rounded-circle "
-                    alt="Profile"
-                  />
-                  <h6 className="bg-dark px-3 bg-opacity-50 rounded">
-                    {follower.login}
-                  </h6>
+                <div className="thumbnail">
+                  <a>
+                    <img src={follower.avatar_url} alt={follower.login} />
+                  </a>
+                </div>
+
+                <div className="content">
+                  <div className="head d-flex justify-content-between">
+                    <h4 className="title text-uppercase mb-3">
+                      <a href={follower.url}>{follower.login}</a>
+                    </h4>
+                  </div>
+                  <div className="category-info d-block mb-3">
+                    <div className="category-list d-flex justify-content-between">
+                      <div className="btn btn-info p-3 text-light fw-bolder text-uppercase">
+                        <a
+                          className="text-white"
+                          href={`https://github.com/${follower.login}?tab=repositories`}
+                        >
+                          Repos
+                        </a>
+                      </div>
+                      <div className="btn btn-danger p-3 text-light fw-bolder text-uppercase">
+                        <a
+                          className="text-white"
+                          href={`https://github.com/${follower.login}?tab=followers`}
+                        >
+                          Followers
+                        </a>
+                      </div>
+                      <div className="btn btn-warning p-3 text-light fw-bolder text-uppercase">
+                        <a
+                          className="text-white"
+                          href={`https://github.com/${follower.login}?tab=following`}
+                        >
+                          Following
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
