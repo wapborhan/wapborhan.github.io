@@ -6,7 +6,7 @@ import RepoIMG from "../../assets/images/repo.png";
 export default function Repos(user) {
   const repo = user.repos;
   const pages = repo.homepage;
-  console.log(repo);
+  // console.log(repo);
   return (
     <Fragment>
       <div

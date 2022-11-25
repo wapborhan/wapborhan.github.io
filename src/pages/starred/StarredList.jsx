@@ -5,7 +5,7 @@ import StarredIMG from "../../assets/images/starred.jpg";
 
 const StarredList = (props) => {
   const starred = props.starred;
-  console.log(starred);
+  // console.log(starred);
   return (
     <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
       {starred.map((starred) => {
