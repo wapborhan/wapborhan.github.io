@@ -112,7 +112,6 @@ export default class App extends Component {
   }
 
   render() {
-    // console.log(this.state.overview);
     return (
       <div>
         <Banner profile={this.state.profile} />
