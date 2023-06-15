@@ -1,11 +1,17 @@
 import React, { Fragment, useState } from "react";
-import { FaRegStar, FaEye, FaExternalLinkAlt } from "react-icons/fa";
+import {
+  FaRegStar,
+  FaEye,
+  FaExternalLinkAlt,
+  FaRegCheckCircle,
+} from "react-icons/fa";
 import { VscRepoForked } from "react-icons/vsc";
 import RepoIMG from "../../assets/images/repo.png";
 
 export default function Repos(user) {
   const repo = user.repos;
   const pages = repo.homepage;
+
   // console.log(repo);
   return (
     <Fragment>
@@ -38,8 +44,11 @@ export default function Repos(user) {
 
             <div className="content">
               <div className="head d-flex justify-content-between">
-                <h4 className="title text-uppercase mb-3">
+                <h4 className="title text-uppercase mb-5">
                   <a href={repo.html_url}>
+                    <span style={{ color: "red", marginRight: "10px" }}>
+                      <FaRegCheckCircle />
+                    </span>{" "}
                     {repo.name}
                     <i></i>
                   </a>
@@ -58,30 +67,38 @@ export default function Repos(user) {
                   )}
                 </div>
               </div>
-              <div className="category-info mb-3">
+              <div className="category-info p-0">
                 <div className="category-list">
-                  <div className="btn btn-warning p-3 text-light fw-bolder text-uppercase">
-                    {repo.language}
-                  </div>
+                  {repo.language ? (
+                    <div
+                      className={
+                        "btn  p-3 text-light fw-bolder text-uppercase " +
+                        repo.language.toLowerCase()
+                      }
+                    >
+                      {repo.language}
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <div className="meta">
                   <div className="card-btn-container d-flex">
                     <div>
                       <a className="btn card-btn" title="Star">
-                        <FaRegStar /> <br />
-                        {repo.stargazers_count}
+                        <FaRegStar />
+                        {" " + repo.stargazers_count}
                       </a>
                     </div>
                     <div>
                       <a className="btn card-btn" title="Watch">
-                        <FaEye /> <br />
-                        {repo.watchers_count}
+                        <FaEye />
+                        {" " + repo.watchers_count}
                       </a>
                     </div>
                     <div>
                       <a className="btn card-btn" title="Fork">
-                        <VscRepoForked />
-                        <br /> {repo.forks_count}
+                        <VscRepoForked /> {" " + repo.forks_count}
                       </a>
                     </div>
                   </div>

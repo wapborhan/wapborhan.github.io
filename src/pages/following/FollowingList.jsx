@@ -28,7 +28,9 @@ const FollowingList = (props) => {
                 <div className="content">
                   <div className="head d-flex justify-content-between">
                     <h4 className="title text-uppercase mb-3">
-                      <a href={follower.url}>{follower.login}</a>
+                      <a href={`https://github.com/${follower.login}`}>
+                        {follower.login}
+                      </a>
                     </h4>
                   </div>
                   <div className="category-info d-block mb-3">

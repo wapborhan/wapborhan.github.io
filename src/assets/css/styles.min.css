@@ -98,17 +98,17 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 0.9em;
+  width: 0.9em;
 }
 body::-webkit-scrollbar-thumb {
-    background: linear-gradient(145deg,#ff014f,#d11414);
-    border-radius: 5px;
-    outline: 1px solid #708090;
+  background: linear-gradient(145deg, #ff014f, #d11414);
+  border-radius: 5px;
+  outline: 1px solid #708090;
 }
 
 body::-webkit-scrollbar-track {
-    background: linear-gradient(to right bottom,#d1d9e6,#e2e8ec);
-    -webkit-box-shadow: inset 0 0 5px rgb(0 0 0 / 30%);
+  background: linear-gradient(to right bottom, #d1d9e6, #e2e8ec);
+  -webkit-box-shadow: inset 0 0 5px rgb(0 0 0 / 30%);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   body {
@@ -12823,7 +12823,7 @@ a:before {
   background: #fff;
   padding: 50px 20px;
   border-radius: 10px;
-box-shadow: var(--shadow-white-3);
+  box-shadow: var(--shadow-white-3);
 }
 
 .sr-content .sect-main {
@@ -12845,16 +12845,16 @@ box-shadow: var(--shadow-white-3);
     display: none;
   }
 }
-.white-version a.btn.card-btn{
-background: var(--gradient-box-w);
+.white-version a.btn.card-btn {
+  background: var(--gradient-box-w);
   -webkit-box-shadow: var(--shadow-white-3);
   box-shadow: var(--shadow-white-3);
 }
-.white-version .btn{
-color: #000;
+.white-version .btn {
+  color: #000;
 }
- .btn{
-color: #fff;
+.btn {
+  color: #fff;
 }
 a.btn.card-btn {
   font-size: 20px;
@@ -12870,7 +12870,7 @@ a.btn.card-btn:hover {
   transform: translateY(-5px);
   background: var(--color-primary);
   color: #fff;
--webkit-transition: var(--transition);
+  -webkit-transition: var(--transition);
   transition: var(--transition);
 }
 
@@ -12881,36 +12881,43 @@ a.btn.card-btn:hover {
   color: #fff;
 }
 
-.rn-portfolio .inner .content .tags span.html {
-  background: #ff5722;
+.rn-portfolio .inner .content .category-list .html {
+  background: #ff5722 !important;
 }
 
-.rn-portfolio .inner .content .tags span.css {
-  background: #2257ea;
+.rn-portfolio .inner .content .category-list .css {
+  background: #2257ea !important;
 }
 
-.rn-portfolio .inner .content .tags span.javascript {
-  background: #dab92d;
+.rn-portfolio .inner .content .category-list .javascript {
+  background: #dab92d !important;
 }
 
-.rn-portfolio .inner .content .tags span.react {
-  background: #53e1fc;
+.rn-portfolio .inner .content .category-list .react {
+  background: #53e1fc !important;
 }
 
-.rn-portfolio .inner .content .tags span.vue {
-  background: #41b883;
+.rn-portfolio .inner .content .category-list .vue {
+  background: #41b883 !important;
 }
 
-.rn-portfolio .inner .content .tags span.typescript {
-  background: #2d79c7;
+.rn-portfolio .inner .content .category-list .typescript {
+  background: #2d79c7 !important;
 }
 
-.rn-portfolio .inner .content .tags span.angular {
-  background: #a70a05;
+.rn-portfolio .inner .content .category-list .angular {
+  background: #a70a05 !important;
 }
 
-.rn-portfolio .inner .content .tags span.php {
-  background: #474a8a;
+.rn-portfolio .inner .content .category-list .php {
+  background: #474a8a !important;
+}
+.rn-portfolio .inner .content .category-list .python {
+  background-image: linear-gradient(#3673a5, #ffd342) !important;
+}
+
+.rn-portfolio .inner .content .category-list .btns {
+  background: #df0f6d;
 }
 
 .tags a {
@@ -20473,15 +20480,12 @@ div#featured-project-carousel {
 
 .white-version .rn-portfolio-area .catt-title h3 {
   color: var(--color-body-white);
- 
 }
 
- .rn-portfolio-area .catt-title h3 {
-
+.rn-portfolio-area .catt-title h3 {
   font-size: 1.75rem;
   margin: 0;
 }
-
 
 .txt-success {
   color: var(--color-primary);
@@ -21693,7 +21697,7 @@ body.white-version {
 
 .white-version .rn-content-wrapper .padding-tb {
   background: #fff;
-box-shadow: var(--shadow-white-3);
+  box-shadow: var(--shadow-white-3);
 }
 
 .white-version .rn-content-wrapper .padding-tb .header-left::before {
@@ -22626,7 +22630,7 @@ box-shadow: var(--shadow-white-3);
   background: var(--gradient-box-w);
   -webkit-box-shadow: var(--shadow-white-3);
   box-shadow: var(--shadow-white-3);
-transition: var(--transition);
+  transition: var(--transition);
 }
 
 .white-version .rn-portfolio::before,

@@ -59,11 +59,21 @@ const StarredList = (props) => {
                       )}
                     </div> */}
                   </div>
-                  <div className="category-info mb-3">
+                  <div className="category-info">
                     <div className="category-list">
-                      <div className="btn btn-warning p-3 text-light fw-bolder text-uppercase">
-                        {starred.language}
-                      </div>
+                      {starred.language ? (
+                        <div
+                          className={
+                            "btn p-3 text-light fw-bolder text-uppercase " +
+                            starred.language.toLowerCase() +
+                            " btns"
+                          }
+                        >
+                          {starred.language}
+                        </div>
+                      ) : (
+                        ""
+                      )}
                     </div>
                     <div className="meta">
                       <div className="card-btn-container d-flex">
