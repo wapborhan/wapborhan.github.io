@@ -42,7 +42,7 @@ export default function Banner(user) {
                     <ul className="social-share d-flex liststyle">
                       <li className="facebook">
                         <a
-                          href="http://www.facebook.com/infoborhan"
+                          href="http://www.facebook.com/wapborhan"
                           target="_bNavLink"
                         >
                           <svg
@@ -85,7 +85,7 @@ export default function Banner(user) {
                       </li>
                       <li className="NavLinkedin">
                         <a
-                          href="http://NavLinkedin.com/in/wapborhan"
+                          href="http://Linkedin.com/in/wapborhan"
                           target="_bNavLink"
                         >
                           <svg
