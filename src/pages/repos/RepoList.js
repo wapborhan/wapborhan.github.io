@@ -22,7 +22,7 @@ export default function Repos(user) {
         data-aos-easing="ease-in-sine"
         data-aos-delay="600"
         data-aos-once="true"
-        className="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30"
+        className="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--70"
       >
         <div className="rn-portfolio w-100">
           <div className="inner">
@@ -30,16 +30,16 @@ export default function Repos(user) {
               {/* <a>
                 <img src={RepoIMG} alt="WapBorhan" />
               </a> */}
-              <div className="owner d-flex align-items-end">
+              {/* <div className="owner d-flex align-items-end">
                 <img
                   src={repo.owner.avatar_url}
                   className="img-fluid w-25 rounded-circle "
                   alt="Profile"
                 />
-                {/* <h6 className="bg-dark px-3 bg-opacity-50 rounded">
+                <h6 className="bg-dark px-3 bg-opacity-50 rounded">
                         Borhan Uddin
-                      </h6> */}
-              </div>
+                      </h6>
+              </div> */}
             </div>
 
             <div className="content">

@@ -20,7 +20,14 @@
 
 .navs ul li {
   list-style: none;
-  padding: 5px 15px;
+  padding: 8px 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.navs ul {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .navs ul a[aria-current] {
@@ -30,11 +37,17 @@
   border-radius: 10px 10px 0px 0px;
 }
 
-.white-version .owner img{
-border: 5px solid #ecf0f3;
-}.owner img{
-border: 5px solid #1d1e24;
+.white-version .owner img {
+  border: 5px solid #ecf0f3;
 }
 
-.rn-portfolio::before:hover, .rn-blog::before:hover{
-opacity: 1;}
+.owner img {
+  border: 5px solid #1d1e24;
+}
+
+.rn-portfolio::before:hover,
+.rn-blog::before:hover {
+  opacity: 1;
+}
+
+.navs ul li {}

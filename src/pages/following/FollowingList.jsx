@@ -1,7 +1,6 @@
 import React from "react";
 
 const FollowingList = (props) => {
-  // console.log(props);
   return (
     <div className="row row--25 mt--10 mt_md--10 mt_sm--10">
       {props.following.map((follower) => {

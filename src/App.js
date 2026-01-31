@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import { clientID, clientSecret } from "./components/Credintials";
-import axios from "axios";
+import { Component } from "react";
 import { Route, Routes } from "react-router-dom";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
@@ -10,6 +8,7 @@ import Following from "./pages/following/Following";
 import Overview from "./pages/overview/Overview";
 import Starred from "./pages/starred/Starred";
 import RightDemo from "./components/RightDemo";
+import { axiosInstance } from "./util/axiosInstance";
 
 export default class App extends Component {
   constructor(props) {
@@ -27,9 +26,9 @@ export default class App extends Component {
 
   componentDidMount() {
     // Overview Data
-    axios
+    axiosInstance
       .get(
-        `https://api.github.com/repos/${this.state.username}/${this.state.username}/contents/README.md?clientId=${clientID}&clientSecret=${clientSecret}`
+        `/repos/${this.state.username}/${this.state.username}/contents/README.md`,
       )
       .then((res) => {
         this.setState({
@@ -41,10 +40,8 @@ export default class App extends Component {
       });
 
     // Profile Data
-    axios
-      .get(
-        `https://api.github.com/users/${this.state.username}?clientId=${clientID}&clientSecret=${clientSecret}`
-      )
+    axiosInstance
+      .get(`/users/${this.state.username}`)
       .then((res) => {
         this.setState({
           profile: res.data,
@@ -55,24 +52,44 @@ export default class App extends Component {
       });
 
     // Repos Data
-    axios
-      .get(
-        `https://api.github.com/users/${this.state.username}/repos?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
-      )
-      .then((res) => {
-        this.setState({
-          repos: res.data,
-        });
-      })
-      .catch((err) => {
-        console.error(err);
-      });
+
+    const getData = async () => {
+      try {
+        const { data: repos1 } = await axiosInstance(
+          `/users/${this.state.username}/repos?page=1&per_page=100&sort=created&type=owner`,
+        );
+        const { data: repos2 } = await axiosInstance(
+          `/users/${this.state.username}/repos?page=2&per_page=100&sort=created&type=owner`,
+        );
+        const { data: repos3 } = await axiosInstance(
+          `/users/${this.state.username}/repos?page=3&per_page=100&sort=created&type=owner`,
+        );
+        let repos = [...repos1, ...repos2, ...repos3];
+
+        this.setState({ repos });
+      } catch (err) {
+        this.setState({ error: "Somthing went wrong!" });
+      }
+    };
+
+    getData();
+
+    // axios
+    //   .get(
+    //     `https://api.github.com/users/${this.state.username}/repos?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
+    //   )
+    //   .then((res) => {
+    //     this.setState({
+    //       repos: res.data,
+    //     });
+    //   })
+    //   .catch((err) => {
+    //     console.error(err);
+    //   });
 
     // Followers Data
-    axios
-      .get(
-        `https://api.github.com/users/${this.state.username}/followers?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
-      )
+    axiosInstance
+      .get(`/users/${this.state.username}/followers?page=1&per_page=100`)
       .then((res) => {
         this.setState({
           followers: res.data,
@@ -83,10 +100,8 @@ export default class App extends Component {
       });
 
     // Following Data
-    axios
-      .get(
-        `https://api.github.com/users/${this.state.username}/following?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
-      )
+    axiosInstance
+      .get(`/users/${this.state.username}/following?page=1&per_page=100`)
       .then((res) => {
         this.setState({
           following: res.data,
@@ -97,10 +112,8 @@ export default class App extends Component {
       });
 
     // Stared Data
-    axios
-      .get(
-        `https://api.github.com/users/${this.state.username}/starred?page=1&per_page=100&clientId=${clientID}&clientSecret=${clientSecret}`
-      )
+    axiosInstance
+      .get(`/users/${this.state.username}/starred?page=1&per_page=100`)
       .then((res) => {
         this.setState({
           starred: res.data,

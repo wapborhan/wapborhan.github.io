@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 export default function Banner(user) {
   const twitter = user.profile.twitter_username;
   const blogurl = user.profile.blog;
+
   return (
     <div className="main-page-wrapper">
       <div className="rn-header-image-area">
@@ -33,9 +34,6 @@ export default function Banner(user) {
                     </a>
                   </h4>
                   <div className="status-info mb-3">{user.profile.bio}</div>
-                  <div className="status-info mb-3">
-                    {user.profile.location}
-                  </div>
 
                   {/* <!-- social sharea area --> */}
                   <div className="social-share-style-1 border-none mt--40">
@@ -133,6 +131,8 @@ export default function Banner(user) {
                     </div>
                     <div className="skill-share-inner ">
                       <ul className="text-left content mt-4 mb-2 p-0">
+                        {" "}
+                        <li>Address: {user.profile.location}</li>
                         <li>Company: {user.profile.company}</li>
                         <li>
                           Website:
@@ -143,7 +143,6 @@ export default function Banner(user) {
                             {user.profile.blog}
                           </a>
                         </li>
-
                         <li>
                           Member Since:
                           {dateFormat(user.profile.created_at, " dS mmmm yyyy")}
@@ -157,7 +156,7 @@ export default function Banner(user) {
             </div>
             <div className="col-md-12">
               <div className="navs text-center d-flex justify-content-center">
-                <ul className="d-flex">
+                <ul className="d-flex flex-wrap">
                   <NavLink to="overview">
                     <li>Overview</li>
                   </NavLink>

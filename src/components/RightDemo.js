@@ -7,7 +7,6 @@ function RightDemo() {
   const toggleDark = () => {
     setDark(!isDark);
     // const html = document.getElementsByTagName("body");
-    // console.log(html);
     document.body.classList.toggle("white-version");
   };
   return (
