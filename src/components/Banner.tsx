@@ -9,12 +9,23 @@ import {
   FaUsers,
   FaUserCheck,
   FaStar,
+  FaFeatherAlt,
 } from "react-icons/fa";
 import { VscRepo } from "react-icons/vsc";
 import dateFormatRaw from "dateformat";
 import { usePortfolio } from "../context/PortfolioContext";
+import navItems from "@/data/navItems.json";
 
 const dateFormat: any = (dateFormatRaw as any)?.default || dateFormatRaw;
+
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  FaBookOpen,
+  VscRepo,
+  FaUsers,
+  FaUserCheck,
+  FaStar,
+  FaFeatherAlt,
+};
 
 export default function Banner() {
   const { profile, starred } = usePortfolio();
@@ -30,12 +41,21 @@ export default function Banner() {
 
   const starredCount = Array.isArray(starred) ? starred.length : 0;
 
-  const isOverviewActive =
-    pathname === "/" || pathname === "/overview" || pathname === "/overview/";
-  const isRepoActive = pathname.startsWith("/repo");
-  const isFollowersActive = pathname.startsWith("/followers");
-  const isFollowingActive = pathname.startsWith("/following");
-  const isStarredActive = pathname.startsWith("/starred");
+  const isItemActive = (href: string, exact?: boolean) => {
+    if (exact || href === "/overview") {
+      return pathname === "/" || pathname === "/overview" || pathname === "/overview/";
+    }
+    return pathname.startsWith(href);
+  };
+
+  const getItemCount = (countKey?: string) => {
+    if (!countKey) return null;
+    if (countKey === "starred") return starredCount;
+    if (countKey in p) {
+      return (p as Record<string, any>)[countKey] ?? 0;
+    }
+    return null;
+  };
 
   return (
     <div className="main-page-wrapper">
@@ -203,46 +223,21 @@ export default function Banner() {
               id="myTabs"
               role="tablist"
             >
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${isOverviewActive ? "active" : ""}`}
-                  href="/overview"
-                >
-                  Overview
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${isRepoActive ? "active" : ""}`}
-                  href="/repo"
-                >
-                  Repositories ({p.public_repos ?? 0})
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${isFollowersActive ? "active" : ""}`}
-                  href="/followers"
-                >
-                  Followers ({p.followers ?? 0})
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${isFollowingActive ? "active" : ""}`}
-                  href="/following"
-                >
-                  Following ({p.following ?? 0})
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${isStarredActive ? "active" : ""}`}
-                  href="/starred"
-                >
-                  Starred ({starredCount})
-                </Link>
-              </li>
+              {navItems.map((item) => {
+                const isActive = isItemActive(item.href, item.exact);
+                const count = getItemCount(item.countKey);
+                return (
+                  <li className="nav-item" key={item.id}>
+                    <Link
+                      className={`nav-link ${isActive ? "active" : ""}`}
+                      href={item.href}
+                    >
+                      {item.name}
+                      {count !== null ? ` (${count})` : ""}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -253,45 +248,20 @@ export default function Banner() {
         className="mobile-bottom-nav flex lg:hidden"
         aria-label="Bottom Navigation"
       >
-        <Link
-          href="/overview"
-          className={`mobile-nav-item ${isOverviewActive ? "active" : ""}`}
-        >
-          <FaBookOpen className="mobile-nav-icon" />
-          <span className="mobile-nav-label">Overview</span>
-        </Link>
-
-        <Link
-          href="/repo"
-          className={`mobile-nav-item ${isRepoActive ? "active" : ""}`}
-        >
-          <VscRepo className="mobile-nav-icon" />
-          <span className="mobile-nav-label">Repos</span>
-        </Link>
-
-        <Link
-          href="/followers"
-          className={`mobile-nav-item ${isFollowersActive ? "active" : ""}`}
-        >
-          <FaUsers className="mobile-nav-icon" />
-          <span className="mobile-nav-label">Followers</span>
-        </Link>
-
-        <Link
-          href="/following"
-          className={`mobile-nav-item ${isFollowingActive ? "active" : ""}`}
-        >
-          <FaUserCheck className="mobile-nav-icon" />
-          <span className="mobile-nav-label">Following</span>
-        </Link>
-
-        <Link
-          href="/starred"
-          className={`mobile-nav-item ${isStarredActive ? "active" : ""}`}
-        >
-          <FaStar className="mobile-nav-icon" />
-          <span className="mobile-nav-label">Starred</span>
-        </Link>
+        {navItems.map((item) => {
+          const Icon = item.icon ? iconMap[item.icon] : null;
+          const isActive = isItemActive(item.href, item.exact);
+          return (
+            <Link
+              key={`mobile-${item.id}`}
+              href={item.href}
+              className={`mobile-nav-item ${isActive ? "active" : ""}`}
+            >
+              {Icon && <Icon className="mobile-nav-icon" />}
+              <span className="mobile-nav-label">{item.name}</span>
+            </Link>
+          );
+        })}
       </nav>
     </div>
   );

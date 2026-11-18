@@ -1,0 +1,43 @@
+[
+  {
+    "id": "overview",
+    "name": "Overview",
+    "href": "/overview",
+    "exact": true,
+    "icon": "FaBookOpen"
+  },
+  {
+    "id": "repo",
+    "name": "Repositories",
+    "href": "/repo",
+    "countKey": "public_repos",
+    "icon": "VscRepo"
+  },
+  {
+    "id": "followers",
+    "name": "Followers",
+    "href": "/followers",
+    "countKey": "followers",
+    "icon": "FaUsers"
+  },
+  {
+    "id": "following",
+    "name": "Following",
+    "href": "/following",
+    "countKey": "following",
+    "icon": "FaUserCheck"
+  },
+  {
+    "id": "starred",
+    "name": "Starred",
+    "href": "/starred",
+    "countKey": "starred",
+    "icon": "FaStar"
+  },
+  {
+    "id": "blog",
+    "name": "Blog",
+    "href": "/blog",
+    "icon": "FaFeatherAlt"
+  }
+]
